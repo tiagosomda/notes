@@ -2,7 +2,7 @@ baseURL = "https://notes.tiago.dev/"
 languageCode = "en-us"
 title = "TIAGO"
 paginate = 5
-publishDir = "public"
+publishDir = "docs"
 
 [params]
   # dir name of your blog content (default is `content/posts`)
