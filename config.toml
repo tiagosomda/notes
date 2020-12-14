@@ -1,4 +1,4 @@
-baseURL = "https://notes.tiago.dev/"
+baseURL = "https://notes.tiago.dev"
 languageCode = "en-us"
 title = "TIAGO"
 paginate = 5
@@ -33,7 +33,7 @@ publishDir = "docs"
 [languages]
   [languages.en]
     languageName = "English"
-    title = "#!tiago"
+    title = "notes.tiago.dev"
     subtitle = "a place for my thoughts"
     keywords = ""
     copyright = ""
@@ -42,7 +42,7 @@ publishDir = "docs"
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "#!tiago"
+      logoText = "notes.tiago.dev"
       logoHomeLink = "/"
 
     [languages.en.menu]
