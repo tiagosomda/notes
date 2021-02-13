@@ -1,0 +1,85 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hello-world on notes.tiago.dev</title>
+    <link>https://notes.tiago.dev/tags/hello-world/</link>
+    <description>Recent content in hello-world on notes.tiago.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>©2021 notes.tiago.dev.</copyright>
+    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://notes.tiago.dev/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is my motto? this up here ^ </title>
+      <link>https://notes.tiago.dev/motto/</link>
+      <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.tiago.dev/motto/</guid>
+      <description>&lt;p&gt;As I was taking a class in called &amp;ldquo;How To Make Great Decisions&amp;rdquo; at the Seattle community college (thanks Microsoft for sponsoring it!),&lt;br&gt;
+I had to keep a daily journal. One of the questions I had to answer in one of these days was &amp;ldquo;What is your motto?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;As I thought about it, my mind went straight into a message that I used to have on my way out of my room.&lt;br&gt;
+That message was &amp;ldquo;The Staying Speed&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;This was something I came up with a long time ago when I used to practice kung fu. I read a lot about Jeet Kune Do and other quotes and teachings from Bruce Lee. I think I got that idea from those, but I could never find it mentioned anywhere. So if you have heard of this again, let me know!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To me, the meaning behind &amp;ldquo;The Staying Speed&amp;rdquo; is&lt;/strong&gt;&amp;hellip;&lt;br&gt;
+&amp;hellip;about finding the right amount of time and effort needed to reach a goal.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Put too little effort and time (how often you do something) and you won&amp;rsquo;t accomplish it.&lt;/li&gt;
+&lt;li&gt;Put too much effort and time and you might get burned out, bored, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;The Staying Speed&amp;rdquo; is&lt;/strong&gt; &amp;hellip;&lt;br&gt;
+the right balance of the amount of effort and time you put into a goal.&lt;br&gt;
+The speed is not always the same. It depends not only on what you are working on, but also your emotional state as well.
+Knowing that, allows you to recognize when it is too little and when it is too much and adjust so you can accomplish your goals.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://notes.tiago.dev/post/thoughts/hello-world/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.tiago.dev/post/thoughts/hello-world/</guid>
+      <description>&lt;h1 id=&#34;why-am-i-starting-a-blog&#34;&gt;Why am I starting a blog?&lt;/h1&gt;
+&lt;p&gt;I am creating this blog as a sort of a personal growth record keeping.&lt;/p&gt;
+&lt;p&gt;The posts I am creating are usually around the areas of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;books I am reading or listening to&lt;/li&gt;
+&lt;li&gt;my endless quest of working on projects&lt;/li&gt;
+&lt;li&gt;a public &amp;ldquo;fuck yeah list&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;
+&lt;p&gt;As I read and listen to book, I take notes.
+Doing that really helps to critically understand what I am reading and it helps to retain knowledge.&lt;/p&gt;
+&lt;p&gt;In short words, this method goes like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;write what you think you are going to be reading&lt;/li&gt;
+&lt;li&gt;read a chapter&lt;/li&gt;
+&lt;li&gt;write about what you have just read&lt;/li&gt;
+&lt;li&gt;before you start reading the book again, read through your notes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are some videos on the method I described:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=z-GtGH57J9I&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Big Think : How to remember everything you read | Shane Parrish&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=9fvUYmJcqWg&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Big Think : Want to get more from books? Stop reading them cover to cover. | Shane Parrish&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;p&gt;I have been tracking all the projects that I have been working on.
+There are over 20 of them. None are never trully done.&lt;br&gt;
+There is always something else to thinker with. Something else to learn.&lt;/p&gt;
+&lt;p&gt;They are my creative outlet. It is probably one of the things I enjoy doing the most in life.
+Some of them are pretty cool and worth sharing, I think :)&lt;/p&gt;
+&lt;h2 id=&#34;fuck-yeah-list&#34;&gt;Fuck Yeah List&lt;/h2&gt;
+&lt;p&gt;That is right. A &amp;ldquo;Fuck Yeah List&amp;rdquo;.&lt;br&gt;
+I learned this &amp;ldquo;concept&amp;rdquo; from &lt;a href=&#34;http://www.docjamesw.com/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Doc James Whittaker&lt;/a&gt;
+.&lt;br&gt;
+It is simple a list of accomplishments that I am proud of.&lt;br&gt;
+Whenever I need a pick me up, I can come here and read &amp;ldquo;my fuck yeah list&amp;rdquo; and feel better about myself.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
