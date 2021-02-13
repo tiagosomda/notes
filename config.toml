@@ -1,56 +1,78 @@
 baseURL = "https://notes.tiago.dev"
-languageCode = "en-us"
-title = "TIAGO"
-paginate = 5
+title = "notes.tiago.dev"
+theme = "hugo-notepadium"
+copyright = "©2021 notes.tiago.dev."
+
 publishDir = "docs"
 
+languageCode = "en"  # for the RSS generation
+defaultContentLanguage = "en"
+
+hasCJKLanguage = false
+
+enableRobotsTXT = true
+
+favicon = "favicon.ico"
+
+# Enable Disqus <--- a way to have comments in the blog
+#disqusShortname = "XXX"
+
+# Google Analytics <--- track page views and etc
+#googleAnalytics = "UA-123-45"
+
+ignoreErrors = ["error-remote-getjson"]
+
+[markup.highlight]
+codeFences = false
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
 [params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
+style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "Jan 02, 2006"  # if unset, default is "2006-01-02"
+readingTime = true  # show reading time after article date
+logo = ""
+slogan = " 🧐 The Staying Speed 🌍"
+#license = "<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "green"
+[params.assets]
+css = ["css/fonts.css", "css/mods.css"]
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 3
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
-  # show selector to switch language
-  showLanguageSelector = false
+[params.share]
+enable = true  # En/Disable share globally, default: false. You can always enable share on per page.
+addThisId = ""
+inlineToolId = ""
 
-  # set theme to full screen width
-  fullWidthTheme = false
+[params.math]
+enable = false # load math globally, default: false. You can always enable math on per page.
+use = "katex"  # builtin: "katex", "mathjax".  default: "katex"
 
-  # center theme with default width
-  centerTheme = true
+[params.syntax]
+use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "github"
+darkTheme = "dracula"
 
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
+[params.profile]
+  enable = false
+  avatar = "https://d33wubrfki0l68.cloudfront.net/ddf49425628d8aec7523db143916b34ae1641e11/b97e8/images/gopher-side_color.svg"
+  name = "gohugo"
+  bio = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."  # support markdown syntax
+  twitter = "GoHugoIO"  # https://twitter.com/XXX
+  github = "gohugoio"  # https://github.com/XXX
 
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "notes.tiago.dev"
-    subtitle = "a place for my thoughts"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
+[[params.nav.custom]]
+title = "Motto"
+url = "/motto/"
 
-    [languages.en.params.logo]
-      logoText = "notes.tiago.dev"
-      logoHomeLink = "/"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "projects"
-        name = "Projects"
-        url = "/projects"
-      [[languages.en.menu.main]]
-        identifier = "reading"
-        name = "Reading"
-        url = "/reading"
+#[[params.nav.custom]]
+#title = "Hugo"
+#url = "https://gohugo.io/"

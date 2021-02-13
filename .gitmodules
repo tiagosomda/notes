@@ -2,3 +2,6 @@
 	path = themes/terminal
 	url = git@github.com:panr/hugo-theme-terminal.git
 	branch = multiple-content-types
+[submodule "themes/hugo-notepadium"]
+	path = themes/hugo-notepadium
+	url = https://github.com/cntrump/hugo-notepadium.git

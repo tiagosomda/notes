@@ -1,0 +1,40 @@
+html {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.site.name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav.item {
+    font-weight: bold;
+    padding: 0px 6px;
+    text-transform: uppercase;
+}
+
+.site.slogan {
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 1.575em;
+}
+
+.nav.item:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.article-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.markdown-body {
+    padding: 20px;
+}
+
+.article.labels {
+    padding-left: 20px;
+}
