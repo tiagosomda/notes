@@ -14,3 +14,9 @@ git submodule update --init --recursive
 
 # add submodule
 git submodule add -b master git@github.com:tiagosomda/tiagosomda.github.io.git public
+
+# add submodule theme
+git submodule add https://github.com/cntrump/hugo-notepadium.git themes/hugo-notepadium
+
+# RSS Feed
+https://notes.tiago.dev/index.xml
