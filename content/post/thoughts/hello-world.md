@@ -1,7 +1,7 @@
 +++
 title = "Hello World!"
 author = "Tiago"
-date = "2021-02-12"
+date = "2021-01-12"
 summary = "of course my first post would have this title. 😛"
 tags = [
     "why",
