@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Perspective Wand : Experiencing Superluminal in VR&nbsp;&ndash;&nbsp;notes.tiago.dev</title><link rel="stylesheet" href="/css/core.min.52f58d1b6b3b3a192d3cb41a190b059b4260d20b7302d308f7e331c0b5a3be21acb942a2d814f389db4310ae7cbe6b42.css" integrity="sha384-UvWNG2s7OhktPLQaGQsFm0Jg0gtzAtMI9&#43;MxwLWjviGsuUKi2BTzidtDEK58vmtC"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Perspective Wand : Experiencing Superluminal in VR" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">notes.tiago.dev</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/motto/">Motto</a><a class="nav item highlight" href="/index.xml" target="_blank">RSS Feed</a>
+</nav></div></span>
+    </div><div class="site slogan"><span class="title"> 🧐 The Staying Speed 🌍</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Perspective Wand : Experiencing Superluminal in VR</h1><p class="article date">Feb 28, 2021<span class="reading-time"> • 6 minutes to read</span></p></section><article class="article markdown-body"><p><img  src="/imgs/projects/perspective-wand-000.gif"
+        alt="perspective wand example"/></p>
+<h1 id="have-you-heard-of-superluminal">Have you heard of Superluminal?</h1>
+<p>If not, check it out!<br>
+I really enjoyed playing it : <a href="https://store.steampowered.com/app/1049410/Superliminal/"target="_blank" rel="noopener noreferrer">link to Superluminal on Steam</a>
+</p>
+<p>The puzzles are incredible.<br>
+It has this game mechanic that tricks your mind. Even when you understand it, it still leaves you in awe.</p>
+<p>If you know me, you know where this is going&hellip;<br>
+I wondered how would it feel to interact with this game mechanic in the real world.<br>
+I am really into VR and that is probably the only environment (for now) that we could experience this game mechanic.</p>
+<p>It also got me thinking&hellip;<br>
+Is it even possible to do this in VR?</p>
+<p>I did some research and found this gold gem on youtube:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lFEIUcXCEvI"target="_blank" rel="noopener noreferrer">How do non-euclidean games work? | Bitwise</a>
+</li>
+</ul>
+<p>The video talks about what non-euclidian games are (super freaking cool is what they are).<br>
+Fast forward to <a href="https://youtu.be/lFEIUcXCEvI?t=646"target="_blank" rel="noopener noreferrer">10:46 in the video</a>
+ and it explains how the game mechanic in Superluminal works.</p>
+<p>I gotta say&hellip;<br>
+&hellip; I was a <em><strong>Bit Wiser</strong></em> after watching that video!<br>
+<img  src="/imgs/memes/ba-dum-tss.png"
+        alt="ba dum tss"/></p>
+<h1 id="how-does-the-game-mechanic-work">How does the game mechanic work?</h1>
+<p>The video puts it really well <strong>&ldquo;as you pick up an object, its perspective stays the same, but its real size changes dramatically.&quot;</strong><br>
+Meaning, something small that you pick up on a table, becomes really big if you point it at some place far away.<br>
+There are all sorts of interesting puzzles that you can make with that.</p>
+<p>The logic behind this mechanic is super simple:</p>
+<ol>
+<li>When you pick up the object, you store
+<ul>
+<li>the current distance from the player to the object and</li>
+<li>also the current scale value of the object.</li>
+</ul>
+</li>
+<li>As you move the object in the world, push it as far as you can.</li>
+<li>With that object in that position,
+<ul>
+<li>get that distance and initial distance stored.</li>
+<li>this gives you a ratio that you can use to calculate the scale that the object should have in this new distance.</li>
+</ul>
+</li>
+</ol>
+<p>My mind was blown. 🤯<br>
+It makes so much sense AND it is so clever.</p>
+<h1 id="how-did-i-go-about-building-this-in-vr">How did I go about building this in VR?</h1>
+<p>I am familiar with making VR things in Unity, so that was an easy choice for me.</p>
+<p>Next, I decided to</p>
+<ul>
+<li>first make the mechanic work in a regular 2D screen</li>
+<li>and then tackle how it work work in VR</li>
+</ul>
+<p>I am sure there would be more to it then the simple math.<br>
+It turns out that the hardest part, to me, was figuring out where to place the object.</p>
+<p>Here are some of the ways I tried doing that&hellip;</p>
+<h2 id="attempt-1-push-the-object-backwards-a-little-bit-every-frame">Attempt #1: Push the object backwards a little bit every frame</h2>
+<p>That initially worked well.<br>
+However, but once my object was far away and I looked at something that was close, when my object was already passed it.</p>
+<p>I added a Raycast to check if whatever I was pointing at was closer to where the object currently was.<br>
+That didn&rsquo;t solve the problem entirely. The Raycast is a very thin line so the object I was holding would stay behind another object until I actually aimed into an object that was closer.</p>
+<p>So I tried something else.</p>
+<h2 id="attempt-2-at-every-frame-calculate-farthest-position-starting-from-the-closest-position">Attempt #2: At every frame, calculate farthest position starting from the closest position</h2>
+<p>This actually worked out very well.<br>
+There are probably other solutions that are more efficient.<br>
+I actually spent a couple of hours over the weekend trying different ways, but I took a little break and remembered what my goal was:</p>
+<ul>
+<li><strong>Goal:</strong> to experience this in VR.</li>
+<li><strong>Not A Goal:</strong> to make the most efficient mechanic in the world.</li>
+</ul>
+<h2 id="calculating-the-farthest-the-object-can-be">Calculating the farthest the object can be</h2>
+<p>This is actually an interesting problem.</p>
+<p>How do we know we can place an object at a certain position?
+Unity does not give us a way to do a collision check on demand given a collider (if it does, let me know!).</p>
+<p>So to do that check, I used <a href="https://docs.unity3d.com/ScriptReference/Physics.CheckBox.html"target="_blank" rel="noopener noreferrer">&ldquo;Unity&rsquo;s Physics Check Box collision&rdquo;</a>
+<br>
+To define the box size, I used an approximation.
+I scaled the box size to what the object&rsquo;s scale would be at a certain point.<br>
+It is not perfect, but it works with most shapes.</p>
+<h3 id="how-else-could-we-do-this">How else could we do this?</h3>
+<p>There are many other ways.<br>
+I think one of the best solutions would be for each object to have a component that calculates how far it can be pushed back given an initial position and direction.</p>
+<p>In that way, simple objects can use something like I mentioned above. Complex objects can implement something that checks for collisions using different shapes and sizes. (for example, an object with holes in it, like a donut.)</p>
+<p>The mathematician in me also likes the other possibility to figure out a set of boxes which can fill an object&rsquo;s space.<br>
+That could be using in some preprocessing function or in realtime.<br>
+During the &ldquo;push back operation&rdquo;, we check if any of the boxes are collisind with anything else.</p>
+<p>Again, this was a weekend project. So I brought myself to focus on the task.<br>
+(As I write this, I have this itch to go back and give these other options a try&hellip;)</p>
+<h1 id="experiencing-it-in-vr">Experiencing it in VR</h1>
+<p>So there are a few things to think about.</p>
+<ul>
+<li>How do we pick up an object?</li>
+<li>Which direction do we push it away?</li>
+</ul>
+<h2 id="how-to-pick-up-the-object">How to pick up the object?</h2>
+<p>There were two ways I thought about:</p>
+<ol>
+<li>Pick up the object by grabbing it.</li>
+<li>Use a pointer (or some cool &ldquo;perspective wand&rdquo;) to point to select an object.</li>
+</ol>
+<p>Grabing the object would be really cool, because it would give you the extra idea that &ldquo;I can&rsquo;t be placing this really far away, it is right here in my hands&rdquo;.<br>
+However, I would have to change how the mechanic work to actually just place the object far away, when I actually let go of the object, which meant changing my current implementation. So I decided to maybe try that later. (I haven&rsquo;t yet)</p>
+<p>So I went with option two. Simple click pointer.</p>
+<h2 id="which-direction-do-we-push-it-away">Which direction do we push it away?</h2>
+<p>We want the object to scale in relation to the position of our eyes,
+but we want to use our hands to place the object in different locations.</p>
+<p>So then, the direction to push the object becomes:</p>
+<ul>
+<li>from: the middle point in between the player&rsquo;s eyes</li>
+<li>to: the location where the hand is pointing to (raycast from the hand&rsquo;s/wand&rsquo;s forward position to whatever we hit)</li>
+</ul>
+<p>Which is very similar to the 2D screen effect.<br>
+Except that in that frame of view, we are always pointing at the center of the camera and the camera is always moving to where we are pointing.</p>
+<p>and that is it!<br>
+It does work in VR!</p>
+<h1 id="how-did-it-feel-to-use-this-perspective-wand-in-vr">How did it feel to use this &ldquo;perspective wand&rdquo; in VR?</h1>
+<p>It feels like doing magic!
+I threw together a bunch of assets in a scene and went crazy with moving them around.<br>
+I tricked myself many times.<br>
+I sometimes still get tricked when I place something in the sky without realizing.<br>
+When that happens, the object starts to fall very slowing and that is what makes me realize that the object is really far away and also veeery large.</p>
+<h1 id="where-can-i-try-it">Where can I try it?</h1>
+<p>I am hosting a WebGL (non-vr) version that you can give a try here:</p>
+<ul>
+<li><a href="https://unfolding-dragon.github.io/perspective-wand/">https://unfolding-dragon.github.io/perspective-wand/</a></li>
+</ul>
+<p>I also built for a couple of other devices:</p>
+<ul>
+<li><a href="https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1">https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1</a></li>
+</ul>
+</article><section class="article labels"><a class="category" href=/categories/projects/>projects</a><a class="tag" href=/tags/fuck-yeah/>fuck-yeah</a><a class="tag" href=/tags/unity/>unity</a><a class="tag" href=/tags/vr/>VR</a><a class="tag" href=/tags/monthly-project/>monthly-project</a></section>
+</div>
+<div class="article bottom"><section class="article navigation"><p>Previous: <a class="link" href="/post/projects/first-diy-table/"><span class="iconfont icon-article"></span>My first table!</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <div>See my main web site at <a href="https://www.tiago.dev" target="_blank">tiago.dev</a></span></div>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p><p class="copyright">©2021 notes.tiago.dev.</p>
+</div>
+</section></body>
+
+</html>
