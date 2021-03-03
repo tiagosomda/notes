@@ -2,8 +2,9 @@
 author = "Tiago"
 title = "My first table!"
 date = "2021-01-29"
-summary = "I noticed my work desk was bending after a few months of holding my work desktop that I had to bring home due to covid-19. So I decided to build mysself a very sturdy table!"
+summary = "I noticed my work desk was bending after a few months of holding my work desktop that I had to bring home due to covid-19. So I decided to build myself a very sturdy table!"
 tags = [
+    "fuck-yeah",
     "woodwork",
     "diy"
 ]

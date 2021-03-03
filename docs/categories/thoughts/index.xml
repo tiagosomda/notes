@@ -12,6 +12,146 @@
     
     
     <item>
+      <title>Perspective Wand : Experiencing Superluminal in VR</title>
+      <link>https://notes.tiago.dev/post/projects/perspective-wand/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.tiago.dev/post/projects/perspective-wand/</guid>
+      <description>&lt;p&gt;&lt;img  src=&#34;https://notes.tiago.dev/imgs/projects/perspective-wand-000.gif&#34;
+        alt=&#34;perspective wand example&#34;/&gt;&lt;/p&gt;
+&lt;h1 id=&#34;have-you-heard-of-superluminal&#34;&gt;Have you heard of Superluminal?&lt;/h1&gt;
+&lt;p&gt;If not, check it out!&lt;br&gt;
+I really enjoyed playing it : &lt;a href=&#34;https://store.steampowered.com/app/1049410/Superliminal/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;link to Superluminal on Steam&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;The puzzles are incredible.&lt;br&gt;
+It has this game mechanic that tricks your mind. Even when you understand it, it still leaves you in awe.&lt;/p&gt;
+&lt;p&gt;If you know me, you know where this is going&amp;hellip;&lt;br&gt;
+I wondered how would it feel to interact with this game mechanic in the real world.&lt;br&gt;
+I am really into VR and that is probably the only environment (for now) that we could experience this game mechanic.&lt;/p&gt;
+&lt;p&gt;It also got me thinking&amp;hellip;&lt;br&gt;
+Is it even possible to do this in VR?&lt;/p&gt;
+&lt;p&gt;I did some research and found this gold gem on youtube:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=lFEIUcXCEvI&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;How do non-euclidean games work? | Bitwise&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The video talks about what non-euclidian games are (super freaking cool is what they are).&lt;br&gt;
+Fast forward to &lt;a href=&#34;https://youtu.be/lFEIUcXCEvI?t=646&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;10:46 in the video&lt;/a&gt;
+ and it explains how the game mechanic in Superluminal works.&lt;/p&gt;
+&lt;p&gt;I gotta say&amp;hellip;&lt;br&gt;
+&amp;hellip; I was a &lt;em&gt;&lt;strong&gt;Bit Wiser&lt;/strong&gt;&lt;/em&gt; after watching that video!&lt;br&gt;
+&lt;img  src=&#34;https://notes.tiago.dev/imgs/memes/ba-dum-tss.png&#34;
+        alt=&#34;ba dum tss&#34;/&gt;&lt;/p&gt;
+&lt;h1 id=&#34;how-does-the-game-mechanic-work&#34;&gt;How does the game mechanic work?&lt;/h1&gt;
+&lt;p&gt;The video puts it really well &lt;strong&gt;&amp;ldquo;as you pick up an object, its perspective stays the same, but its real size changes dramatically.&amp;quot;&lt;/strong&gt;&lt;br&gt;
+Meaning, something small that you pick up on a table, becomes really big if you point it at some place far away.&lt;br&gt;
+There are all sorts of interesting puzzles that you can make with that.&lt;/p&gt;
+&lt;p&gt;The logic behind this mechanic is super simple:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;When you pick up the object, you store
+&lt;ul&gt;
+&lt;li&gt;the current distance from the player to the object and&lt;/li&gt;
+&lt;li&gt;also the current scale value of the object.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;As you move the object in the world, push it as far as you can.&lt;/li&gt;
+&lt;li&gt;With that object in that position,
+&lt;ul&gt;
+&lt;li&gt;get that distance and initial distance stored.&lt;/li&gt;
+&lt;li&gt;this gives you a ratio that you can use to calculate the scale that the object should have in this new distance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;My mind was blown. 🤯&lt;br&gt;
+It makes so much sense AND it is so clever.&lt;/p&gt;
+&lt;h1 id=&#34;how-did-i-go-about-building-this-in-vr&#34;&gt;How did I go about building this in VR?&lt;/h1&gt;
+&lt;p&gt;I am familiar with making VR things in Unity, so that was an easy choice for me.&lt;/p&gt;
+&lt;p&gt;Next, I decided to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;first make the mechanic work in a regular 2D screen&lt;/li&gt;
+&lt;li&gt;and then tackle how it work work in VR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am sure there would be more to it then the simple math.&lt;br&gt;
+It turns out that the hardest part, to me, was figuring out where to place the object.&lt;/p&gt;
+&lt;p&gt;Here are some of the ways I tried doing that&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;attempt-1-push-the-object-backwards-a-little-bit-every-frame&#34;&gt;Attempt #1: Push the object backwards a little bit every frame&lt;/h2&gt;
+&lt;p&gt;That initially worked well.&lt;br&gt;
+However, but once my object was far away and I looked at something that was close, when my object was already passed it.&lt;/p&gt;
+&lt;p&gt;I added a Raycast to check if whatever I was pointing at was closer to where the object currently was.&lt;br&gt;
+That didn&amp;rsquo;t solve the problem entirely. The Raycast is a very thin line so the object I was holding would stay behind another object until I actually aimed into an object that was closer.&lt;/p&gt;
+&lt;p&gt;So I tried something else.&lt;/p&gt;
+&lt;h2 id=&#34;attempt-2-at-every-frame-calculate-farthest-position-starting-from-the-closest-position&#34;&gt;Attempt #2: At every frame, calculate farthest position starting from the closest position&lt;/h2&gt;
+&lt;p&gt;This actually worked out very well.&lt;br&gt;
+There are probably other solutions that are more efficient.&lt;br&gt;
+I actually spent a couple of hours over the weekend trying different ways, but I took a little break and remembered what my goal was:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Goal:&lt;/strong&gt; to experience this in VR.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Not A Goal:&lt;/strong&gt; to make the most efficient mechanic in the world.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;calculating-the-farthest-the-object-can-be&#34;&gt;Calculating the farthest the object can be&lt;/h2&gt;
+&lt;p&gt;This is actually an interesting problem.&lt;/p&gt;
+&lt;p&gt;How do we know we can place an object at a certain position?
+Unity does not give us a way to do a collision check on demand given a collider (if it does, let me know!).&lt;/p&gt;
+&lt;p&gt;So to do that check, I used &lt;a href=&#34;https://docs.unity3d.com/ScriptReference/Physics.CheckBox.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&amp;ldquo;Unity&amp;rsquo;s Physics Check Box collision&amp;rdquo;&lt;/a&gt;
+&lt;br&gt;
+To define the box size, I used an approximation.
+I scaled the box size to what the object&amp;rsquo;s scale would be at a certain point.&lt;br&gt;
+It is not perfect, but it works with most shapes.&lt;/p&gt;
+&lt;h3 id=&#34;how-else-could-we-do-this&#34;&gt;How else could we do this?&lt;/h3&gt;
+&lt;p&gt;There are many other ways.&lt;br&gt;
+I think one of the best solutions would be for each object to have a component that calculates how far it can be pushed back given an initial position and direction.&lt;/p&gt;
+&lt;p&gt;In that way, simple objects can use something like I mentioned above. Complex objects can implement something that checks for collisions using different shapes and sizes. (for example, an object with holes in it, like a donut.)&lt;/p&gt;
+&lt;p&gt;The mathematician in me also likes the other possibility to figure out a set of boxes which can fill an object&amp;rsquo;s space.&lt;br&gt;
+That could be using in some preprocessing function or in realtime.&lt;br&gt;
+During the &amp;ldquo;push back operation&amp;rdquo;, we check if any of the boxes are collisind with anything else.&lt;/p&gt;
+&lt;p&gt;Again, this was a weekend project. So I brought myself to focus on the task.&lt;br&gt;
+(As I write this, I have this itch to go back and give these other options a try&amp;hellip;)&lt;/p&gt;
+&lt;h1 id=&#34;experiencing-it-in-vr&#34;&gt;Experiencing it in VR&lt;/h1&gt;
+&lt;p&gt;So there are a few things to think about.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How do we pick up an object?&lt;/li&gt;
+&lt;li&gt;Which direction do we push it away?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-to-pick-up-the-object&#34;&gt;How to pick up the object?&lt;/h2&gt;
+&lt;p&gt;There were two ways I thought about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pick up the object by grabbing it.&lt;/li&gt;
+&lt;li&gt;Use a pointer (or some cool &amp;ldquo;perspective wand&amp;rdquo;) to point to select an object.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Grabing the object would be really cool, because it would give you the extra idea that &amp;ldquo;I can&amp;rsquo;t be placing this really far away, it is right here in my hands&amp;rdquo;.&lt;br&gt;
+However, I would have to change how the mechanic work to actually just place the object far away, when I actually let go of the object, which meant changing my current implementation. So I decided to maybe try that later. (I haven&amp;rsquo;t yet)&lt;/p&gt;
+&lt;p&gt;So I went with option two. Simple click pointer.&lt;/p&gt;
+&lt;h2 id=&#34;which-direction-do-we-push-it-away&#34;&gt;Which direction do we push it away?&lt;/h2&gt;
+&lt;p&gt;We want the object to scale in relation to the position of our eyes,
+but we want to use our hands to place the object in different locations.&lt;/p&gt;
+&lt;p&gt;So then, the direction to push the object becomes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;from: the middle point in between the player&amp;rsquo;s eyes&lt;/li&gt;
+&lt;li&gt;to: the location where the hand is pointing to (raycast from the hand&amp;rsquo;s/wand&amp;rsquo;s forward position to whatever we hit)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Which is very similar to the 2D screen effect.&lt;br&gt;
+Except that in that frame of view, we are always pointing at the center of the camera and the camera is always moving to where we are pointing.&lt;/p&gt;
+&lt;p&gt;and that is it!&lt;br&gt;
+It does work in VR!&lt;/p&gt;
+&lt;h1 id=&#34;how-did-it-feel-to-use-this-perspective-wand-in-vr&#34;&gt;How did it feel to use this &amp;ldquo;perspective wand&amp;rdquo; in VR?&lt;/h1&gt;
+&lt;p&gt;It feels like doing magic!
+I threw together a bunch of assets in a scene and went crazy with moving them around.&lt;br&gt;
+I tricked myself many times.&lt;br&gt;
+I sometimes still get tricked when I place something in the sky without realizing.&lt;br&gt;
+When that happens, the object starts to fall very slowing and that is what makes me realize that the object is really far away and also veeery large.&lt;/p&gt;
+&lt;h1 id=&#34;where-can-i-try-it&#34;&gt;Where can I try it?&lt;/h1&gt;
+&lt;p&gt;I am hosting a WebGL (non-vr) version that you can give a try here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://unfolding-dragon.github.io/perspective-wand/&#34;&gt;https://unfolding-dragon.github.io/perspective-wand/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I also built for a couple of other devices:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&#34;&gt;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>What is my motto? this up here ^ </title>
       <link>https://notes.tiago.dev/motto/</link>
       <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
