@@ -13,7 +13,7 @@ categories = [
 ]
 +++
 
-![My first table!](/imgs/books/the-mental-work-load.png)  
+![book cover for the Mental Load](/imgs/books/the-mental-load.png)  
 
 I have recently read 'The Mental Load: A Feminist Comic' By Emma and I learned a lot! As I read each chapter, I took notes and today I reflected on them. I highly recommend this book to the women and men of your life.
 
