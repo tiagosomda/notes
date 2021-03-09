@@ -1,164 +1,124 @@
 +++
 author = "Tiago"
-title = "The Mental Load : What do women think about?"
-date = "2020-01-18"
-summary = "I have recently 'The Mental Load: A Feminist Comic' By Emma and I learned a lot! As I read each chapter, I took notes and reflected on what the chapter was telling me. I highly recommend this book to the women and men of your life."
+title = "The Mental Load : What do Women think about?"
+date = "2021-03-08"
+summary = "I have recently read 'The Mental Load: A Feminist Comic' By Emma and I learned a lot! As I read each chapter, I took notes and today I reflected on them. I highly recommend this book to the women and men of your life."
 tags = [
     "feminist",
     "growth",
-    "book"
+    "international-womens-day"
 ]
 categories = [
     "books"
 ]
-draft = true
 +++
 
+![My first table!](/imgs/books/the-mental-work-load.png)  
+
+I have recently read 'The Mental Load: A Feminist Comic' By Emma and I learned a lot! As I read each chapter, I took notes and today I reflected on them. I highly recommend this book to the women and men of your life.
+
+
+
+# What is this book about?
+This [review by Nancy O'Toole explains it well](https://www.goodreads.com/book/show/39196352-the-mental-load#:~:text=The%20mental%20load%20is%20an%20intersectional%20feminist%20comic,the%20main%20focus%20here%20is%20on%20the%20domestic.)  
+> The mental load is an intersectional feminist comic that uses simple illustrations to convey current issues. While the content goes beyond this, the main focus here is on the domestic. We already know about the imbalance in hours spent on activities such as cooking, cleaning, and child care, and how that negatively impacts women (especially those who work full time), but what about the impact of the mental load? The strain that comes from mentally balancing the dozens of seemingly small tasks in the household that men are, too often, blind to?
+
 # Why did I read this book?
-- to learn more about how I can be a better man.  
-
-After I got married, I have been working, daily, to be the best husband that I can be.  
-My wife deserves that and it is an awesome objective to strive for.  
-
-My wife and I have agreed that we want to be equals in our relationship.  
-Reading this book and reflecting on it, is one of my actions to understand a bit more about what are the struggles of being a woman.  
-This book does it really well.
-
-
-# Chapter 1: You should have asked
-This is about how we need to make things more equal between genders.
-There shouldn't be things that one gender is responsible for and the other(s) is(are) not.
-
-Start by dividing up the recurrent tasks/chores equally.
-
-I am not sure yet how useful this is, but if you think of something you need to do. Add it to your to-do list and set a date for when you will do it. Hop fully that can help you drive those things out of your mental load.
-
-# 2. Violence of the oppressed
-
-This chapter is about how fingers are pointed at the people being oppressed instead of the oppressors when the oppressed expressed violence.
-
-Some friends have told me how they have to really watch out how they dress and act so that they can fit in an environment - this is added mental load that is unfair.
-
-For example blacks need to dress well, drive nice cars, act calmly, speak well so that they are not victims of police brutality.
-
-Another example is women at work (in tech, but I am sure in other places too), they can't act angry or express their opinions in am angry way. The men in those environments see those behaviors as unfit for a women, when in the other hand it is completely okay for aen to act like that.
-
-# 2. Episiotomy in childbirth
-
-Not needed but yet still used
-
-As a men (or a partner to the one giving childbirth), we should read and inform ourselves just as much as the person giving birth and back them up on their decisions.
-
-# 3. The Male Gaze
-
-This chapter is about how society views women.
-
-Over many many years, we (society) have objectified women. In our movies, games, advertisements, books, posters and so on.
-
-It has become so ingrained within us that a lot of times, we have behaviors that keep on enforcing this objectification of women.
-
-It is not only men that see and act that way. Women do it too.
-
-It is up to each of us to watch out for our behaviors and to speak out when we see these kinds of things.
-
-# 4. Show me that Bossom
-
-This was a very interesting chapter.
-
-I felt a bit conflicted. I instantly recognized the parallel with girls wearing hijabs.
-
-I was never in favour of hijabs. I never liked the idea.
-
-To me, and from what I learned, hijabs were just a way to prevent men from doing and thinking bad things. It was forced into women.
-
-The other side of this is the religious meaning of a hijab. To what I say, "men should also wear it".
-
-However, after reading this chapter, I think the way I think has changed.
-
-It is not that men should wear it, it is that men should not force wen to wear it.
-
-It is up to each individual to choose how they want to show or not show their body.
-
-To a higher level, this also means not objectifying women's body.
-
-Society should not make women wear or not wear something. 
-
-Society does not force men to wear hijabs. Society does not force men to cover their chest at the beach.
-
-Society should not force women to do any of those things either.
-
-# 5. The wonderful take of Mohamed
-
-That is a terrible story.
-
-People being discriminated for being muslim or come from Muslim countries is terrible.
-
-# 6. The Wait
-
-This bottom line here is "Work Life Balance"
-
-It is very clear how men and women are treated differently at work.
-
-It never occured to me how some people think about that it is okay for men to sacrifice family time and it is not okay for women to sacrifice family time.
-
-I actually enforce on myself to have a very clear distinction between my work time and my life time.
-
-I have one phone for work and I put it away when I am done working.
-
-I try really hard to always finish working at 5pm and I almost never accept meetings that are after 5pm. When I do, I make sure to set aside some time to not work.
-
-I also made me think further into how we divide tasks at home. For example, I felt that it wouls be completely okay for me to take my future kid to day care in the morning and have my wife pick her up in the evening. However, now I believe that both of us should take our kid in the morning and pick her up after work.
-
-While keeping it very clear that after work, really means after work.
-
-# 8. Work
-
-This chapter is about how we should work less.
-
-The main point I got from it was how unfairly distributed wealth is. Owners of companies/factories gain a lot more money from the business then the workers.
-
-The book claims that universal basic income is a better solution and it could be, but in my opinion it needs to be tested really well before being implemented.
-
-# 9. Check your Pussy
-
-This chapter talks about how unstudied the female orgasmic organ is known.
-
-Not a lot of attention and research has been done on it. Most material on female pleasure is all about penetration while that is not from where most women have sexual pleasure.
-
-This again hits on how male centric everything is. Penetration is about the pleasure that men feel during sex and not really about the female pleasure side.
-
-# 10. Just another guy from the hood
-
-This chapter talks about police brutality.
-
-The more I read and get in touch with people from other parts of the world, the more I see that the there is a lot of police brutality everywhere. That sucks.
-
-A lot of people say "it is just one bad apple in the tree"
-
-Well then let's focus on that because the tree is getting rotten. The other apples should talk about it and the bad apples should be seemed out and removed fr the police.
-
-The police should be protecting people and not making people afraid of them.
-
-# 11. Chill Out
-
-Women are always being told to "chill out" and to "stand up for themselves"
-
-When they do stand up for themselves, like being angry at someone else (for in appropriate comments) they get back a "chill out" and the one who ends up being sorry is the woman.
-
-It shouldn't be like this.
-
-The author offers some suggestions about how to express their anger by calmly expressing them or not laughing at sexiest jokes.
-
-That can work for sure, but we need to teach the future generations to be better.
-
-# 12. The Holidays
-
-Next time I hear someone saying "holidays" instead of "maternity leave" I am going to call them out.
-
-This is one of the topics I am well aware.
-
-I want to be and share 100% (if not more) of the burden when my wife and I have kids.
-
-She would have gone 9 months of pregnancy and the birth. I should be responsible for more than 50% of the responsibilities of the new born baby.
-
-My wife will need to time to recover. She deserves it and I will give it to her.
+As the review says above says *"small tasks in the household that men are, too often, blind to"* I wanted to know more about what those things were.
+  
+
+With that in mind, let me tell you about 3 things that prompted me to read this book once I saw it.
+## First : My Mom
+After I got married, my mom would tell/ask me if I was doing my part in the house.
+- I was not. 
+- ... and honestly, I thought I was.
+
+## Second : Deciding to be Equal Partners
+My wife and I listened to the audio book [The Moment of Lift - by Melinda Gates](https://www.audible.com/pd/The-Moment-of-Lift-Audiobook/1250317045).  
+In it, Melinda talks about how she and Bill strive to be equals in their marriage and also in their foundation.  
+
+My wife and I thought this was a great idea!  
+We do not want one of us "wearing the pants" in our relationship.  
+We want to be equal partners.
+
+## Third : Understanding that which I did not even know
+My wife and I take around 30 minutes every Sunday to have a marriage meeting.  
+The meeting name sounds very formal, but this is actually a very intimate moment of our lives where we reflect on the week that has passed.  
+It is composed of four sections where we get to appreciate each other, discuss chores, plan for good times, and talk about our problems and challenges.  
+  
+
+One of the things we talked about was how to become more equal and hence how to split up chores more evenly.  
+There were some easy things that we could split, but there were also a couple of things that she did without really thinking about, but it nonetheless added to her **Mental Load**.  
+As we worked through these, I realized that she did so many things around the house that I was not even aware of.  
+
+I found out about marriage meetings via a podcast that my friend showed to me.  
+Here is the episode: [Art of Manliness - Podcast #611: How a Weekly Marriage Meeting Can Strengthen Your Relationship](https://www.artofmanliness.com/articles/podcast-611-how-a-weekly-marriage-meeting-can-strengthen-your-relationship/)
+
+There is also a book about it: 
+- [Marriage Meeting for Lasting Love by Marcia Naomi Berger](https://www.amazon.com/Reclaiming-Conversation-Power-Talk-Digital/dp/1608682234).
+
+## Answering: Why did I want to read this book?
+I want to be the best husband that I can be.  
+I want to be the best men that I can be.  
+I want to be a better ally to women.
+
+There is too much inequality between men and women around so many parts of our society.  
+It is up to each and every one of us to learn and try to be better.  
+
+# So what did I learn from the book?
+You should read it and make your own conclusions.  
+The book is packed with very deep and important issues and yet it is very short.
+
+If you are interested, here are the top five things that I want to highlight:
+
+## 1 : "You Should Have Asked"
+Often in a relationship, we may think that we are doing more than our partners.  
+That is when little fights start, one might say "why didn't you put the dishes in the dishwasher?" ... the other responds, "you should have asked"  
+and etc... the book goes into more examples.  
+
+So, try and understand what each of you does in the house. 
+Ask everyone to keep a list where they add the things they are doing around the house.  
+and then, once a week, review that list and start to divide them up more equally.
+
+## 2 : "Oh wow, she is angry. Calm down" and "Did you see how these vandals destroyed the city?"
+The second chapter of the book is called "Violence of the oppressed".  
+It is about how fingers are usually pointed to the people being oppressed and not the oppressors.  
+
+For example, there was A LOT of news coverage on the destruction around BlackLivesMatter protests.  
+And yet, there was little talk about the inequality that black people in this country (and around the world) suffer. 
+There was no coverage on how black people have this gigantic mental load about what they need to do to avoid being victims of police brutality
+- dress well, drive nice cards, act calmly, speak well... the list goes on and on.
+
+Another example is women at work (in tech, but I am sure in other places too), they cannot act angry or express their opinions in a stern way.  
+Some men in those environments see those behaviors as unfit for women, when on the other hand it is completely okay for men to act like that.  
+
+## 3 : Episiotomy
+This is a practice done during childbirth that is brutal and not necessary, in most cases.  Read more about it here: 
+- [https://www.parents.com/pregnancy/giving-birth/vaginal/qa-do-i-have-to-have-an-episiotomy](https://www.parents.com/pregnancy/giving-birth/vaginal/qa-do-i-have-to-have-an-episiotomy)
+
+## 4 : Hijabs
+Chapter 4 in the book, "Show me that Bossom", caught me by surprise.  
+It uses a clever story that changed my views on hijab.  
+I always viewed hijabs as a tool of men to oppress and control women.    
+So, of course, I never liked it.  
+      
+However, now, I think differently. Here is what I think about hijabs:
+If a woman wants to wear a hijab. It is their right to do so.  
+I won't force them to wear or not to wear them.  
+It is their body and their belief.  
+They are in control of how and how much they want to show their bodies.  
+ 
+## 5 : "How was the Holiday?"
+A woman takes her paid leave to take care of her newborn.  
+She is welcomed back with "How was the Holiday?"  
+Next time I hear someone saying "holidays" instead of "maternity leave" I am going to call them out.   
+Taking care of a newborn is not a holiday.  
+
+Women who have just given birth go through so much.  
+Their body needs to heal AND they are taking care of their baby.  
+- I got a puppy last year and woooooooow, I hear a newborn baby is soooo much more work than puppies.
+- I have since then a deeper appreciation for my parents and mad respect to single parents.
+
+# Conclusion
+Go read this book.
+If you have men and women that you care about in your life, show them this book.
