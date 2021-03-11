@@ -14,7 +14,9 @@ categories = [
 draft = false
 +++
 
-![My first table!](/imgs/woodwork/first-diy-table-07.jpg)
+<div>
+    <img style="width:100%" src="/imgs/woodwork/first-diy-table-07.jpg" alt="my first table!">
+</div>
 
 # Why did I build a table?
 My work desk was bending after about 1 year of working from home.  

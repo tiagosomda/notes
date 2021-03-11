@@ -13,7 +13,6 @@ categories = [
     "books",
     "projects"
 ]
-draft = false
 +++
 
 # Why am I starting a blog?

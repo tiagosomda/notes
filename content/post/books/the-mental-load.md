@@ -13,11 +13,11 @@ categories = [
 ]
 +++
 
-![book cover for the Mental Load](/imgs/books/the-mental-load.png)  
+<div>
+    <img style="width:100%" src="/imgs/books/the-mental-load.png" alt="book cover for the Mental Load">
+</div>
 
-I have recently read 'The Mental Load: A Feminist Comic' By Emma and I learned a lot! As I read each chapter, I took notes and today I reflected on them. I highly recommend this book to the women and men of your life.
-
-
+I have recently read 'The Mental Load: A Feminist Comic' By Emma and I learned a lot! As I read each chapter, I took notes and today I reflected on them. I highly recommend this book to the women and men of your life.  
 
 # What is this book about?
 This [review by Nancy O'Toole explains it well](https://www.goodreads.com/book/show/39196352-the-mental-load#:~:text=The%20mental%20load%20is%20an%20intersectional%20feminist%20comic,the%20main%20focus%20here%20is%20on%20the%20domestic.)  

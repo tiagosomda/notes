@@ -1,6 +1,6 @@
 +++
 author = "Tiago"
-title = "gito command"
+title = "The gito alias"
 date = "2021-03-10"
 summary = "I often need to open a repo's webpage to look at PRs, get code reference to others and many other reasons. So I created an alias that makes navigating from my terminal to the repo's webpage super easy."
 tags = [
@@ -13,7 +13,9 @@ categories = [
 ]
 +++
 
-![gito matrix](/imgs/misc/gito.jpg#center)
+<div>
+    <img style="width:100%" src="/imgs/misc/gito.jpg" alt="gito matrix">
+</div>
 
 I often need to open a repo's webpage to look at PRs, get code reference to others and many other reasons.   
 So I created an alias that makes navigating from my terminal to the repo's webpage super easy.  

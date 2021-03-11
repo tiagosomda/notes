@@ -15,7 +15,9 @@ categories = [
 draft = false
 +++
 
-![perspective wand example](/imgs/projects/perspective-wand-000.gif)
+<div>
+    <img style="width:100%" src="/imgs/projects/perspective-wand-000.gif" alt="perspective wand example">
+</div>
 
 # Have you heard of Superluminal?
 
