@@ -12,13 +12,14 @@
     
     
     <item>
-      <title>gito command</title>
+      <title>The gito alias</title>
       <link>https://notes.tiago.dev/post/hacks/gito-alias/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.tiago.dev/post/hacks/gito-alias/</guid>
-      <description>&lt;p&gt;&lt;img  src=&#34;https://notes.tiago.dev/imgs/misc/gito.jpg#center&#34;
-        alt=&#34;gito matrix&#34;/&gt;&lt;/p&gt;
+      <description>&lt;div&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/misc/gito.jpg&#34; alt=&#34;gito matrix&#34;&gt;
+&lt;/div&gt;
 &lt;p&gt;I often need to open a repo&amp;rsquo;s webpage to look at PRs, get code reference to others and many other reasons.&lt;br&gt;
 So I created an alias that makes navigating from my terminal to the repo&amp;rsquo;s webpage super easy.&lt;/p&gt;
 &lt;p&gt;A coworker actually showed me part of this.&lt;br&gt;
@@ -43,8 +44,9 @@ After that, do some regex magic and open a browser with the url! 😄&lt;/p&gt;
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.tiago.dev/post/books/the-mental-load/</guid>
-      <description>&lt;p&gt;&lt;img  src=&#34;https://notes.tiago.dev/imgs/books/the-mental-load.png&#34;
-        alt=&#34;book cover for the Mental Load&#34;/&gt;&lt;/p&gt;
+      <description>&lt;div&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/books/the-mental-load.png&#34; alt=&#34;book cover for the Mental Load&#34;&gt;
+&lt;/div&gt;
 &lt;p&gt;I have recently read &amp;lsquo;The Mental Load: A Feminist Comic&amp;rsquo; By Emma and I learned a lot! As I read each chapter, I took notes and today I reflected on them. I highly recommend this book to the women and men of your life.&lt;/p&gt;
 &lt;h1 id=&#34;what-is-this-book-about&#34;&gt;What is this book about?&lt;/h1&gt;
 &lt;p&gt;This &lt;a href=&#34;https://www.goodreads.com/book/show/39196352-the-mental-load#:~:text=The%20mental%20load%20is%20an%20intersectional%20feminist%20comic,the%20main%20focus%20here%20is%20on%20the%20domestic.&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;review by Nancy O&amp;rsquo;Toole explains it well&lt;/a&gt;
@@ -150,8 +152,9 @@ If you have men and women that you care about in your life, show them this book.
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.tiago.dev/post/projects/perspective-wand/</guid>
-      <description>&lt;p&gt;&lt;img  src=&#34;https://notes.tiago.dev/imgs/projects/perspective-wand-000.gif&#34;
-        alt=&#34;perspective wand example&#34;/&gt;&lt;/p&gt;
+      <description>&lt;div&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/projects/perspective-wand-000.gif&#34; alt=&#34;perspective wand example&#34;&gt;
+&lt;/div&gt;
 &lt;h1 id=&#34;have-you-heard-of-superluminal&#34;&gt;Have you heard of Superluminal?&lt;/h1&gt;
 &lt;p&gt;If not, check it out!&lt;br&gt;
 I really enjoyed playing it : &lt;a href=&#34;https://store.steampowered.com/app/1049410/Superliminal/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;link to Superluminal on Steam&lt;/a&gt;
@@ -314,8 +317,9 @@ Knowing that, allows you to recognize when it is too little and when it is too m
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.tiago.dev/post/projects/first-diy-table/</guid>
-      <description>&lt;p&gt;&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-07.jpg&#34;
-        alt=&#34;My first table!&#34;/&gt;&lt;/p&gt;
+      <description>&lt;div&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-07.jpg&#34; alt=&#34;my first table!&#34;&gt;
+&lt;/div&gt;
 &lt;h1 id=&#34;why-did-i-build-a-table&#34;&gt;Why did I build a table?&lt;/h1&gt;
 &lt;p&gt;My work desk was bending after about 1 year of working from home.&lt;br&gt;
 My office equipment is actually pretty heavy.&lt;br&gt;
