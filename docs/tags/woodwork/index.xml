@@ -12,6 +12,32 @@
     
     
     <item>
+      <title>gito command</title>
+      <link>https://notes.tiago.dev/post/hacks/gito-alias/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.tiago.dev/post/hacks/gito-alias/</guid>
+      <description>&lt;p&gt;&lt;img  src=&#34;https://notes.tiago.dev/imgs/misc/gito.jpg#center&#34;
+        alt=&#34;gito matrix&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;I often need to open a repo&amp;rsquo;s webpage to look at PRs, get code reference to others and many other reasons.&lt;br&gt;
+So I created an alias that makes navigating from my terminal to the repo&amp;rsquo;s webpage super easy.&lt;/p&gt;
+&lt;p&gt;A coworker actually showed me part of this.&lt;br&gt;
+He had an alias that echoed the repo&amp;rsquo;s url.&lt;br&gt;
+So I thought, &amp;ldquo;oh, I can make a command that opens a browser window with that output!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;the git command to get the url is pretty simple: &lt;code&gt;git config --get remote.origin.url&lt;/code&gt;&lt;br&gt;
+After that, do some regex magic and open a browser with the url! 😄&lt;/p&gt;
+&lt;p&gt;Here is the code:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bash: &lt;a href=&#34;https://gist.github.com/tiagosomda/28be45e7b22e72a70996f6ba2b218a39&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gist.github.com/tiagosomda/28be45e7b22e72a70996f6ba2b218a39&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;powershell: &lt;a href=&#34;https://gist.github.com/tiagosomda/f6c97a9ffbfb686048895cca2c099b58&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gist.github.com/tiagosomda/f6c97a9ffbfb686048895cca2c099b58&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;if you improve it or if you have any other useful commands, let me know!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The Mental Load : What do Women think about?</title>
       <link>https://notes.tiago.dev/post/books/the-mental-load/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>

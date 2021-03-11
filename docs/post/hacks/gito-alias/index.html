@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>gito command&nbsp;&ndash;&nbsp;notes.tiago.dev</title><link rel="stylesheet" href="/css/core.min.52f58d1b6b3b3a192d3cb41a190b059b4260d20b7302d308f7e331c0b5a3be21acb942a2d814f389db4310ae7cbe6b42.css" integrity="sha384-UvWNG2s7OhktPLQaGQsFm0Jg0gtzAtMI9&#43;MxwLWjviGsuUKi2BTzidtDEK58vmtC"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="gito command" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">notes.tiago.dev</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/motto/">Motto</a><a class="nav item highlight" href="/index.xml" target="_blank">RSS Feed</a>
+</nav></div></span>
+    </div><div class="site slogan"><span class="title"> 🧐 The Staying Speed 🌍</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">gito command</h1><p class="article date">Mar 10, 2021<span class="reading-time"> • One minute to read</span></p></section><article class="article markdown-body"><p><img  src="/imgs/misc/gito.jpg#center"
+        alt="gito matrix"/></p>
+<p>I often need to open a repo&rsquo;s webpage to look at PRs, get code reference to others and many other reasons.<br>
+So I created an alias that makes navigating from my terminal to the repo&rsquo;s webpage super easy.</p>
+<p>A coworker actually showed me part of this.<br>
+He had an alias that echoed the repo&rsquo;s url.<br>
+So I thought, &ldquo;oh, I can make a command that opens a browser window with that output!&rdquo;</p>
+<p>the git command to get the url is pretty simple: <code>git config --get remote.origin.url</code><br>
+After that, do some regex magic and open a browser with the url! 😄</p>
+<p>Here is the code:</p>
+<ul>
+<li>bash: <a href="https://gist.github.com/tiagosomda/28be45e7b22e72a70996f6ba2b218a39"target="_blank" rel="noopener noreferrer">https://gist.github.com/tiagosomda/28be45e7b22e72a70996f6ba2b218a39</a>
+</li>
+<li>powershell: <a href="https://gist.github.com/tiagosomda/f6c97a9ffbfb686048895cca2c099b58"target="_blank" rel="noopener noreferrer">https://gist.github.com/tiagosomda/f6c97a9ffbfb686048895cca2c099b58</a>
+</li>
+</ul>
+<p>if you improve it or if you have any other useful commands, let me know!</p>
+</article><section class="article labels"><a class="category" href=/categories/hacks/>hacks</a><a class="tag" href=/tags/bash/>bash</a><a class="tag" href=/tags/powershell/>powershell</a><a class="tag" href=/tags/git/>git</a></section>
+</div>
+<div class="article bottom"><section class="article navigation"><p>Previous: <a class="link" href="/post/books/the-mental-load/"><span class="iconfont icon-article"></span>The Mental Load : What do Women think about?</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <div>See my main web site at <a href="https://www.tiago.dev" target="_blank">tiago.dev</a></span></div>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p><p class="copyright">©2021 notes.tiago.dev.</p>
+</div>
+</section></body>
+
+</html>
