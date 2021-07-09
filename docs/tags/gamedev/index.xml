@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gamedev on notes.tiago.dev</title>
+    <link>https://notes.tiago.dev/tags/gamedev/</link>
+    <description>Recent content in gamedev on notes.tiago.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>©2021 notes.tiago.dev.</copyright>
+    <lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://notes.tiago.dev/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Week @ HomeTeam GameDev</title>
+      <link>https://notes.tiago.dev/post/thoughts/hometeam-gamedev-first-week/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.tiago.dev/post/thoughts/hometeam-gamedev-first-week/</guid>
+      <description>This is exactly what I had been looking for. So far, it is much better than I thought it would have been.</description>
+    </item>
+    
+  </channel>
+</rss>
