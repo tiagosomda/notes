@@ -1,22 +1,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>monthly-project on notes.tiago.dev</title>
-    <link>https://notes.tiago.dev/tags/monthly-project/</link>
+    <link>localhost/tags/monthly-project/</link>
     <description>Recent content in monthly-project on notes.tiago.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©2021 notes.tiago.dev.</copyright>
     <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://notes.tiago.dev/tags/monthly-project/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="localhost/tags/monthly-project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Cool Tools</title>
+      <link>localhost/post/thoughts/tools/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>localhost/post/thoughts/tools/</guid>
+      <description>&lt;h1 id=&#34;tools&#34;&gt;Tools&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.screentogif.com&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.screentogif.com&lt;/a&gt;
+&lt;br&gt;
+Super handy tool for making gifs out of whatever is going on your computer screen.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://windirstat.net&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://windirstat.net&lt;/a&gt;
+&lt;br&gt;
+This helps my assess where I could delete/move things in my OS drive.&lt;br&gt;
+Seeing how much space each folder is taking up allows me to clean it up better than using Window&amp;rsquo;s storage settings.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blaze.vercel.app&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://blaze.vercel.app&lt;/a&gt;
+&lt;br&gt;
+Easily transfer files between computers/people.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>First Week @ HomeTeam GameDev</title>
-      <link>https://notes.tiago.dev/post/thoughts/hometeam-gamedev-first-week/</link>
+      <link>localhost/post/thoughts/hometeam-gamedev-first-week/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/thoughts/hometeam-gamedev-first-week/</guid>
+      <guid>localhost/post/thoughts/hometeam-gamedev-first-week/</guid>
       <description>&lt;h1 id=&#34;how-did-i-stumble-onto-hometeam-gamedev&#34;&gt;How did I stumble onto HomeTeam GameDev?&lt;/h1&gt;
 &lt;p&gt;I had been looking for a place where I could collaborate with others on a game.&lt;br&gt;
 This is something I already do with some friends. However, I wanted to do it in a more global scale.&lt;br&gt;
@@ -53,10 +73,10 @@ I am really looking forward to understanding why I think that there is something
     
     <item>
       <title>Career Panel @ Geeking Out Kids of Color</title>
-      <link>https://notes.tiago.dev/post/thoughts/gokic-career-panel-2021-04/</link>
+      <link>localhost/post/thoughts/gokic-career-panel-2021-04/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/thoughts/gokic-career-panel-2021-04/</guid>
+      <guid>localhost/post/thoughts/gokic-career-panel-2021-04/</guid>
       <description>&lt;p&gt;Yesterday I volunteered for one hour to speak at a career panel.&lt;br&gt;
 The panel was organized by GOKiC (Geeking Out Kids of Color) and Collective Youth.&lt;/p&gt;
 &lt;p&gt;I helped start GOKiC as a board member.&lt;br&gt;
@@ -76,7 +96,7 @@ Soon after I was contact with some guidelines on what we could speak about durin
 &lt;li&gt;and then a QA session.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;what-did-i-present&#34;&gt;What did I present?&lt;/h1&gt;
-&lt;p&gt;Here it is, let me know if any of it was helpful to you: &lt;a href=&#34;https://notes.tiago.dev/misc/tiago-gokic-career-panel-2021-04.pdf&#34;&gt;career panel presentation&lt;/a&gt;
+&lt;p&gt;Here it is, let me know if any of it was helpful to you: &lt;a href=&#34;localhost/misc/tiago-gokic-career-panel-2021-04.pdf&#34;&gt;career panel presentation&lt;/a&gt;
 &lt;br&gt;
 If you have any questions, send me a message.&lt;/p&gt;
 &lt;h1 id=&#34;qa-session&#34;&gt;Q&amp;amp;A Session&lt;/h1&gt;
@@ -113,12 +133,12 @@ That student in middle school was attending a panel for college kids about caree
     
     <item>
       <title>The gito alias</title>
-      <link>https://notes.tiago.dev/post/hacks/gito-alias/</link>
+      <link>localhost/post/hacks/gito-alias/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/hacks/gito-alias/</guid>
+      <guid>localhost/post/hacks/gito-alias/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/misc/gito.jpg&#34; alt=&#34;gito matrix&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;localhost/imgs/misc/gito.jpg&#34; alt=&#34;gito matrix&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;I often need to open a repo&amp;rsquo;s webpage to look at PRs, get code reference to others and many other reasons.&lt;br&gt;
 So I created an alias that makes navigating from my terminal to the repo&amp;rsquo;s webpage super easy.&lt;/p&gt;
@@ -140,12 +160,12 @@ After that, do some regex magic and open a browser with the url! 😄&lt;/p&gt;
     
     <item>
       <title>The Mental Load : What do Women think about?</title>
-      <link>https://notes.tiago.dev/post/books/the-mental-load/</link>
+      <link>localhost/post/books/the-mental-load/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/books/the-mental-load/</guid>
+      <guid>localhost/post/books/the-mental-load/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/books/the-mental-load.png&#34; alt=&#34;book cover for the Mental Load&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;localhost/imgs/books/the-mental-load.png&#34; alt=&#34;book cover for the Mental Load&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;I have recently read &amp;lsquo;The Mental Load: A Feminist Comic&amp;rsquo; By Emma and I learned a lot! As I read each chapter, I took notes and today I reflected on them. I highly recommend this book to the women and men of your life.&lt;/p&gt;
 &lt;h1 id=&#34;what-is-this-book-about&#34;&gt;What is this book about?&lt;/h1&gt;
@@ -248,12 +268,12 @@ If you have men and women that you care about in your life, show them this book.
     
     <item>
       <title>Perspective Wand : Experiencing Superluminal in VR</title>
-      <link>https://notes.tiago.dev/post/projects/perspective-wand/</link>
+      <link>localhost/post/projects/perspective-wand/</link>
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/projects/perspective-wand/</guid>
+      <guid>localhost/post/projects/perspective-wand/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/projects/perspective-wand-000.gif&#34; alt=&#34;perspective wand example&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;localhost/imgs/projects/perspective-wand-000.gif&#34; alt=&#34;perspective wand example&#34;&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;have-you-heard-of-superluminal&#34;&gt;Have you heard of Superluminal?&lt;/h1&gt;
 &lt;p&gt;If not, check it out!&lt;br&gt;
@@ -276,10 +296,10 @@ Fast forward to &lt;a href=&#34;https://youtu.be/lFEIUcXCEvI?t=646&#34;target=&#
  and it explains how the game mechanic in Superluminal works.&lt;/p&gt;
 &lt;p&gt;I gotta say&amp;hellip;&lt;br&gt;
 &amp;hellip; I was a &lt;em&gt;&lt;strong&gt;Bit Wiser&lt;/strong&gt;&lt;/em&gt; after watching that video!&lt;br&gt;
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/memes/ba-dum-tss.png&#34;
+&lt;img  src=&#34;localhost/imgs/memes/ba-dum-tss.png&#34;
         alt=&#34;ba dum tss&#34;/&gt;&lt;/p&gt;
 &lt;h1 id=&#34;how-does-the-game-mechanic-work&#34;&gt;How does the game mechanic work?&lt;/h1&gt;
-&lt;p&gt;The video puts it really well &lt;strong&gt;&amp;ldquo;as you pick up an object, its perspective stays the same, but its real size changes dramatically.&amp;quot;&lt;/strong&gt;&lt;br&gt;
+&lt;p&gt;The video puts it really well &lt;strong&gt;&amp;ldquo;as you pick up an object, its perspective stays the same, but its real size changes dramatically.&amp;rdquo;&lt;/strong&gt;&lt;br&gt;
 Meaning, something small that you pick up on a table, becomes really big if you point it at some place far away.&lt;br&gt;
 There are all sorts of interesting puzzles that you can make with that.&lt;/p&gt;
 &lt;p&gt;The logic behind this mechanic is super simple:&lt;/p&gt;
@@ -378,21 +398,23 @@ When that happens, the object starts to fall very slowing and that is what makes
 &lt;h1 id=&#34;where-can-i-try-it&#34;&gt;Where can I try it?&lt;/h1&gt;
 &lt;p&gt;I am hosting a WebGL (non-vr) version that you can give a try here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://unfolding-dragon.github.io/perspective-wand/&#34;&gt;https://unfolding-dragon.github.io/perspective-wand/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://unfolding-dragon.github.io/perspective-wand/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://unfolding-dragon.github.io/perspective-wand/&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I also built for a couple of other devices:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&#34;&gt;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
       <title>What is my motto? this up here ^ </title>
-      <link>https://notes.tiago.dev/motto/</link>
+      <link>localhost/motto/</link>
       <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/motto/</guid>
+      <guid>localhost/motto/</guid>
       <description>&lt;p&gt;As I was taking a class in called &amp;ldquo;How To Make Great Decisions&amp;rdquo; at the Seattle community college (thanks Microsoft for sponsoring it!),&lt;br&gt;
 I had to keep a daily journal. One of the questions I had to answer in one of these days was &amp;ldquo;What is your motto?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;As I thought about it, my mind went straight to a message that I used to written on a mirror right outside my bedroom.&lt;br&gt;
@@ -406,19 +428,19 @@ The message was &amp;ldquo;The Staying Speed = The Right Effort + Time&amp;rdquo
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;&amp;ldquo;The Staying Speed&amp;rdquo; is&lt;/strong&gt; &amp;hellip;&lt;br&gt;
 the right balance of the amount of effort and time you put into a goal.&lt;br&gt;
-The speed is not always the same. It depends not only on what you are working on, but your emotional state as well.
+The speed is not always the same. It depends not only on what you are working on, but your emotional state as well. 
 Knowing that, allows you to recognize when it is too little and when it is too much. From there you can adjust your staying speed to accomplish your goal.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>My first table!</title>
-      <link>https://notes.tiago.dev/post/projects/first-diy-table/</link>
+      <link>localhost/post/projects/first-diy-table/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/projects/first-diy-table/</guid>
+      <guid>localhost/post/projects/first-diy-table/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-07.jpg&#34; alt=&#34;my first table!&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;localhost/imgs/woodwork/first-diy-table-07.jpg&#34; alt=&#34;my first table!&#34;&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;why-did-i-build-a-table&#34;&gt;Why did I build a table?&lt;/h1&gt;
 &lt;p&gt;My work desk was bending after about 1 year of working from home.&lt;br&gt;
@@ -452,28 +474,28 @@ I had the right measurements, but I had this &amp;ldquo;imposter syndrome&amp;rd
 but now! I have a little door at the top of my table which I can pass cables below or easily hook things to the power strip I added on the table 😁&lt;/p&gt;
 &lt;h1 id=&#34;so-here-is-my-first-diy-workbenchtable&#34;&gt;So here is my first DIY Workbench/Table&lt;/h1&gt;
 &lt;p&gt;The Materials
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-00.jpg&#34;
+&lt;img  src=&#34;localhost/imgs/woodwork/first-diy-table-00.jpg&#34;
         alt=&#34;The Materials&#34;/&gt;&lt;/p&gt;
 &lt;p&gt;My First 2 by 4 frame!
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-01.jpg&#34;
+&lt;img  src=&#34;localhost/imgs/woodwork/first-diy-table-01.jpg&#34;
         alt=&#34;my first 2 by 4 frame!&#34;/&gt;&lt;/p&gt;
 &lt;p&gt;Laying the legs and casters
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-02.jpg&#34;
+&lt;img  src=&#34;localhost/imgs/woodwork/first-diy-table-02.jpg&#34;
         alt=&#34;Laying the legs and casters&#34;/&gt;&lt;/p&gt;
 &lt;p&gt;legs, bottom frame casters all attached
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-03.jpg&#34;
+&lt;img  src=&#34;localhost/imgs/woodwork/first-diy-table-03.jpg&#34;
         alt=&#34;legs, bottom frame casters all attached&#34;/&gt;&lt;/p&gt;
 &lt;p&gt;Getting a feel for the table
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-04.jpg&#34;
+&lt;img  src=&#34;localhost/imgs/woodwork/first-diy-table-04.jpg&#34;
         alt=&#34;Getting a feel for the table&#34;/&gt;&lt;/p&gt;
 &lt;p&gt;Glueing the table top
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-05.jpg&#34;
+&lt;img  src=&#34;localhost/imgs/woodwork/first-diy-table-05.jpg&#34;
         alt=&#34;Glueing the table top&#34;/&gt;&lt;/p&gt;
 &lt;p&gt;Staining the top
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-06.jpg&#34;
+&lt;img  src=&#34;localhost/imgs/woodwork/first-diy-table-06.jpg&#34;
         alt=&#34;Staining the top&#34;/&gt;&lt;/p&gt;
 &lt;p&gt;Done! and with all my work equipment setup
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-07.jpg&#34;
+&lt;img  src=&#34;localhost/imgs/woodwork/first-diy-table-07.jpg&#34;
         alt=&#34;Done! and with all my work equipment setup&#34;/&gt;&lt;/p&gt;
 &lt;h1 id=&#34;am-i-going-to-do-more&#34;&gt;Am I going to do more?&lt;/h1&gt;
 &lt;p&gt;Definitely!&lt;br&gt;
@@ -494,10 +516,10 @@ I have plans to build a table for a tv.&lt;/p&gt;
     
     <item>
       <title>Hello World!</title>
-      <link>https://notes.tiago.dev/post/thoughts/hello-world/</link>
+      <link>localhost/post/thoughts/hello-world/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/thoughts/hello-world/</guid>
+      <guid>localhost/post/thoughts/hello-world/</guid>
       <description>&lt;h1 id=&#34;why-am-i-starting-a-blog&#34;&gt;Why am I starting a blog?&lt;/h1&gt;
 &lt;p&gt;I am creating this blog as a sort of a personal growth record keeping.&lt;/p&gt;
 &lt;p&gt;The posts I am creating are usually around the areas of:&lt;/p&gt;
