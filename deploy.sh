@@ -12,7 +12,7 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 rm -rf docs/
 
 # build site
-hugo -t terminal
+hugo -t hugo-notepadium
 
 # go to deployment folder
 cd docs
