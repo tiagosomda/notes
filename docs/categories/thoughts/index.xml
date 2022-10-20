@@ -6,10 +6,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©2021 notes.tiago.dev.</copyright>
-    <lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Sep 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://notes.tiago.dev/categories/thoughts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cool Tools</title>
+      <link>https://notes.tiago.dev/post/thoughts/tools/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.tiago.dev/post/thoughts/tools/</guid>
+      <description>&lt;h1 id=&#34;tools&#34;&gt;Tools&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.screentogif.com&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.screentogif.com&lt;/a&gt;
+&lt;br&gt;
+Super handy tool for making gifs out of whatever is going on your computer screen.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://windirstat.net&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://windirstat.net&lt;/a&gt;
+&lt;br&gt;
+This helps my assess where I could delete/move things in my OS drive.&lt;br&gt;
+Seeing how much space each folder is taking up allows me to clean it up better than using Window&amp;rsquo;s storage settings.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blaze.vercel.app&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://blaze.vercel.app&lt;/a&gt;
+&lt;br&gt;
+Easily transfer files between computers/people.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>First Week @ HomeTeam GameDev</title>
@@ -279,7 +299,7 @@ Fast forward to &lt;a href=&#34;https://youtu.be/lFEIUcXCEvI?t=646&#34;target=&#
 &lt;img  src=&#34;https://notes.tiago.dev/imgs/memes/ba-dum-tss.png&#34;
         alt=&#34;ba dum tss&#34;/&gt;&lt;/p&gt;
 &lt;h1 id=&#34;how-does-the-game-mechanic-work&#34;&gt;How does the game mechanic work?&lt;/h1&gt;
-&lt;p&gt;The video puts it really well &lt;strong&gt;&amp;ldquo;as you pick up an object, its perspective stays the same, but its real size changes dramatically.&amp;quot;&lt;/strong&gt;&lt;br&gt;
+&lt;p&gt;The video puts it really well &lt;strong&gt;&amp;ldquo;as you pick up an object, its perspective stays the same, but its real size changes dramatically.&amp;rdquo;&lt;/strong&gt;&lt;br&gt;
 Meaning, something small that you pick up on a table, becomes really big if you point it at some place far away.&lt;br&gt;
 There are all sorts of interesting puzzles that you can make with that.&lt;/p&gt;
 &lt;p&gt;The logic behind this mechanic is super simple:&lt;/p&gt;
@@ -378,11 +398,13 @@ When that happens, the object starts to fall very slowing and that is what makes
 &lt;h1 id=&#34;where-can-i-try-it&#34;&gt;Where can I try it?&lt;/h1&gt;
 &lt;p&gt;I am hosting a WebGL (non-vr) version that you can give a try here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://unfolding-dragon.github.io/perspective-wand/&#34;&gt;https://unfolding-dragon.github.io/perspective-wand/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://unfolding-dragon.github.io/perspective-wand/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://unfolding-dragon.github.io/perspective-wand/&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I also built for a couple of other devices:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&#34;&gt;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -406,7 +428,7 @@ The message was &amp;ldquo;The Staying Speed = The Right Effort + Time&amp;rdquo
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;&amp;ldquo;The Staying Speed&amp;rdquo; is&lt;/strong&gt; &amp;hellip;&lt;br&gt;
 the right balance of the amount of effort and time you put into a goal.&lt;br&gt;
-The speed is not always the same. It depends not only on what you are working on, but your emotional state as well.
+The speed is not always the same. It depends not only on what you are working on, but your emotional state as well. 
 Knowing that, allows you to recognize when it is too little and when it is too much. From there you can adjust your staying speed to accomplish your goal.&lt;/p&gt;
 </description>
     </item>
