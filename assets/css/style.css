@@ -678,7 +678,7 @@
   }
   
   .article.markdown-body li+li {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   
   .article.markdown-body>*,
