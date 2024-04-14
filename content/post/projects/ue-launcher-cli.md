@@ -48,7 +48,7 @@ since I almost always have a cli open to make git commits, I started by creating
 It had been a while since I had to create a powershell script that would list the currently open projects, so I enlisted copilot to see if it could spit out some functions.  
 - It did and it mostly worked, so that got me started into building this cli.  
 Once I had things working, I wrapped everything in a powershell module and started using it.  
-- It worked super well, so I put it up on github and posted about it on linked in.  
+- It worked super well, so I put it up on github and [posted about it on linked in](https://www.linkedin.com/feed/update/urn:li:activity:7185372847844786176).  
 
 
 ## Was this really necessary?
