@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://notes.tiago.dev/</loc><lastmod>2022-10-19T00:00:00+00:00</lastmod></url><url>
+    <loc>https://notes.tiago.dev/</loc><lastmod>2023-04-14T00:00:00+00:00</lastmod></url><url>
+    <loc>https://notes.tiago.dev/categories/</loc><lastmod>2023-04-14T00:00:00+00:00</lastmod></url><url>
+    <loc>https://notes.tiago.dev/tags/cli/</loc><lastmod>2023-04-14T00:00:00+00:00</lastmod></url><url>
+    <loc>https://notes.tiago.dev/post/</loc><lastmod>2023-04-14T00:00:00+00:00</lastmod></url><url>
+    <loc>https://notes.tiago.dev/tags/powershell/</loc><lastmod>2023-04-14T00:00:00+00:00</lastmod></url><url>
+    <loc>https://notes.tiago.dev/categories/projects/</loc><lastmod>2023-04-14T00:00:00+00:00</lastmod></url><url>
+    <loc>https://notes.tiago.dev/tags/</loc><lastmod>2023-04-14T00:00:00+00:00</lastmod></url><url>
+    <loc>https://notes.tiago.dev/tags/unreal/</loc><lastmod>2023-04-14T00:00:00+00:00</lastmod></url><url>
+    <loc>https://notes.tiago.dev/post/projects/ue-launcher-cli/</loc><lastmod>2023-04-14T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/post/thoughts/one-year-as-game-dev/</loc><lastmod>2022-10-19T00:00:00+00:00</lastmod></url><url>
-    <loc>https://notes.tiago.dev/categories/</loc><lastmod>2022-10-19T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/tags/fuck-yeah/</loc><lastmod>2022-10-19T00:00:00+00:00</lastmod></url><url>
-    <loc>https://notes.tiago.dev/post/</loc><lastmod>2022-10-19T00:00:00+00:00</lastmod></url><url>
-    <loc>https://notes.tiago.dev/tags/</loc><lastmod>2022-10-19T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/categories/thoughts/</loc><lastmod>2022-10-19T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/post/thoughts/tools/</loc><lastmod>2022-09-12T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/tags/tools/</loc><lastmod>2022-09-12T00:00:00+00:00</lastmod></url><url>
@@ -19,7 +24,6 @@
     <loc>https://notes.tiago.dev/tags/bash/</loc><lastmod>2021-03-10T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/tags/git/</loc><lastmod>2021-03-10T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/categories/hacks/</loc><lastmod>2021-03-10T00:00:00+00:00</lastmod></url><url>
-    <loc>https://notes.tiago.dev/tags/powershell/</loc><lastmod>2021-03-10T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/post/hacks/gito-alias/</loc><lastmod>2021-03-10T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/categories/books/</loc><lastmod>2021-03-08T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/tags/feminist/</loc><lastmod>2021-03-08T00:00:00+00:00</lastmod></url><url>
@@ -28,7 +32,6 @@
     <loc>https://notes.tiago.dev/post/books/the-mental-load/</loc><lastmod>2021-03-08T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/tags/monthly-project/</loc><lastmod>2021-02-28T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/post/projects/perspective-wand/</loc><lastmod>2021-02-28T00:00:00+00:00</lastmod></url><url>
-    <loc>https://notes.tiago.dev/categories/projects/</loc><lastmod>2021-02-28T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/tags/vr/</loc><lastmod>2021-02-28T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/motto/</loc><lastmod>2021-02-12T00:00:00+00:00</lastmod></url><url>
     <loc>https://notes.tiago.dev/tags/diy/</loc><lastmod>2021-01-29T00:00:00+00:00</lastmod></url><url>

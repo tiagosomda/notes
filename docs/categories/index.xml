@@ -6,10 +6,65 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©2021 notes.tiago.dev.</copyright>
-    <lastBuildDate>Wed, 19 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Apr 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://notes.tiago.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unreal Engine Project Launcher CLI</title>
+      <link>https://notes.tiago.dev/post/projects/ue-launcher-cli/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.tiago.dev/post/projects/ue-launcher-cli/</guid>
+      <description>&lt;p&gt;Hey! how are you?  I hope you are doing well&lt;br&gt;
+I made a cool tool, so I thought about writing about it a bit.&lt;br&gt;
+It is an unreal engine launcher cli that makes it easier to open, close, and regenerate uproject/vssolutions&lt;/p&gt;
+&lt;p&gt;you can find the source code here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tiagosomda/ue-launcher-cli&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/tiagosomda/ue-launcher-cli&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/projects/ue-launcher-cli-examples.gif&#34; alt=&#34;unreal engine project launcher gif with examples&#34;&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;why-did-i-create-this&#34;&gt;Why did I create this?&lt;/h1&gt;
+&lt;p&gt;One of the things that I seem to have to do a lot is to&amp;hellip;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;close unreal and visual studio,&lt;/li&gt;
+&lt;li&gt;delete generated files&lt;/li&gt;
+&lt;li&gt;right click the project&lt;/li&gt;
+&lt;li&gt;select to regenerate it&lt;/li&gt;
+&lt;li&gt;launch visual studio&lt;/li&gt;
+&lt;li&gt;launch the unreal project&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div&gt;
+    &lt;img style=&#34;height:250px&#34; src=&#34;https://notes.tiago.dev/imgs/memes/getting-through-it.png&#34; alt=&#34;meme of me being tired of typing these commands over and over&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;b&gt; &amp;hellip; those are a lot of steps 😵 &lt;/b&gt; &lt;i&gt; &amp;hellip; and many of them are mouse clicks!&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;since I almost always have a cli open to make git commits, I started by creating a alias that would launch the unreal project.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;then I realized that I could probably regenerate the files as well,&lt;/li&gt;
+&lt;li&gt;and then why not close any unreal and visual studio instances for my project before regenerating it?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;building-it&#34;&gt;Building it&lt;/h2&gt;
+&lt;p&gt;It had been a while since I had to create a powershell script that would list the currently open projects, so I enlisted copilot to see if it could spit out some functions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It did and it mostly worked, so that got me started into building this cli.&lt;br&gt;
+Once I had things working, I wrapped everything in a powershell module and started using it.&lt;/li&gt;
+&lt;li&gt;It worked super well, so I put it up on github and posted about it on linked in.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;was-this-really-necessary&#34;&gt;Was this really necessary?&lt;/h2&gt;
+&lt;p&gt;not really&amp;hellip; and there might be a better way to go about it than this workflow, but so far, spending some time on it was rewarding and has been helpful to me.&lt;/p&gt;
+&lt;h3 id=&#34;what-do-you-think&#34;&gt;What do you think?&lt;/h3&gt;
+&lt;p&gt;If you end up using or making additions, modifications, or variation of it, let me know!&lt;/p&gt;
+&lt;p&gt;ps: I have some other useful scripts here as well if you are interested:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/tiagosomda&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gist.github.com/tiagosomda&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Being a Game Dev at a game studio, one year into it</title>
@@ -406,14 +461,14 @@ The book is packed with very deep and important issues and yet it is very short.
 &lt;p&gt;Often in a relationship, we may think that we are doing more than our partners.&lt;br&gt;
 That is when little fights start, one might say &amp;ldquo;why didn&amp;rsquo;t you put the dishes in the dishwasher?&amp;rdquo; &amp;hellip; the other responds, &amp;ldquo;you should have asked&amp;rdquo;&lt;br&gt;
 and etc&amp;hellip; the book goes into more examples.&lt;/p&gt;
-&lt;p&gt;So, try and understand what each of you does in the house. 
+&lt;p&gt;So, try and understand what each of you does in the house.
 Ask everyone to keep a list where they add the things they are doing around the house.&lt;br&gt;
 and then, once a week, review that list and start to divide them up more equally.&lt;/p&gt;
 &lt;h2 id=&#34;2--oh-wow-she-is-angry-calm-down-and-did-you-see-how-these-vandals-destroyed-the-city&#34;&gt;2 : &amp;ldquo;Oh wow, she is angry. Calm down&amp;rdquo; and &amp;ldquo;Did you see how these vandals destroyed the city?&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;The second chapter of the book is called &amp;ldquo;Violence of the oppressed&amp;rdquo;.&lt;br&gt;
 It is about how fingers are usually pointed to the people being oppressed and not the oppressors.&lt;/p&gt;
 &lt;p&gt;For example, there was A LOT of news coverage on the destruction around BlackLivesMatter protests.&lt;br&gt;
-And yet, there was little talk about the inequality that black people in this country (and around the world) suffer. 
+And yet, there was little talk about the inequality that black people in this country (and around the world) suffer.
 There was no coverage on how black people have this gigantic mental load about what they need to do to avoid being victims of police brutality&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;dress well, drive nice cards, act calmly, speak well&amp;hellip; the list goes on and on.&lt;/li&gt;
@@ -617,87 +672,6 @@ The message was &amp;ldquo;The Staying Speed = The Right Effort + Time&amp;rdquo
 the right balance of the amount of effort and time you put into a goal.&lt;br&gt;
 The speed is not always the same. It depends not only on what you are working on, but your emotional state as well.
 Knowing that, allows you to recognize when it is too little and when it is too much. From there you can adjust your staying speed to accomplish your goal.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My first table!</title>
-      <link>https://notes.tiago.dev/post/projects/first-diy-table/</link>
-      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.tiago.dev/post/projects/first-diy-table/</guid>
-      <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-07.jpg&#34; alt=&#34;my first table!&#34;&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;why-did-i-build-a-table&#34;&gt;Why did I build a table?&lt;/h1&gt;
-&lt;p&gt;My work desk was bending after about 1 year of working from home.&lt;br&gt;
-My office equipment is actually pretty heavy.&lt;br&gt;
-So I decided to build a table!&lt;/p&gt;
-&lt;h1 id=&#34;why-not-just-buy-one&#34;&gt;Why not just buy one?&lt;/h1&gt;
-&lt;p&gt;I like building things.&lt;br&gt;
-and some youtube videos claimed I could make one for under $100.&lt;/p&gt;
-&lt;p&gt;and  the biggest reasons were that if I build one:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;would be fun!&lt;/li&gt;
-&lt;li&gt;I would learn a new skill!&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;how-did-i-go-about-it&#34;&gt;How did I go about it?&lt;/h1&gt;
-&lt;p&gt;I watched tons and tons of youtube videos to learn the different techniques and styles for building a table.&lt;br&gt;
-I mentioned to my buddy Matt that I wanted to build a table and he told me that he had ALL THE TOOLS! for building a table.&lt;br&gt;
-He saved me a lof of money on renting/buying the tools 😁
-(Thanks Matt!)&lt;/p&gt;
-&lt;p&gt;My plan was to build something like a workbench.
-Instead of having a full frame at the bottom, I wanted to space for my chair and legs.&lt;br&gt;
-I also love tables that can easily move, so I knew I had to put some casters on it as well 😈&lt;br&gt;
-(the casters definitely pushed the cost to over $100)&lt;/p&gt;
-&lt;h1 id=&#34;mistakes&#34;&gt;Mistakes!&lt;/h1&gt;
-&lt;p&gt;I did a couple of rookie mistakes while building the table (as most people do when trying things for the first time).&lt;br&gt;
-The biggest mistake was getting the wrong measurements, but I was able to turn those bugs into features of my desk.&lt;/p&gt;
-&lt;h2 id=&#34;bug-to-feature-1&#34;&gt;Bug to Feature #1&lt;/h2&gt;
-&lt;p&gt;The legs were a bit too short, so instead of having the legs go all the way up to the top frame, they are a bit lower, which gave me the right height and it gave a little space where I can hang my headset on.&lt;/p&gt;
-&lt;h2 id=&#34;bug-to-feature-2&#34;&gt;Bug to Feature #2&lt;/h2&gt;
-&lt;p&gt;When I got my plywood, I asked them to cut to the wrong size.&lt;br&gt;
-I had the right measurements, but I had this &amp;ldquo;imposter syndrome&amp;rdquo; when I was buying the plywood and I told them the wrong measurement&amp;hellip;&lt;br&gt;
-but now! I have a little door at the top of my table which I can pass cables below or easily hook things to the power strip I added on the table 😁&lt;/p&gt;
-&lt;h1 id=&#34;so-here-is-my-first-diy-workbenchtable&#34;&gt;So here is my first DIY Workbench/Table&lt;/h1&gt;
-&lt;p&gt;The Materials
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-00.jpg&#34;
-        alt=&#34;The Materials&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;My First 2 by 4 frame!
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-01.jpg&#34;
-        alt=&#34;my first 2 by 4 frame!&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;Laying the legs and casters
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-02.jpg&#34;
-        alt=&#34;Laying the legs and casters&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;legs, bottom frame casters all attached
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-03.jpg&#34;
-        alt=&#34;legs, bottom frame casters all attached&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;Getting a feel for the table
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-04.jpg&#34;
-        alt=&#34;Getting a feel for the table&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;Glueing the table top
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-05.jpg&#34;
-        alt=&#34;Glueing the table top&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;Staining the top
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-06.jpg&#34;
-        alt=&#34;Staining the top&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;Done! and with all my work equipment setup
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/woodwork/first-diy-table-07.jpg&#34;
-        alt=&#34;Done! and with all my work equipment setup&#34;/&gt;&lt;/p&gt;
-&lt;h1 id=&#34;am-i-going-to-do-more&#34;&gt;Am I going to do more?&lt;/h1&gt;
-&lt;p&gt;Definitely!&lt;br&gt;
-I have plans to build a table for a tv.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;my plan is to actually undo a table I put together a couple of years ago and make two tables out of it. Use one and sell the other.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here are some good youtube channels that explain how to build stuff with simple tools and materials:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UChKlSK39lLg8eZHIX0iVzLA&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;DIY Creators&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCD02RAib9K0kob8UMWwLMSA&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Pneumatic Addict&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Don&amp;rsquo;t use only them as your resources. There are tons of other videos and blogs where you can learn bits and pieces about what you might want to create.&lt;/p&gt;
 </description>
     </item>
     

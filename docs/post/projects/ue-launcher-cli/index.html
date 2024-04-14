@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.120.4"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Unreal Engine Project Launcher CLI&nbsp;&ndash;&nbsp;notes.tiago.dev</title><link rel="stylesheet" href="/css/core.min.a6d32e47fed5853134423a53a3147c56370dacea7b6b7e5eca960ae0a557a183189500cb03425850b1458f3a215c5a58.css" integrity="sha384-ptMuR/7VhTE0QjpToxR8VjcNrOp7a35eypYK4KVXoYMYlQDLA0JYULFFjzohXFpY"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Unreal Engine Project Launcher CLI" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">notes.tiago.dev</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/motto/">Motto</a><a class="nav item highlight" href="/index.xml" target="_blank">RSS Feed</a>
+</nav></div></span>
+    </div><div class="site slogan"><span class="title"> 🧐 The Staying Speed 🌍</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Unreal Engine Project Launcher CLI</h1><p class="article date">Apr 14, 2023<span class="reading-time"> • 2 minutes to read</span></p></section><article class="article markdown-body"><p>Hey! how are you?  I hope you are doing well<br>
+I made a cool tool, so I thought about writing about it a bit.<br>
+It is an unreal engine launcher cli that makes it easier to open, close, and regenerate uproject/vssolutions</p>
+<p>you can find the source code here:</p>
+<ul>
+<li><a href="https://github.com/tiagosomda/ue-launcher-cli"target="_blank" rel="noopener noreferrer">https://github.com/tiagosomda/ue-launcher-cli</a>
+</li>
+</ul>
+<div>
+    <img style="width:100%" src="/imgs/projects/ue-launcher-cli-examples.gif" alt="unreal engine project launcher gif with examples">
+</div>
+<h1 id="why-did-i-create-this">Why did I create this?</h1>
+<p>One of the things that I seem to have to do a lot is to&hellip;</p>
+<ol>
+<li>close unreal and visual studio,</li>
+<li>delete generated files</li>
+<li>right click the project</li>
+<li>select to regenerate it</li>
+<li>launch visual studio</li>
+<li>launch the unreal project</li>
+</ol>
+<div>
+    <img style="height:250px" src="/imgs/memes/getting-through-it.png" alt="meme of me being tired of typing these commands over and over">
+</div>
+<p><b> &hellip; those are a lot of steps 😵 </b> <i> &hellip; and many of them are mouse clicks!</i></p>
+<p>since I almost always have a cli open to make git commits, I started by creating a alias that would launch the unreal project.</p>
+<ul>
+<li>then I realized that I could probably regenerate the files as well,</li>
+<li>and then why not close any unreal and visual studio instances for my project before regenerating it?</li>
+</ul>
+<h2 id="building-it">Building it</h2>
+<p>It had been a while since I had to create a powershell script that would list the currently open projects, so I enlisted copilot to see if it could spit out some functions.</p>
+<ul>
+<li>It did and it mostly worked, so that got me started into building this cli.<br>
+Once I had things working, I wrapped everything in a powershell module and started using it.</li>
+<li>It worked super well, so I put it up on github and posted about it on linked in.</li>
+</ul>
+<h2 id="was-this-really-necessary">Was this really necessary?</h2>
+<p>not really&hellip; and there might be a better way to go about it than this workflow, but so far, spending some time on it was rewarding and has been helpful to me.</p>
+<h3 id="what-do-you-think">What do you think?</h3>
+<p>If you end up using or making additions, modifications, or variation of it, let me know!</p>
+<p>ps: I have some other useful scripts here as well if you are interested:</p>
+<ul>
+<li><a href="https://gist.github.com/tiagosomda"target="_blank" rel="noopener noreferrer">https://gist.github.com/tiagosomda</a>
+</li>
+</ul>
+</article><section class="article labels"><a class="category" href=/categories/projects/>projects</a><a class="tag" href=/tags/unreal/>unreal</a><a class="tag" href=/tags/cli/>cli</a><a class="tag" href=/tags/powershell/>powershell</a></section>
+</div>
+<div class="article bottom"><section class="article navigation"><p>Previous: <a class="link" href="/post/thoughts/one-year-as-game-dev/"><span class="iconfont icon-article"></span>Being a Game Dev at a game studio, one year into it</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <div>See my main web site at <a href="https://www.tiago.dev" target="_blank">tiago.dev</a></span></div>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p><p class="copyright">©2021 notes.tiago.dev.</p>
+</div>
+</section></body>
+
+</html>
