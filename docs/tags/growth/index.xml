@@ -52,7 +52,8 @@ It is an unreal engine launcher cli that makes it easier to open, close, and reg
 &lt;ul&gt;
 &lt;li&gt;It did and it mostly worked, so that got me started into building this cli.&lt;br&gt;
 Once I had things working, I wrapped everything in a powershell module and started using it.&lt;/li&gt;
-&lt;li&gt;It worked super well, so I put it up on github and posted about it on linked in.&lt;/li&gt;
+&lt;li&gt;It worked super well, so I put it up on github and &lt;a href=&#34;https://www.linkedin.com/feed/update/urn:li:activity:7185372847844786176&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;posted about it on linked in&lt;/a&gt;
+.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;was-this-really-necessary&#34;&gt;Was this really necessary?&lt;/h2&gt;
 &lt;p&gt;not really&amp;hellip; and there might be a better way to go about it than this workflow, but so far, spending some time on it was rewarding and has been helpful to me.&lt;/p&gt;
