@@ -6,10 +6,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©2024 notes.tiago.dev.</copyright>
-    <lastBuildDate>Fri, 14 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2024 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://notes.tiago.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Shader Journey</title>
+      <link>https://notes.tiago.dev/post/projects/shader-journey/</link>
+      <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.tiago.dev/post/projects/shader-journey/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Tech Artists are wizards,&lt;br&gt;
+In the realm of shaders, they bend space and time.&lt;br&gt;
+With fragments and vertex, they sculpt light’s design,&lt;br&gt;
+Crafting worlds of wonder, where brilliance does shine.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;my-journey-with-shaders-in-godot&#34;&gt;My Journey with Shaders in Godot&lt;/h1&gt;
+&lt;p&gt;Working closely with Tech Artists has always left me in awe of what they can achieve with code. I was fortunate to be part of a team where my teammates were eager to walk me through the intricacies of shaders.&lt;/p&gt;
+&lt;p&gt;To better collaborate with them, I read the Unity Shader Bible. This book provided a solid foundation and helped me understand more about what my coworkers were doing. I remember thinking that my next step in this shader journey would be to experiment with different techniques and examples.&lt;/p&gt;
+&lt;p&gt;However, I got busy with other projects until I stumbled upon a book that guides using shaders in Godot, an engine I recently fell in love with.&lt;/p&gt;
+&lt;p&gt;As I started going through the book, I decided to create a little web viewer to share what I’ve been learning in this space.&lt;br&gt;
+You can find the Godot project here: &lt;a href=&#34;https://github.com/tiagosomda/godot-shader-journey&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/tiagosomda/godot-shader-journey&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;my-journey-so-far&#34;&gt;My journey so far&lt;/h2&gt;
+&lt;div style=&#34;display: flex; justify-content: center;&#34;&gt;
+    &lt;div style=&#34;width: 80%; position: relative; padding-top: 56.25%;&#34;&gt; &lt;!-- 16:9 aspect ratio --&gt;
+        &lt;iframe src=&#34;https://notes.tiago.dev/shader-journey-frame/index.html&#34; title=&#34;The Shader Journey&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Unreal Engine Project Launcher CLI</title>
@@ -649,30 +677,6 @@ When that happens, the object starts to fall very slowing and that is what makes
 &lt;li&gt;&lt;a href=&#34;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>What is my motto? this up here ^ </title>
-      <link>https://notes.tiago.dev/motto/</link>
-      <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.tiago.dev/motto/</guid>
-      <description>&lt;p&gt;As I was taking a class in called &amp;ldquo;How To Make Great Decisions&amp;rdquo; at the Seattle community college (thanks Microsoft for sponsoring it!),&lt;br&gt;
-I had to keep a daily journal. One of the questions I had to answer in one of these days was &amp;ldquo;What is your motto?&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;As I thought about it, my mind went straight to a message that I used to written on a mirror right outside my bedroom.&lt;br&gt;
-The message was &amp;ldquo;The Staying Speed = The Right Effort + Time&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;This was something I came up with a long time ago when I used to practice kung fu. I used to read a lot about Jeet Kune Do and quotes/teachings from Bruce Lee and in those, I derived this motto.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;To me, the meaning behind &amp;ldquo;The Staying Speed&amp;rdquo; is&lt;/strong&gt;&amp;hellip;&lt;br&gt;
-&amp;hellip;about finding the right amount of time and effort needed to reach a goal.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Put too little effort and time (how often you do something) and you won&amp;rsquo;t accomplish it.&lt;/li&gt;
-&lt;li&gt;Put too much effort and time and you might get burned out, bored, etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&amp;ldquo;The Staying Speed&amp;rdquo; is&lt;/strong&gt; &amp;hellip;&lt;br&gt;
-the right balance of the amount of effort and time you put into a goal.&lt;br&gt;
-The speed is not always the same. It depends not only on what you are working on, but your emotional state as well.
-Knowing that, allows you to recognize when it is too little and when it is too much. From there you can adjust your staying speed to accomplish your goal.&lt;/p&gt;
 </description>
     </item>
     
