@@ -20,3 +20,36 @@ git submodule add https://github.com/cntrump/hugo-notepadium.git themes/hugo-not
 
 # RSS Feed
 https://notes.tiago.dev/index.xml
+
+# Hugo Usage
+
+## Build the site
+```
+hugo
+```
+This will generate the static site in the `docs/` directory.
+
+## Serve locally (preview changes)
+```
+hugo serve
+```
+This starts a local server at http://localhost:1313 and watches for changes.
+
+## Show drafts and future posts
+- To include drafts:
+  ```
+  hugo serve -D
+  ```
+- To include future-dated posts:
+  ```
+  hugo serve -F
+  ```
+- To include both drafts and future posts:
+  ```
+  hugo serve -D -F
+  ```
+
+## Build including future posts
+```
+hugo -F
+```

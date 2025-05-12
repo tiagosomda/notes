@@ -18,9 +18,9 @@ favicon = "favicon.ico"
 #disqusShortname = "XXX"
 
 # Google Analytics <--- track page views and etc
-#googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-123-45"
 
-ignoreErrors = ["error-remote-getjson"]
+ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy-term-pages"]
 
 [markup.highlight]
 codeFences = false
