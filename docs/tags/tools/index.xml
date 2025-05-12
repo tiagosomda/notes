@@ -1,22 +1,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on notes.tiago.dev</title>
-    <link>http://localhost:1313/tags/tools/</link>
+    <link>https://notes.tiago.dev/tags/tools/</link>
     <description>Recent content in Tools on notes.tiago.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©2024 notes.tiago.dev.</copyright>
     <lastBuildDate>Mon, 12 Sep 2022 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://notes.tiago.dev/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Shader Journey</title>
-      <link>http://localhost:1313/post/projects/shader-journey/</link>
+      <link>https://notes.tiago.dev/post/projects/shader-journey/</link>
       <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/projects/shader-journey/</guid>
+      <guid>https://notes.tiago.dev/post/projects/shader-journey/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Tech Artists are wizards,&lt;br&gt;
 In the realm of shaders, they bend space and time.&lt;br&gt;
@@ -33,7 +33,7 @@ You can find the Godot project here: &lt;a href=&#34;https://github.com/tiagosom
 &lt;h2 id=&#34;my-journey-so-far&#34;&gt;My journey so far&lt;/h2&gt;
 &lt;div style=&#34;display: flex; justify-content: center;&#34;&gt;
     &lt;div style=&#34;width: 80%; position: relative; padding-top: 56.25%;&#34;&gt; &lt;!-- 16:9 aspect ratio --&gt;
-        &lt;iframe src=&#34;http://localhost:1313/shader-journey-frame/index.html&#34; title=&#34;The Shader Journey&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;&gt;&lt;/iframe&gt;
+        &lt;iframe src=&#34;https://notes.tiago.dev/shader-journey-frame/index.html&#34; title=&#34;The Shader Journey&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;&gt;&lt;/iframe&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -41,10 +41,10 @@ You can find the Godot project here: &lt;a href=&#34;https://github.com/tiagosom
     
     <item>
       <title>Unreal Engine Project Launcher CLI</title>
-      <link>http://localhost:1313/post/projects/ue-launcher-cli/</link>
+      <link>https://notes.tiago.dev/post/projects/ue-launcher-cli/</link>
       <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/projects/ue-launcher-cli/</guid>
+      <guid>https://notes.tiago.dev/post/projects/ue-launcher-cli/</guid>
       <description>&lt;p&gt;Hey! how are you?  I hope you are doing well&lt;br&gt;
 I made a cool tool, so I thought about writing about it a bit.&lt;br&gt;
 It is an unreal engine launcher cli that makes it easier to open, close, and regenerate uproject/vssolutions&lt;/p&gt;
@@ -54,7 +54,7 @@ It is an unreal engine launcher cli that makes it easier to open, close, and reg
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;http://localhost:1313/imgs/projects/ue-launcher-cli-examples.gif&#34; alt=&#34;unreal engine project launcher gif with examples&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/projects/ue-launcher-cli-examples.gif&#34; alt=&#34;unreal engine project launcher gif with examples&#34;&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;why-did-i-create-this&#34;&gt;Why did I create this?&lt;/h1&gt;
 &lt;p&gt;One of the things that I seem to have to do a lot is to&amp;hellip;&lt;/p&gt;
@@ -67,7 +67,7 @@ It is an unreal engine launcher cli that makes it easier to open, close, and reg
 &lt;li&gt;launch the unreal project&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div&gt;
-    &lt;img style=&#34;height:250px&#34; src=&#34;http://localhost:1313/imgs/memes/getting-through-it.png&#34; alt=&#34;meme of me being tired of typing these commands over and over&#34;&gt;
+    &lt;img style=&#34;height:250px&#34; src=&#34;https://notes.tiago.dev/imgs/memes/getting-through-it.png&#34; alt=&#34;meme of me being tired of typing these commands over and over&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;b&gt; &amp;hellip; those are a lot of steps 😵 &lt;/b&gt; &lt;i&gt; &amp;hellip; and many of them are mouse clicks!&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;since I almost always have a cli open to make git commits, I started by creating a alias that would launch the unreal project.&lt;/p&gt;
@@ -97,17 +97,17 @@ Once I had things working, I wrapped everything in a powershell module and start
     
     <item>
       <title>Being a Game Dev at a game studio, one year into it</title>
-      <link>http://localhost:1313/post/thoughts/one-year-as-game-dev/</link>
+      <link>https://notes.tiago.dev/post/thoughts/one-year-as-game-dev/</link>
       <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/thoughts/one-year-as-game-dev/</guid>
+      <guid>https://notes.tiago.dev/post/thoughts/one-year-as-game-dev/</guid>
       <description>&lt;p&gt;so&amp;hellip; here we are! 😊😍&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;12 year old Tiago would be proud! ❤️&lt;/li&gt;
 &lt;li&gt;32 year old Tiago is loving the change and still learning every day.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Today marks 1 year since I started my career as a professional gameplay engineer!&lt;br&gt;
-For comparison, this is how I felt a few days prior to starting as a full time game dev: &lt;a href=&#34;http://localhost:1313/post/thoughts/one-year-as-game-dev&#34;&gt;dealing with leaving my comfort zone&lt;/a&gt;
+For comparison, this is how I felt a few days prior to starting as a full time game dev: &lt;a href=&#34;https://notes.tiago.dev/post/thoughts/one-year-as-game-dev&#34;&gt;dealing with leaving my comfort zone&lt;/a&gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;highlights&#34;&gt;Highlights&lt;/h1&gt;
 &lt;p&gt;in other words, #FuckYeahs 😊&lt;/p&gt;
@@ -260,10 +260,10 @@ Read that fuck yeah list again!&lt;/p&gt;
     
     <item>
       <title>Cool Tools</title>
-      <link>http://localhost:1313/post/thoughts/tools/</link>
+      <link>https://notes.tiago.dev/post/thoughts/tools/</link>
       <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/thoughts/tools/</guid>
+      <guid>https://notes.tiago.dev/post/thoughts/tools/</guid>
       <description>&lt;h1 id=&#34;tools&#34;&gt;Tools&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.screentogif.com&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.screentogif.com&lt;/a&gt;
 &lt;br&gt;
@@ -280,10 +280,10 @@ Easily transfer files between computers/people.&lt;/p&gt;
     
     <item>
       <title>Dealing with leaving my comfort zone</title>
-      <link>http://localhost:1313/post/thoughts/dealing-with-getting-out-of-my-comfort-zone/</link>
+      <link>https://notes.tiago.dev/post/thoughts/dealing-with-getting-out-of-my-comfort-zone/</link>
       <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/thoughts/dealing-with-getting-out-of-my-comfort-zone/</guid>
+      <guid>https://notes.tiago.dev/post/thoughts/dealing-with-getting-out-of-my-comfort-zone/</guid>
       <description>&lt;p&gt;(not proof read - sorry for all the grammar mistakes xD)&lt;/p&gt;
 &lt;p&gt;Last week, I left my job at Microsoft as a Software Engineer.&lt;br&gt;
 In a few days, I start my new job as a Gameplay Engineer at Red Storm.&lt;/p&gt;
@@ -335,10 +335,10 @@ I was not planning on making this public, but perhaps it can be of use to someon
     
     <item>
       <title>First Week @ HomeTeam GameDev</title>
-      <link>http://localhost:1313/post/thoughts/hometeam-gamedev-first-week/</link>
+      <link>https://notes.tiago.dev/post/thoughts/hometeam-gamedev-first-week/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/thoughts/hometeam-gamedev-first-week/</guid>
+      <guid>https://notes.tiago.dev/post/thoughts/hometeam-gamedev-first-week/</guid>
       <description>&lt;h1 id=&#34;how-did-i-stumble-onto-hometeam-gamedev&#34;&gt;How did I stumble onto HomeTeam GameDev?&lt;/h1&gt;
 &lt;p&gt;I had been looking for a place where I could collaborate with others on a game.&lt;br&gt;
 This is something I already do with some friends. However, I wanted to do it in a more global scale.&lt;br&gt;
@@ -375,10 +375,10 @@ I am really looking forward to understanding why I think that there is something
     
     <item>
       <title>Career Panel @ Geeking Out Kids of Color</title>
-      <link>http://localhost:1313/post/thoughts/gokic-career-panel-2021-04/</link>
+      <link>https://notes.tiago.dev/post/thoughts/gokic-career-panel-2021-04/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/thoughts/gokic-career-panel-2021-04/</guid>
+      <guid>https://notes.tiago.dev/post/thoughts/gokic-career-panel-2021-04/</guid>
       <description>&lt;p&gt;Yesterday I volunteered for one hour to speak at a career panel.&lt;br&gt;
 The panel was organized by GOKiC (Geeking Out Kids of Color) and Collective Youth.&lt;/p&gt;
 &lt;p&gt;I helped start GOKiC as a board member.&lt;br&gt;
@@ -398,7 +398,7 @@ Soon after I was contact with some guidelines on what we could speak about durin
 &lt;li&gt;and then a QA session.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;what-did-i-present&#34;&gt;What did I present?&lt;/h1&gt;
-&lt;p&gt;Here it is, let me know if any of it was helpful to you: &lt;a href=&#34;http://localhost:1313/misc/tiago-gokic-career-panel-2021-04.pdf&#34;&gt;career panel presentation&lt;/a&gt;
+&lt;p&gt;Here it is, let me know if any of it was helpful to you: &lt;a href=&#34;https://notes.tiago.dev/misc/tiago-gokic-career-panel-2021-04.pdf&#34;&gt;career panel presentation&lt;/a&gt;
 &lt;br&gt;
 If you have any questions, send me a message.&lt;/p&gt;
 &lt;h1 id=&#34;qa-session&#34;&gt;Q&amp;amp;A Session&lt;/h1&gt;
@@ -435,12 +435,12 @@ That student in middle school was attending a panel for college kids about caree
     
     <item>
       <title>The gito alias</title>
-      <link>http://localhost:1313/post/hacks/gito-alias/</link>
+      <link>https://notes.tiago.dev/post/hacks/gito-alias/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/hacks/gito-alias/</guid>
+      <guid>https://notes.tiago.dev/post/hacks/gito-alias/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;http://localhost:1313/imgs/misc/gito.jpg&#34; alt=&#34;gito matrix&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/misc/gito.jpg&#34; alt=&#34;gito matrix&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;I often need to open a repo&amp;rsquo;s webpage to look at PRs, get code reference to others and many other reasons.&lt;br&gt;
 So I created an alias that makes navigating from my terminal to the repo&amp;rsquo;s webpage super easy.&lt;/p&gt;
@@ -462,12 +462,12 @@ After that, do some regex magic and open a browser with the url! 😄&lt;/p&gt;
     
     <item>
       <title>The Mental Load : What do Women think about?</title>
-      <link>http://localhost:1313/post/books/the-mental-load/</link>
+      <link>https://notes.tiago.dev/post/books/the-mental-load/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/books/the-mental-load/</guid>
+      <guid>https://notes.tiago.dev/post/books/the-mental-load/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;http://localhost:1313/imgs/books/the-mental-load.png&#34; alt=&#34;book cover for the Mental Load&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/books/the-mental-load.png&#34; alt=&#34;book cover for the Mental Load&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;I have recently read &amp;lsquo;The Mental Load: A Feminist Comic&amp;rsquo; By Emma and I learned a lot! As I read each chapter, I took notes and today I reflected on them. I highly recommend this book to the women and men of your life.&lt;/p&gt;
 &lt;h1 id=&#34;what-is-this-book-about&#34;&gt;What is this book about?&lt;/h1&gt;
@@ -570,12 +570,12 @@ If you have men and women that you care about in your life, show them this book.
     
     <item>
       <title>Perspective Wand : Experiencing Superluminal in VR</title>
-      <link>http://localhost:1313/post/projects/perspective-wand/</link>
+      <link>https://notes.tiago.dev/post/projects/perspective-wand/</link>
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/projects/perspective-wand/</guid>
+      <guid>https://notes.tiago.dev/post/projects/perspective-wand/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;http://localhost:1313/imgs/projects/perspective-wand-000.gif&#34; alt=&#34;perspective wand example&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/projects/perspective-wand-000.gif&#34; alt=&#34;perspective wand example&#34;&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;have-you-heard-of-superluminal&#34;&gt;Have you heard of Superluminal?&lt;/h1&gt;
 &lt;p&gt;If not, check it out!&lt;br&gt;
@@ -598,7 +598,7 @@ Fast forward to &lt;a href=&#34;https://youtu.be/lFEIUcXCEvI?t=646&#34;target=&#
  and it explains how the game mechanic in Superluminal works.&lt;/p&gt;
 &lt;p&gt;I gotta say&amp;hellip;&lt;br&gt;
 &amp;hellip; I was a &lt;em&gt;&lt;strong&gt;Bit Wiser&lt;/strong&gt;&lt;/em&gt; after watching that video!&lt;br&gt;
-&lt;img  src=&#34;http://localhost:1313/imgs/memes/ba-dum-tss.png&#34;
+&lt;img  src=&#34;https://notes.tiago.dev/imgs/memes/ba-dum-tss.png&#34;
         alt=&#34;ba dum tss&#34;/&gt;&lt;/p&gt;
 &lt;h1 id=&#34;how-does-the-game-mechanic-work&#34;&gt;How does the game mechanic work?&lt;/h1&gt;
 &lt;p&gt;The video puts it really well &lt;strong&gt;&amp;ldquo;as you pick up an object, its perspective stays the same, but its real size changes dramatically.&amp;rdquo;&lt;/strong&gt;&lt;br&gt;
