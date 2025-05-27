@@ -59,7 +59,7 @@ jobs:
       - name: Build with Hugo
         run: |
           hugo \
-            -t "hugo-notepadium" \
+            -t "theme-hugo-notepadium" \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Cache Save
