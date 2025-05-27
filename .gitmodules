@@ -1,10 +1,1 @@
-[submodule "themes/terminal"]
-	path = themes/terminal
-	url = git@github.com:panr/hugo-theme-terminal.git
-	branch = multiple-content-types
-[submodule "themes/hugo-notepadium"]
-	path = themes/hugo-notepadium
-	url = https://github.com/cntrump/hugo-notepadium.git
-[submodule "hugo-future-imperfect-slim"]
-	path = hugo-future-imperfect-slim
-	url = https://github.com/pacollins/hugo-future-imperfect-slim.git
+
