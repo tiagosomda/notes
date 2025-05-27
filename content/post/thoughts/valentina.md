@@ -1,7 +1,7 @@
 +++
 title = "Hello World, Valentina!"
 author = "Tiago"
-date = "2025-05-24"
+date = "2025-06-03"
 summary = "Celebrating the birth of my daughter Valentina!"
 tags = [
     "fuck-yeah",

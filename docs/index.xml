@@ -1,22 +1,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>notes.tiago.dev</title>
-    <link>https://notes.tiago.dev/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on notes.tiago.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©2024 notes.tiago.dev.</copyright>
-    <lastBuildDate>Sat, 24 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://notes.tiago.dev/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Shader Journey</title>
-      <link>https://notes.tiago.dev/post/projects/shader-journey/</link>
+      <link>http://localhost:1313/post/projects/shader-journey/</link>
       <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/projects/shader-journey/</guid>
+      <guid>http://localhost:1313/post/projects/shader-journey/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Tech Artists are wizards,&lt;br&gt;
 In the realm of shaders, they bend space and time.&lt;br&gt;
@@ -28,12 +28,11 @@ Crafting worlds of wonder, where brilliance does shine.&lt;/p&gt;
 &lt;p&gt;To better collaborate with them, I read the Unity Shader Bible. This book provided a solid foundation and helped me understand more about what my coworkers were doing. I remember thinking that my next step in this shader journey would be to experiment with different techniques and examples.&lt;/p&gt;
 &lt;p&gt;However, I got busy with other projects until I stumbled upon a book that guides using shaders in Godot, an engine I recently fell in love with.&lt;/p&gt;
 &lt;p&gt;As I started going through the book, I decided to create a little web viewer to share what I’ve been learning in this space.&lt;br&gt;
-You can find the Godot project here: &lt;a href=&#34;https://github.com/tiagosomda/godot-shader-journey&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/tiagosomda/godot-shader-journey&lt;/a&gt;
-&lt;/p&gt;
+You can find the Godot project here: &lt;a href=&#34;https://github.com/tiagosomda/godot-shader-journey&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/tiagosomda/godot-shader-journey&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;my-journey-so-far&#34;&gt;My journey so far&lt;/h2&gt;
 &lt;div style=&#34;display: flex; justify-content: center;&#34;&gt;
     &lt;div style=&#34;width: 80%; position: relative; padding-top: 56.25%;&#34;&gt; &lt;!-- 16:9 aspect ratio --&gt;
-        &lt;iframe src=&#34;https://notes.tiago.dev/shader-journey-frame/index.html&#34; title=&#34;The Shader Journey&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;&gt;&lt;/iframe&gt;
+        &lt;iframe src=&#34;http://localhost:1313/shader-journey-frame/index.html&#34; title=&#34;The Shader Journey&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;&gt;&lt;/iframe&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -41,20 +40,19 @@ You can find the Godot project here: &lt;a href=&#34;https://github.com/tiagosom
     
     <item>
       <title>Unreal Engine Project Launcher CLI</title>
-      <link>https://notes.tiago.dev/post/projects/ue-launcher-cli/</link>
+      <link>http://localhost:1313/post/projects/ue-launcher-cli/</link>
       <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/projects/ue-launcher-cli/</guid>
+      <guid>http://localhost:1313/post/projects/ue-launcher-cli/</guid>
       <description>&lt;p&gt;Hey! how are you?  I hope you are doing well&lt;br&gt;
 I made a cool tool, so I thought about writing about it a bit.&lt;br&gt;
 It is an unreal engine launcher cli that makes it easier to open, close, and regenerate uproject/vssolutions&lt;/p&gt;
 &lt;p&gt;you can find the source code here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tiagosomda/ue-launcher-cli&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/tiagosomda/ue-launcher-cli&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tiagosomda/ue-launcher-cli&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/tiagosomda/ue-launcher-cli&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/projects/ue-launcher-cli-examples.gif&#34; alt=&#34;unreal engine project launcher gif with examples&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;http://localhost:1313/imgs/projects/ue-launcher-cli-examples.gif&#34; alt=&#34;unreal engine project launcher gif with examples&#34;&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;why-did-i-create-this&#34;&gt;Why did I create this?&lt;/h1&gt;
 &lt;p&gt;One of the things that I seem to have to do a lot is to&amp;hellip;&lt;/p&gt;
@@ -67,7 +65,7 @@ It is an unreal engine launcher cli that makes it easier to open, close, and reg
 &lt;li&gt;launch the unreal project&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div&gt;
-    &lt;img style=&#34;height:250px&#34; src=&#34;https://notes.tiago.dev/imgs/memes/getting-through-it.png&#34; alt=&#34;meme of me being tired of typing these commands over and over&#34;&gt;
+    &lt;img style=&#34;height:250px&#34; src=&#34;http://localhost:1313/imgs/memes/getting-through-it.png&#34; alt=&#34;meme of me being tired of typing these commands over and over&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;b&gt; &amp;hellip; those are a lot of steps 😵 &lt;/b&gt; &lt;i&gt; &amp;hellip; and many of them are mouse clicks!&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;since I almost always have a cli open to make git commits, I started by creating a alias that would launch the unreal project.&lt;/p&gt;
@@ -80,8 +78,7 @@ It is an unreal engine launcher cli that makes it easier to open, close, and reg
 &lt;ul&gt;
 &lt;li&gt;It did and it mostly worked, so that got me started into building this cli.&lt;br&gt;
 Once I had things working, I wrapped everything in a powershell module and started using it.&lt;/li&gt;
-&lt;li&gt;It worked super well, so I put it up on github and &lt;a href=&#34;https://www.linkedin.com/feed/update/urn:li:activity:7185372847844786176&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;posted about it on linked in&lt;/a&gt;
-.&lt;/li&gt;
+&lt;li&gt;It worked super well, so I put it up on github and &lt;a href=&#34;https://www.linkedin.com/feed/update/urn:li:activity:7185372847844786176&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;posted about it on linked in&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;was-this-really-necessary&#34;&gt;Was this really necessary?&lt;/h2&gt;
 &lt;p&gt;not really&amp;hellip; and there might be a better way to go about it than this workflow, but so far, spending some time on it was rewarding and has been helpful to me.&lt;/p&gt;
@@ -89,26 +86,24 @@ Once I had things working, I wrapped everything in a powershell module and start
 &lt;p&gt;If you end up using or making additions, modifications, or variation of it, let me know!&lt;/p&gt;
 &lt;p&gt;ps: I have some other useful scripts here as well if you are interested:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://gist.github.com/tiagosomda&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gist.github.com/tiagosomda&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/tiagosomda&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gist.github.com/tiagosomda&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
       <title>Being a Game Dev at a game studio, one year into it</title>
-      <link>https://notes.tiago.dev/post/thoughts/one-year-as-game-dev/</link>
+      <link>http://localhost:1313/post/thoughts/one-year-as-game-dev/</link>
       <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/thoughts/one-year-as-game-dev/</guid>
+      <guid>http://localhost:1313/post/thoughts/one-year-as-game-dev/</guid>
       <description>&lt;p&gt;so&amp;hellip; here we are! 😊😍&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;12 year old Tiago would be proud! ❤️&lt;/li&gt;
 &lt;li&gt;32 year old Tiago is loving the change and still learning every day.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Today marks 1 year since I started my career as a professional gameplay engineer!&lt;br&gt;
-For comparison, this is how I felt a few days prior to starting as a full time game dev: &lt;a href=&#34;https://notes.tiago.dev/post/thoughts/one-year-as-game-dev&#34;&gt;dealing with leaving my comfort zone&lt;/a&gt;
-&lt;/p&gt;
+For comparison, this is how I felt a few days prior to starting as a full time game dev: &lt;a href=&#34;http://localhost:1313/post/thoughts/one-year-as-game-dev&#34;&gt;dealing with leaving my comfort zone&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;highlights&#34;&gt;Highlights&lt;/h1&gt;
 &lt;p&gt;in other words, #FuckYeahs 😊&lt;/p&gt;
 &lt;ul&gt;
@@ -260,30 +255,27 @@ Read that fuck yeah list again!&lt;/p&gt;
     
     <item>
       <title>Cool Tools</title>
-      <link>https://notes.tiago.dev/post/thoughts/tools/</link>
+      <link>http://localhost:1313/post/thoughts/tools/</link>
       <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/thoughts/tools/</guid>
+      <guid>http://localhost:1313/post/thoughts/tools/</guid>
       <description>&lt;h1 id=&#34;tools&#34;&gt;Tools&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.screentogif.com&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.screentogif.com&lt;/a&gt;
-&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.screentogif.com&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.screentogif.com&lt;/a&gt;&lt;br&gt;
 Super handy tool for making gifs out of whatever is going on your computer screen.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://windirstat.net&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://windirstat.net&lt;/a&gt;
-&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://windirstat.net&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://windirstat.net&lt;/a&gt;&lt;br&gt;
 This helps my assess where I could delete/move things in my OS drive.&lt;br&gt;
 Seeing how much space each folder is taking up allows me to clean it up better than using Window&amp;rsquo;s storage settings.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://blaze.vercel.app&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://blaze.vercel.app&lt;/a&gt;
-&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://blaze.vercel.app&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://blaze.vercel.app&lt;/a&gt;&lt;br&gt;
 Easily transfer files between computers/people.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Dealing with leaving my comfort zone</title>
-      <link>https://notes.tiago.dev/post/thoughts/dealing-with-getting-out-of-my-comfort-zone/</link>
+      <link>http://localhost:1313/post/thoughts/dealing-with-getting-out-of-my-comfort-zone/</link>
       <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/thoughts/dealing-with-getting-out-of-my-comfort-zone/</guid>
+      <guid>http://localhost:1313/post/thoughts/dealing-with-getting-out-of-my-comfort-zone/</guid>
       <description>&lt;p&gt;(not proof read - sorry for all the grammar mistakes xD)&lt;/p&gt;
 &lt;p&gt;Last week, I left my job at Microsoft as a Software Engineer.&lt;br&gt;
 In a few days, I start my new job as a Gameplay Engineer at Red Storm.&lt;/p&gt;
@@ -335,10 +327,10 @@ I was not planning on making this public, but perhaps it can be of use to someon
     
     <item>
       <title>First Week @ HomeTeam GameDev</title>
-      <link>https://notes.tiago.dev/post/thoughts/hometeam-gamedev-first-week/</link>
+      <link>http://localhost:1313/post/thoughts/hometeam-gamedev-first-week/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/thoughts/hometeam-gamedev-first-week/</guid>
+      <guid>http://localhost:1313/post/thoughts/hometeam-gamedev-first-week/</guid>
       <description>&lt;h1 id=&#34;how-did-i-stumble-onto-hometeam-gamedev&#34;&gt;How did I stumble onto HomeTeam GameDev?&lt;/h1&gt;
 &lt;p&gt;I had been looking for a place where I could collaborate with others on a game.&lt;br&gt;
 This is something I already do with some friends. However, I wanted to do it in a more global scale.&lt;br&gt;
@@ -375,10 +367,10 @@ I am really looking forward to understanding why I think that there is something
     
     <item>
       <title>Career Panel @ Geeking Out Kids of Color</title>
-      <link>https://notes.tiago.dev/post/thoughts/gokic-career-panel-2021-04/</link>
+      <link>http://localhost:1313/post/thoughts/gokic-career-panel-2021-04/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/thoughts/gokic-career-panel-2021-04/</guid>
+      <guid>http://localhost:1313/post/thoughts/gokic-career-panel-2021-04/</guid>
       <description>&lt;p&gt;Yesterday I volunteered for one hour to speak at a career panel.&lt;br&gt;
 The panel was organized by GOKiC (Geeking Out Kids of Color) and Collective Youth.&lt;/p&gt;
 &lt;p&gt;I helped start GOKiC as a board member.&lt;br&gt;
@@ -398,8 +390,7 @@ Soon after I was contact with some guidelines on what we could speak about durin
 &lt;li&gt;and then a QA session.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;what-did-i-present&#34;&gt;What did I present?&lt;/h1&gt;
-&lt;p&gt;Here it is, let me know if any of it was helpful to you: &lt;a href=&#34;https://notes.tiago.dev/misc/tiago-gokic-career-panel-2021-04.pdf&#34;&gt;career panel presentation&lt;/a&gt;
-&lt;br&gt;
+&lt;p&gt;Here it is, let me know if any of it was helpful to you: &lt;a href=&#34;http://localhost:1313/misc/tiago-gokic-career-panel-2021-04.pdf&#34;&gt;career panel presentation&lt;/a&gt;&lt;br&gt;
 If you have any questions, send me a message.&lt;/p&gt;
 &lt;h1 id=&#34;qa-session&#34;&gt;Q&amp;amp;A Session&lt;/h1&gt;
 &lt;p&gt;Sadly the students were very quiet&amp;hellip;&lt;br&gt;
@@ -435,12 +426,12 @@ That student in middle school was attending a panel for college kids about caree
     
     <item>
       <title>The gito alias</title>
-      <link>https://notes.tiago.dev/post/hacks/gito-alias/</link>
+      <link>http://localhost:1313/post/hacks/gito-alias/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/hacks/gito-alias/</guid>
+      <guid>http://localhost:1313/post/hacks/gito-alias/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/misc/gito.jpg&#34; alt=&#34;gito matrix&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;http://localhost:1313/imgs/misc/gito.jpg&#34; alt=&#34;gito matrix&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;I often need to open a repo&amp;rsquo;s webpage to look at PRs, get code reference to others and many other reasons.&lt;br&gt;
 So I created an alias that makes navigating from my terminal to the repo&amp;rsquo;s webpage super easy.&lt;/p&gt;
@@ -451,10 +442,8 @@ So I thought, &amp;ldquo;oh, I can make a command that opens a browser window wi
 After that, do some regex magic and open a browser with the url! 😄&lt;/p&gt;
 &lt;p&gt;Here is the code:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;bash: &lt;a href=&#34;https://gist.github.com/tiagosomda/28be45e7b22e72a70996f6ba2b218a39&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gist.github.com/tiagosomda/28be45e7b22e72a70996f6ba2b218a39&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;powershell: &lt;a href=&#34;https://gist.github.com/tiagosomda/f6c97a9ffbfb686048895cca2c099b58&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gist.github.com/tiagosomda/f6c97a9ffbfb686048895cca2c099b58&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;bash: &lt;a href=&#34;https://gist.github.com/tiagosomda/28be45e7b22e72a70996f6ba2b218a39&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gist.github.com/tiagosomda/28be45e7b22e72a70996f6ba2b218a39&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;powershell: &lt;a href=&#34;https://gist.github.com/tiagosomda/f6c97a9ffbfb686048895cca2c099b58&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gist.github.com/tiagosomda/f6c97a9ffbfb686048895cca2c099b58&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;if you improve it or if you have any other useful commands, let me know!&lt;/p&gt;
 </description>
@@ -462,17 +451,16 @@ After that, do some regex magic and open a browser with the url! 😄&lt;/p&gt;
     
     <item>
       <title>The Mental Load : What do Women think about?</title>
-      <link>https://notes.tiago.dev/post/books/the-mental-load/</link>
+      <link>http://localhost:1313/post/books/the-mental-load/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/books/the-mental-load/</guid>
+      <guid>http://localhost:1313/post/books/the-mental-load/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/books/the-mental-load.png&#34; alt=&#34;book cover for the Mental Load&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;http://localhost:1313/imgs/books/the-mental-load.png&#34; alt=&#34;book cover for the Mental Load&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;I have recently read &amp;lsquo;The Mental Load: A Feminist Comic&amp;rsquo; By Emma and I learned a lot! As I read each chapter, I took notes and today I reflected on them. I highly recommend this book to the women and men of your life.&lt;/p&gt;
 &lt;h1 id=&#34;what-is-this-book-about&#34;&gt;What is this book about?&lt;/h1&gt;
-&lt;p&gt;This &lt;a href=&#34;https://www.goodreads.com/book/show/39196352-the-mental-load#:~:text=The%20mental%20load%20is%20an%20intersectional%20feminist%20comic,the%20main%20focus%20here%20is%20on%20the%20domestic.&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;review by Nancy O&amp;rsquo;Toole explains it well&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;This &lt;a href=&#34;https://www.goodreads.com/book/show/39196352-the-mental-load#:~:text=The%20mental%20load%20is%20an%20intersectional%20feminist%20comic,the%20main%20focus%20here%20is%20on%20the%20domestic.&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;review by Nancy O&amp;rsquo;Toole explains it well&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The mental load is an intersectional feminist comic that uses simple illustrations to convey current issues. While the content goes beyond this, the main focus here is on the domestic. We already know about the imbalance in hours spent on activities such as cooking, cleaning, and child care, and how that negatively impacts women (especially those who work full time), but what about the impact of the mental load? The strain that comes from mentally balancing the dozens of seemingly small tasks in the household that men are, too often, blind to?&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -486,8 +474,7 @@ After that, do some regex magic and open a browser with the url! 😄&lt;/p&gt;
 &lt;li&gt;&amp;hellip; and honestly, I thought I was.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;second--deciding-to-be-equal-partners&#34;&gt;Second : Deciding to be Equal Partners&lt;/h2&gt;
-&lt;p&gt;My wife and I listened to the audio book &lt;a href=&#34;https://www.audible.com/pd/The-Moment-of-Lift-Audiobook/1250317045&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;The Moment of Lift - by Melinda Gates&lt;/a&gt;
-.&lt;br&gt;
+&lt;p&gt;My wife and I listened to the audio book &lt;a href=&#34;https://www.audible.com/pd/The-Moment-of-Lift-Audiobook/1250317045&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;The Moment of Lift - by Melinda Gates&lt;/a&gt;.&lt;br&gt;
 In it, Melinda talks about how she and Bill strive to be equals in their marriage and also in their foundation.&lt;/p&gt;
 &lt;p&gt;My wife and I thought this was a great idea!&lt;br&gt;
 We do not want one of us &amp;ldquo;wearing the pants&amp;rdquo; in our relationship.&lt;br&gt;
@@ -500,12 +487,10 @@ It is composed of four sections where we get to appreciate each other, discuss c
 There were some easy things that we could split, but there were also a couple of things that she did without really thinking about, but it nonetheless added to her &lt;strong&gt;Mental Load&lt;/strong&gt;.&lt;br&gt;
 As we worked through these, I realized that she did so many things around the house that I was not even aware of.&lt;/p&gt;
 &lt;p&gt;I found out about marriage meetings via a podcast that my friend showed to me.&lt;br&gt;
-Here is the episode: &lt;a href=&#34;https://www.artofmanliness.com/articles/podcast-611-how-a-weekly-marriage-meeting-can-strengthen-your-relationship/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Art of Manliness - Podcast #611: How a Weekly Marriage Meeting Can Strengthen Your Relationship&lt;/a&gt;
-&lt;/p&gt;
+Here is the episode: &lt;a href=&#34;https://www.artofmanliness.com/articles/podcast-611-how-a-weekly-marriage-meeting-can-strengthen-your-relationship/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Art of Manliness - Podcast #611: How a Weekly Marriage Meeting Can Strengthen Your Relationship&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;There is also a book about it:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Reclaiming-Conversation-Power-Talk-Digital/dp/1608682234&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Marriage Meeting for Lasting Love by Marcia Naomi Berger&lt;/a&gt;
-.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Reclaiming-Conversation-Power-Talk-Digital/dp/1608682234&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Marriage Meeting for Lasting Love by Marcia Naomi Berger&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;answering-why-did-i-want-to-read-this-book&#34;&gt;Answering: Why did I want to read this book?&lt;/h2&gt;
 &lt;p&gt;I want to be the best husband that I can be.&lt;br&gt;
@@ -538,8 +523,7 @@ Some men in those environments see those behaviors as unfit for women, when on t
 &lt;h2 id=&#34;3--episiotomy&#34;&gt;3 : Episiotomy&lt;/h2&gt;
 &lt;p&gt;This is a practice done during childbirth that is brutal and not necessary, in most cases.  Read more about it here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.parents.com/pregnancy/giving-birth/vaginal/qa-do-i-have-to-have-an-episiotomy&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.parents.com/pregnancy/giving-birth/vaginal/qa-do-i-have-to-have-an-episiotomy&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.parents.com/pregnancy/giving-birth/vaginal/qa-do-i-have-to-have-an-episiotomy&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.parents.com/pregnancy/giving-birth/vaginal/qa-do-i-have-to-have-an-episiotomy&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;4--hijabs&#34;&gt;4 : Hijabs&lt;/h2&gt;
 &lt;p&gt;Chapter 4 in the book, &amp;ldquo;Show me that Bossom&amp;rdquo;, caught me by surprise.&lt;br&gt;
@@ -570,17 +554,16 @@ If you have men and women that you care about in your life, show them this book.
     
     <item>
       <title>Perspective Wand : Experiencing Superluminal in VR</title>
-      <link>https://notes.tiago.dev/post/projects/perspective-wand/</link>
+      <link>http://localhost:1313/post/projects/perspective-wand/</link>
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.tiago.dev/post/projects/perspective-wand/</guid>
+      <guid>http://localhost:1313/post/projects/perspective-wand/</guid>
       <description>&lt;div&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;https://notes.tiago.dev/imgs/projects/perspective-wand-000.gif&#34; alt=&#34;perspective wand example&#34;&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;http://localhost:1313/imgs/projects/perspective-wand-000.gif&#34; alt=&#34;perspective wand example&#34;&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;have-you-heard-of-superluminal&#34;&gt;Have you heard of Superluminal?&lt;/h1&gt;
 &lt;p&gt;If not, check it out!&lt;br&gt;
-I really enjoyed playing it : &lt;a href=&#34;https://store.steampowered.com/app/1049410/Superliminal/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;link to Superluminal on Steam&lt;/a&gt;
-&lt;/p&gt;
+I really enjoyed playing it : &lt;a href=&#34;https://store.steampowered.com/app/1049410/Superliminal/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;link to Superluminal on Steam&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The puzzles are incredible.&lt;br&gt;
 It has this game mechanic that tricks your mind. Even when you understand it, it still leaves you in awe.&lt;/p&gt;
 &lt;p&gt;If you know me, you know where this is going&amp;hellip;&lt;br&gt;
@@ -590,15 +573,13 @@ I am really into VR and that is probably the only environment (for now) that we 
 Is it even possible to do this in VR?&lt;/p&gt;
 &lt;p&gt;I did some research and found this gold gem on youtube:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=lFEIUcXCEvI&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;How do non-euclidean games work? | Bitwise&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=lFEIUcXCEvI&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;How do non-euclidean games work? | Bitwise&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The video talks about what non-euclidian games are (super freaking cool is what they are).&lt;br&gt;
-Fast forward to &lt;a href=&#34;https://youtu.be/lFEIUcXCEvI?t=646&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;10:46 in the video&lt;/a&gt;
- and it explains how the game mechanic in Superluminal works.&lt;/p&gt;
+Fast forward to &lt;a href=&#34;https://youtu.be/lFEIUcXCEvI?t=646&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;10:46 in the video&lt;/a&gt; and it explains how the game mechanic in Superluminal works.&lt;/p&gt;
 &lt;p&gt;I gotta say&amp;hellip;&lt;br&gt;
 &amp;hellip; I was a &lt;em&gt;&lt;strong&gt;Bit Wiser&lt;/strong&gt;&lt;/em&gt; after watching that video!&lt;br&gt;
-&lt;img  src=&#34;https://notes.tiago.dev/imgs/memes/ba-dum-tss.png&#34;
+&lt;img loading=&#34;lazy&#34;  src=&#34;http://localhost:1313/imgs/memes/ba-dum-tss.png&#34;
         alt=&#34;ba dum tss&#34;/&gt;&lt;/p&gt;
 &lt;h1 id=&#34;how-does-the-game-mechanic-work&#34;&gt;How does the game mechanic work?&lt;/h1&gt;
 &lt;p&gt;The video puts it really well &lt;strong&gt;&amp;ldquo;as you pick up an object, its perspective stays the same, but its real size changes dramatically.&amp;rdquo;&lt;/strong&gt;&lt;br&gt;
@@ -650,8 +631,7 @@ I actually spent a couple of hours over the weekend trying different ways, but I
 &lt;p&gt;This is actually an interesting problem.&lt;/p&gt;
 &lt;p&gt;How do we know we can place an object at a certain position?
 Unity does not give us a way to do a collision check on demand given a collider (if it does, let me know!).&lt;/p&gt;
-&lt;p&gt;So to do that check, I used &lt;a href=&#34;https://docs.unity3d.com/ScriptReference/Physics.CheckBox.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&amp;ldquo;Unity&amp;rsquo;s Physics Check Box collision&amp;rdquo;&lt;/a&gt;
-&lt;br&gt;
+&lt;p&gt;So to do that check, I used &lt;a href=&#34;https://docs.unity3d.com/ScriptReference/Physics.CheckBox.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&amp;ldquo;Unity&amp;rsquo;s Physics Check Box collision&amp;rdquo;&lt;/a&gt;&lt;br&gt;
 To define the box size, I used an approximation.
 I scaled the box size to what the object&amp;rsquo;s scale would be at a certain point.&lt;br&gt;
 It is not perfect, but it works with most shapes.&lt;/p&gt;
@@ -700,13 +680,11 @@ When that happens, the object starts to fall very slowing and that is what makes
 &lt;h1 id=&#34;where-can-i-try-it&#34;&gt;Where can I try it?&lt;/h1&gt;
 &lt;p&gt;I am hosting a WebGL (non-vr) version that you can give a try here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://unfolding-dragon.github.io/perspective-wand/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://unfolding-dragon.github.io/perspective-wand/&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://unfolding-dragon.github.io/perspective-wand/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://unfolding-dragon.github.io/perspective-wand/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I also built for a couple of other devices:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/unfolding-dragon/perspective-wand/releases/tag/v0.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
