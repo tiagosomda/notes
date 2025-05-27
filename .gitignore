@@ -1,5 +1,5 @@
 # Hugo default output directory
-#/public
+/docs/
 /resources/_gen/
 
 ## OS Files
