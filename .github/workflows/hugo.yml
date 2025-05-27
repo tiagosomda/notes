@@ -51,7 +51,7 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: |
           hugo \
-            -t "hugo-notepadium"
+            -t "hugo-notepadium" \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
