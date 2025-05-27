@@ -3,7 +3,7 @@ title = "notes.tiago.dev"
 theme = "hugo-notepadium"
 copyright = "©2024 notes.tiago.dev."
 
-publishDir = "docs"
+publishDir = "public"
 
 languageCode = "en"  # for the RSS generation
 defaultContentLanguage = "en"
