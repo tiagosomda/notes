@@ -43,4 +43,26 @@ For now, we're soaking in these precious early moments, learning the rhythm of o
 
 We can't wait for all of you to meet the newest member of our family when the time is right!
 
-![Valentina's First Photo][PLACEHOLDER FOR PHOTO]
+{{< tabpane >}}
+{{< tab label="Tab 1" >}}
+  Markdown
+{{< /tab >}}
+{{< tab label="Tab 2" selected="true" >}}
+  Markdown
+{{< /tab >}}
+{{< tab label="Tab 3" >}}
+  Markdown
+{{< /tab >}}
+{{< /tabpane >}}
+
+{{<gallery  
+    globalMatch="imgs/hello-world-valentina/*"  
+    sortOrder="asc"  
+    rowHeight="150"
+    margins="5"  
+    thumbnailResizeOptions="600x600 q90 Lanczos"  
+    showExif=false  
+    previewType="blur"  
+    embedPreview=true  
+    loadJQuery=true  
+>}}  
