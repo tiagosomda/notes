@@ -801,7 +801,7 @@
   .tabpane__label {
     position: relative;
     flex-shrink: 1;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.5rem;
     background-color: #f6f8fa;
     border: solid 2px #e6e6e6;
     border-left-width: 1px;
