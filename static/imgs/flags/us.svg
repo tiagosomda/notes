@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" width="20" height="14">
+  <defs>
+    <clipPath id="us">
+      <rect width="24" height="16"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#us)">
+    <!-- Red and white stripes -->
+    <rect width="24" height="16" fill="#B22234"/>
+    <rect y="1.23" width="24" height="1.23" fill="white"/>
+    <rect y="3.69" width="24" height="1.23" fill="white"/>
+    <rect y="6.15" width="24" height="1.23" fill="white"/>
+    <rect y="8.62" width="24" height="1.23" fill="white"/>
+    <rect y="11.08" width="24" height="1.23" fill="white"/>
+    <rect y="13.54" width="24" height="1.23" fill="white"/>
+    <!-- Blue canton -->
+    <rect width="9.6" height="8.62" fill="#3C3B6E"/>
+    <!-- Stars simplified as white dots -->
+    <circle cx="1.2" cy="1.2" r="0.3" fill="white"/>
+    <circle cx="2.4" cy="1.2" r="0.3" fill="white"/>
+    <circle cx="3.6" cy="1.2" r="0.3" fill="white"/>
+    <circle cx="4.8" cy="1.2" r="0.3" fill="white"/>
+    <circle cx="6" cy="1.2" r="0.3" fill="white"/>
+    <circle cx="7.2" cy="1.2" r="0.3" fill="white"/>
+    <circle cx="8.4" cy="1.2" r="0.3" fill="white"/>
+    <circle cx="1.8" cy="2.4" r="0.3" fill="white"/>
+    <circle cx="3" cy="2.4" r="0.3" fill="white"/>
+    <circle cx="4.2" cy="2.4" r="0.3" fill="white"/>
+    <circle cx="5.4" cy="2.4" r="0.3" fill="white"/>
+    <circle cx="6.6" cy="2.4" r="0.3" fill="white"/>
+    <circle cx="7.8" cy="2.4" r="0.3" fill="white"/>
+  </g>
+</svg>

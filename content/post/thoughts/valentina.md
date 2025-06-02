@@ -14,7 +14,7 @@ draft = true
 +++
 
 {{< tabpane >}}
-{{< tab label="🇺🇸 English" selected="true" >}}
+{{< tab flag="us" label="English" selected="true" >}}
 
 # She's Here! Introducing Valentina!
 
@@ -47,7 +47,7 @@ For now, we're soaking in these precious early moments, learning the rhythm of o
 We can't wait for all of you to meet the newest member of our family when the time is right!
 
 {{< /tab >}}
-{{< tab label="🇵🇹 Português" >}}
+{{< tab flag="br" label="Português" >}}
 
 # Ela Chegou! Apresentando a Valentina!
 
@@ -80,7 +80,7 @@ Por enquanto, estamos absorvendo esses momentos preciosos iniciais, aprendendo o
 Mal podemos esperar para que todos vocês conheçam o mais novo membro da nossa família quando chegar a hora certa!
 
 {{< /tab >}}
-{{< tab label="🇪🇸 Español" >}}
+{{< tab flag="mx" label="Español" >}}
 
 # ¡Ella Está Aquí! ¡Presentando a Valentina!
 
