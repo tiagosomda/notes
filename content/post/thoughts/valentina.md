@@ -43,18 +43,6 @@ For now, we're soaking in these precious early moments, learning the rhythm of o
 
 We can't wait for all of you to meet the newest member of our family when the time is right!
 
-{{< tabpane >}}
-{{< tab label="Tab 1" >}}
-  Markdown
-{{< /tab >}}
-{{< tab label="Tab 2" selected="true" >}}
-  Markdown
-{{< /tab >}}
-{{< tab label="Tab 3" >}}
-  Markdown
-{{< /tab >}}
-{{< /tabpane >}}
-
 {{<gallery  
     globalMatch="imgs/hello-world-valentina/*"  
     sortOrder="asc"  
