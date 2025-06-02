@@ -1,7 +1,7 @@
 +++
 title = "Hello World, Valentina!"
 author = "Tiago"
-date = "2025-06-03"
+date = "2025-05-03"
 summary = "Celebrating the birth of my daughter Valentina!"
 tags = [
     "dad"
@@ -10,7 +10,7 @@ categories = [
     "parenting"
 ]
 url = 'hello-world/valentina'
-draft = true
+draft = false
 +++
 
 {{< tabpane >}}
