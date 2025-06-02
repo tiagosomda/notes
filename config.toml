@@ -1,6 +1,6 @@
 baseURL = "https://notes.tiago.dev"
 title = "notes.tiago.dev"
-theme = "hugo-notepadium"
+theme = ["hugo-notepadium", "hugo-shortcode-gallery"]
 copyright = "©2024 notes.tiago.dev."
 
 publishDir = "public"
