@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" width="20" height="14">
+  <defs>
+    <clipPath id="de">
+      <rect width="24" height="16"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#de)">
+    <!-- Black stripe -->
+    <rect width="24" height="5.33" fill="#000000"/>
+    <!-- Red stripe -->
+    <rect width="24" height="5.33" y="5.33" fill="#DD0000"/>
+    <!-- Gold stripe -->
+    <rect width="24" height="5.34" y="10.66" fill="#FFCE00"/>
+  </g>
+</svg>

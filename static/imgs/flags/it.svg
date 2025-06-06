@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" width="20" height="14">
+  <defs>
+    <clipPath id="it">
+      <rect width="24" height="16"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#it)">
+    <!-- Green stripe -->
+    <rect width="8" height="16" fill="#009246"/>
+    <!-- White stripe -->
+    <rect width="8" height="16" x="8" fill="#FFFFFF"/>
+    <!-- Red stripe -->
+    <rect width="8" height="16" x="16" fill="#CE2B37"/>
+  </g>
+</svg>
