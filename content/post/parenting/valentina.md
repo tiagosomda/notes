@@ -26,7 +26,7 @@ With hearts overflowing with joy and love, we are thrilled to announce the arriv
 
 Today marks the beginning of what I think will be the most rewarding adventure of our lives. Our family has grown by two tiny feet, ten perfect fingers, and one huge heart that has already captured ours completely.
 
-Valentina arrived as planned and has already shown us her some of personality and demanding attitude.
+Valentina arrived as planned and has already shown us some of her personality and demanding attitude.
 
 
 ## Dad is overjoyed
