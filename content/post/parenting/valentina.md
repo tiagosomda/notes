@@ -40,10 +40,9 @@ I am a dad now!
 
 
 ## What's Next
-For now, we're soaking in these precious early moments, learning this new rythm of life, and looking forward to decoding V's language.  
+For now, we're soaking in these precious early moments, learning this new rhythm of life, and looking forward to decoding V's language.  
 
-if you have any words of wisdom that you would like to share with us, leave a comment bellow  
-(eventually we will find time to read them 😅)
+if you have any words of wisdom that you would like to share with us, leave a comment below  
 
 {{< /tab >}}
 {{< tab flag="br" label="Português" >}}
@@ -73,7 +72,7 @@ Agora eu sou pai!
 Por enquanto, estamos aproveitando esses momentos preciosos, aprendendo esse novo ritmo de vida, e ansiosos para decodificar a linguagem da V.
 
 se vocês têm alguma palavra de sabedoria que gostariam de compartilhar conosco, deixem um comentário abaixo  
-(eventualmente encontraremos tempo para lê-los 😅)
+
 
 {{< /tab >}}
 {{< tab flag="mx" label="Español" >}}
@@ -103,7 +102,6 @@ Valentina llegó según lo planeado y ya nos ha mostrado algo de su personalidad
 Por ahora, estamos disfrutando estos momentos preciosos, aprendiendo este nuevo ritmo de vida, y esperando descifrar el lenguaje de V.
 
 si tienen alguna palabra de sabiduría que les gustaría compartir con nosotros, dejen un comentario abajo  
-(eventualmente encontraremos tiempo para leerlos 😅)
 
 {{< /tab >}}
 {{< /tabpane >}}
