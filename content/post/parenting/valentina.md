@@ -12,7 +12,7 @@ categories = [
 url = 'hello-world/valentina'
 +++
 
-{{< tabpane >}}
+{{< tabpane key="language" >}}
 {{< tab flag="us" label="English" selected="true" >}}
 
 # She's Here! Introducing Valentina!
