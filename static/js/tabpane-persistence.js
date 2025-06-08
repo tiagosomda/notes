@@ -27,15 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Determine which tab to select (priority: URL > localStorage > default selected)
         let targetLabel = urlValue || storedValue;
         let targetInput = null;
-        console.log('Target label:', targetLabel);
-          if (targetLabel) {
-            // Find input with matching label
+        console.log('Target label:', targetLabel);        if (targetLabel) {
+            // Find input with matching id
             inputs.forEach(function(input) {
-                const inputLabel = input.getAttribute('data-label');
-                console.log('Checking input with label:', inputLabel);
-                if (inputLabel === targetLabel) {
+                const inputId = input.getAttribute('data-id');
+                console.log('Checking input with id:', inputId);
+                if (inputId === targetLabel) {
                     targetInput = input;
-                    console.log('Found matching input for label:', targetLabel);
+                    console.log('Found matching input for id:', targetLabel);
                 }
             });
         }
@@ -50,20 +49,19 @@ document.addEventListener('DOMContentLoaded', function() {
             targetInput.checked = true;
         } else {
             console.log('No target input found, using default selection');
-        }
-          // Add event listeners to save selection to localStorage
+        }        // Add event listeners to save selection to localStorage
         inputs.forEach(function(input) {
             input.addEventListener('change', function() {
                 if (this.checked) {
-                    const label = this.getAttribute('data-label');
-                    console.log('Tab changed to:', label);
-                    localStorage.setItem('tabpane-' + key, label);
+                    const id = this.getAttribute('data-id');
+                    console.log('Tab changed to:', id);
+                    localStorage.setItem('tabpane-' + key, id);
                     
                     // Update URL parameter without reloading the page
                     const newUrl = new URL(window.location);
-                    newUrl.searchParams.set(key, label);
+                    newUrl.searchParams.set(key, id);
                     window.history.replaceState({}, '', newUrl);
-                    console.log('Updated URL and localStorage for key', key + ':', label);
+                    console.log('Updated URL and localStorage for key', key + ':', id);
                 }
             });
         });

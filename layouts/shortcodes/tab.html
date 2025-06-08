@@ -8,6 +8,8 @@
 {{ end }}
 {{/* Get label */}}
 {{ $label := cond .IsNamedParams (.Get "label") (.Get 0) | default (printf "Tab %v" .Ordinal) }}
+{{/* Get id */}}
+{{ $id := .Get "id" }}
 {{/* Get emoji */}}
 {{ $emoji := .Get "emoji" }}
 {{/* Get flag */}}
@@ -17,6 +19,9 @@
 {{ $selected = or (eq $selected "true") (eq $selected "selected") }}
 {{/* Pass params to tabpane */}}
 {{ $tab := dict "label" $label }}
+{{ if $id }}
+  {{ $tab = merge $tab (dict "id" $id) }}
+{{ end }}
 {{ if $emoji }}
   {{ $tab = merge $tab (dict "emoji" $emoji) }}
 {{ end }}

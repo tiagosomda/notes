@@ -13,7 +13,7 @@ url = 'hello-world/valentina'
 +++
 
 {{< tabpane key="language" >}}
-{{< tab flag="us" label="English" selected="true" >}}
+{{< tab flag="us" label="English" id="en" selected="true" >}}
 
 # She's Here! Introducing Valentina!
 
@@ -45,7 +45,7 @@ For now, we're soaking in these precious early moments, learning this new rhythm
 if you have any words of wisdom that you would like to share with us, leave a comment below  
 
 {{< /tab >}}
-{{< tab flag="br" label="Português" >}}
+{{< tab flag="br" label="Português" id="pt" >}}
 
 # Ela chegou! Apresentando Valentina!
 
@@ -75,7 +75,7 @@ se vocês têm alguma palavra de sabedoria que gostariam de compartilhar conosco
 
 
 {{< /tab >}}
-{{< tab flag="mx" label="Español" >}}
+{{< tab flag="mx" label="Español" id="es" >}}
 
 # ¡Ya está aquí! ¡Presentamos a Valentina!
 

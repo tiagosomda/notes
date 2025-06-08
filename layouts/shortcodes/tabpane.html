@@ -16,10 +16,10 @@
   {{- end -}}
 {{- end }}
 {{- /* Render tabpane */ -}}
-<div class="tabpane"{{ if $key }} data-key="{{ $key }}"{{ end }}>
-  {{- range $k, $v := $.Scratch.Get "tabs" }}
+<div class="tabpane"{{ if $key }} data-key="{{ $key }}"{{ end }}>  {{- range $k, $v := $.Scratch.Get "tabs" }}
     {{- $tabId :=  printf "%v-%v" $tabpaneId $k }}
-    <input type="radio" name="{{ $tabpaneId }}" id="{{ $tabId }}" class="tabpane__input" tabindex="1"{{ if eq $k $checked }} checked="checked"{{ end }} data-label="{{ index $v "label" }}">    <label class="tabpane__label" for="{{ $tabId }}">
+    {{- $tabDataId := cond (index $v "id") (index $v "id") (index $v "label") }}
+    <input type="radio" name="{{ $tabpaneId }}" id="{{ $tabId }}" class="tabpane__input" tabindex="1"{{ if eq $k $checked }} checked="checked"{{ end }} data-id="{{ $tabDataId }}">    <label class="tabpane__label" for="{{ $tabId }}">
       {{- if index $v "flag" }}<img src="/imgs/flags/{{ index $v "flag" }}.svg" alt="{{ index $v "flag" }} flag" style="width: 20px; height: 14px; margin-right: 0.5em; vertical-align: middle;">{{ else if index $v "emoji" }}{{ index $v "emoji" }} {{ end }}{{ index $v "label" }}
     </label>
     <div class="tabpane__panel" tabindex="1">

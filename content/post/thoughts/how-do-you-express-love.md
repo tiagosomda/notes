@@ -15,8 +15,8 @@ categories = [
 ]
 +++
 
-{{< tabpane >}}
-{{< tab flag="us" label="English" selected="true" >}}
+{{< tabpane key="language" >}}
+{{< tab flag="us" label="English" id="en" selected="true" >}}
 
 # How do you express love?
 
@@ -37,7 +37,7 @@ His generosity and selflessness left an enduring impact, not only on his family 
 He was an extraordinary example of what it means to be a father, a friend, and a world citizen.
 
 {{< /tab >}}
-{{< tab flag="br" label="Português" >}}
+{{< tab flag="br" label="Português" id="pt" >}}
 
 # Como você expressa amor?
 
@@ -58,7 +58,7 @@ Sua generosidade e altruísmo deixaram um impacto duradouro, não apenas em sua 
 Ele foi um exemplo extraordinário do que significa ser pai, amigo e cidadão do mundo.
 
 {{< /tab >}}
-{{< tab flag="de" label="Deutsch" >}}
+{{< tab flag="de" label="Deutsch" id="de" >}}
 
 # Wie drückst du Liebe aus?
 
@@ -79,7 +79,7 @@ Seine Großzügigkeit und Selbstlosigkeit hinterließen eine bleibende Wirkung, 
 Er war ein außergewöhnliches Beispiel dafür, was es bedeutet, ein Vater, ein Freund und ein Weltbürger zu sein.
 
 {{< /tab >}}
-{{< tab flag="it" label="Italiano" >}}
+{{< tab flag="it" label="Italiano" id="it" >}}
 
 # Come esprimi l'amore?
 
