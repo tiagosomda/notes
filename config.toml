@@ -12,8 +12,6 @@ hasCJKLanguage = false
 
 enableRobotsTXT = true
 
-favicon = "favicon.ico"
-
 # Enable Disqus <--- a way to have comments in the blog
 #disqusShortname = "XXX"
 
@@ -30,6 +28,7 @@ noClasses = false
 unsafe = true  # enable raw HTML in Markdown
 
 [params]
+favicon = "favicon.ico"
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 dateFormat = "Jan 02, 2006"  # if unset, default is "2006-01-02"
 readingTime = true  # show reading time after article date
