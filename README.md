@@ -1,3 +1,7 @@
+# notes.tiago.dev
+
+Hugo website built via GitHub Actions.
+
 # initialize submodules
 git submodule update --init --recursive
 
