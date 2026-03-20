@@ -1,0 +1,74 @@
+<section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="{{- `` | relLangURL -}}">
+                {{- $logo := site.Params.logo -}}
+                {{- if $logo -}}
+                <img alt="" loading="lazy" class="site logo" src="{{- $logo | relURL -}}"/>
+                {{- end -}}
+                <span class="site name">{{- site.Title | safeHTML -}}</span></a></span>
+        <span class="header right-side">
+            {{- partial "navigation-items.html" site.Params.nav -}}
+        </span>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+    {{- with site.Params.slogan -}}
+        <div class="site slogan"><span class="title">{{- . | safeHTML -}}</span></div>
+    {{- end -}}
+</section>
+
+{{- $nav := site.Params.nav -}}
+{{- if or $nav.showCategories $nav.showTags $nav.custom -}}
+<div class="mobile-menu-overlay" aria-hidden="true">
+    <div class="mobile-menu-panel">
+        <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+        <nav class="mobile-nav">
+            {{- if $nav.showCategories -}}
+                <a class="mobile-nav-item" href="{{- `categories/` | relLangURL -}}">{{- T "Categories" -}}</a>
+            {{- end -}}
+            {{- if $nav.showTags -}}
+                <a class="mobile-nav-item" href="{{- `tags/` | relLangURL -}}">{{- T "Tags" -}}</a>
+            {{- end -}}
+            {{- range $nav.custom -}}
+                {{- $url := replace .url "#" "%23" -}}
+                {{- $url = replace $url "." "%2e" -}}
+                {{- $url = $url | safeURL -}}
+                {{- if strings.HasPrefix $url "/" -}}{{- $url = $url | relLangURL -}}{{- end -}}
+                <a class="mobile-nav-item" href="{{- $url -}}"
+                    {{- if strings.HasPrefix $url "http" -}} target="_blank" rel="noopener noreferrer"
+                    {{- end -}}>{{- .title -}}</a>
+            {{- end -}}
+        </nav>
+    </div>
+</div>
+{{- end -}}
+
+<script>
+(function() {
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var overlay = document.querySelector('.mobile-menu-overlay');
+    var closeBtn = document.querySelector('.mobile-menu-close');
+    if (!toggle || !overlay) return;
+
+    function openMenu() {
+        overlay.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+        overlay.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+
+    toggle.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeMenu();
+    });
+})();
+</script>
