@@ -45,9 +45,9 @@ html {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 8px;
+    padding: 0;
     float: right;
-    margin-top: 2px;
+    line-height: 1;
 }
 .hamburger-line {
     display: block;
@@ -104,6 +104,21 @@ html {
     display: flex;
     flex-direction: column;
     margin-top: 24px;
+    flex: 1;
+}
+.mobile-nav-footer {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.mobile-nav-footer a {
+    color: rgba(29, 43, 76, .85);
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+.mobile-nav-footer a:hover {
+    text-decoration: none;
+    opacity: 1;
 }
 .mobile-nav-item {
     display: block;
@@ -150,5 +165,11 @@ html {
     .mobile-nav-item {
         color: #c7d5f6;
         border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+    .mobile-nav-footer {
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+    .mobile-nav-footer a {
+        color: #c7d5f6;
     }
 }
