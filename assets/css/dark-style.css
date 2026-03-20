@@ -63,15 +63,16 @@
   }
   
   .pagination ul li a {
-    color: #2997ff;
+    color: #ff8800;
   }
-  
+
   .pagination ul li a.active {
-    background-color: #2997ff;
+    background-color: #ff8800;
+    color: #ffffff;
   }
-  
+
   .pagination ul li a:hover:not(.active) {
-    background-color: rgba(41, 151, 255, .5);
+    background-color: rgba(255, 136, 0, .3);
   }
   
   .tag {
