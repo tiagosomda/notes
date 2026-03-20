@@ -31,8 +31,9 @@
     if (c && activeCategories.indexOf(c) === -1) activeCategories.push(c);
   });
 
-  // Intercept tag/category clicks on the paginated list
+  // Intercept tag/category clicks on both containers (fix #1: attach once, not per render)
   paginatedContainer.addEventListener('click', handleLabelClick);
+  filteredContainer.addEventListener('click', handleLabelClick);
 
   filterClear.addEventListener('click', function () {
     activeTags = [];
@@ -79,12 +80,16 @@
     paginationContainer.style.display = 'none';
 
     fetchJSON(function (posts) {
+      // Fix #2: case-insensitive matching
       var filtered = posts.filter(function (post) {
+        var postTagsLower = post.tags.map(function (t) { return t.toLowerCase(); });
+        var postCatsLower = post.categories.map(function (c) { return c.toLowerCase(); });
+
         var matchesTags = activeTags.every(function (tag) {
-          return post.tags.indexOf(tag) !== -1;
+          return postTagsLower.indexOf(tag.toLowerCase()) !== -1;
         });
         var matchesCategories = activeCategories.every(function (cat) {
-          return post.categories.indexOf(cat) !== -1;
+          return postCatsLower.indexOf(cat.toLowerCase()) !== -1;
         });
         return matchesTags && matchesCategories;
       });
@@ -100,12 +105,10 @@
       paginatedContainer.style.display = 'none';
       filteredContainer.innerHTML = renderPostList(filtered);
       filteredContainer.style.display = '';
-
-      // Attach click handlers to the newly rendered labels
-      filteredContainer.addEventListener('click', handleLabelClick);
     });
   }
 
+  // Fix #4: error handling for fetch failure
   function fetchJSON(callback) {
     if (jsonCache) {
       callback(jsonCache);
@@ -115,17 +118,33 @@
     xhr.open('GET', '/index.json');
     xhr.onload = function () {
       if (xhr.status === 200) {
-        jsonCache = JSON.parse(xhr.responseText);
-        callback(jsonCache);
+        try {
+          jsonCache = JSON.parse(xhr.responseText);
+          callback(jsonCache);
+        } catch (e) {
+          showFetchError();
+        }
+      } else {
+        showFetchError();
       }
     };
+    xhr.onerror = function () {
+      showFetchError();
+    };
     xhr.send();
+  }
+
+  function showFetchError() {
+    paginatedContainer.style.display = 'none';
+    filteredContainer.style.display = 'none';
+    filterEmpty.textContent = 'Failed to load posts. Please try refreshing the page.';
+    filterEmpty.style.display = '';
   }
 
   function renderPostList(posts) {
     var html = '<ul class="note list">';
     posts.forEach(function (post) {
-      var url = post.external ? escapeHTML(post.externalUrl) : escapeHTML(post.url);
+      var url = post.external ? escapeAttr(post.externalUrl) : escapeAttr(post.url);
       var externalIcon = post.external ? ' ⇗' : '';
       var tagsAttr = escapeAttr(post.tags.join(','));
       var catsAttr = escapeAttr(post.categories.join(','));
@@ -141,22 +160,34 @@
         if (post.truncated) html += '<span class="mldr">&mldr;</span>';
         html += '</p>';
       }
+
+      // Fix #6: render images
+      if (post.imgs && post.imgs.length > 0) {
+        html += '<span class="note imgs">';
+        post.imgs.forEach(function (img) {
+          var imgUrl = img.toLowerCase();
+          if (imgUrl.indexOf('http://') !== 0 && imgUrl.indexOf('https://') !== 0) {
+            imgUrl = post.url + img;
+          }
+          html += '<img alt="" loading="lazy" class="img" src="' + escapeAttr(imgUrl) + '"/>';
+        });
+        html += '</span>';
+      }
+
       html += '</a>';
 
       // Render labels
       if (post.categories.length > 0 || post.tags.length > 0) {
         html += '<p class="note labels">';
         post.categories.forEach(function (cat) {
-          var catSlug = slugify(cat);
           html +=
-            '<a class="category" href="/categories/' + catSlug + '/">' +
+            '<a class="category" href="/categories/' + encodeURIComponent(cat.toLowerCase()) + '/">' +
             escapeHTML(cat) +
             '</a>';
         });
         post.tags.forEach(function (tag) {
-          var tagSlug = slugify(tag);
           html +=
-            '<a class="tag" href="/tags/' + tagSlug + '/">' +
+            '<a class="tag" href="/tags/' + encodeURIComponent(tag.toLowerCase()) + '/">' +
             escapeHTML(tag) +
             '</a>';
         });
@@ -221,17 +252,14 @@
     return div.innerHTML;
   }
 
+  // Fix #10: complete escapeAttr
   function escapeAttr(str) {
-    return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-  }
-
-  function slugify(str) {
     return str
-      .toLowerCase()
-      .replace(/[^\w\s-]/g, '')
-      .replace(/\s+/g, '-')
-      .replace(/-+/g, '-')
-      .trim();
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/'/g, '&#39;');
   }
 
   // On non-home pages, rewrite tag/category links to navigate to home with filter params

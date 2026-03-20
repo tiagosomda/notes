@@ -2,15 +2,18 @@
 [
 {{- range $index, $page := $pages -}}
   {{- if $index -}},{{- end -}}
+  {{- $relURL := replace $page.RelPermalink "#" "%23" -}}
+  {{- $relURL = replace $relURL "." "%2e" -}}
   {
     "title": {{ $page.Title | jsonify }},
-    "url": {{ $page.RelPermalink | jsonify }},
+    "url": {{ $relURL | jsonify }},
     "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
     "dateFormatted": {{ $page.Date.Format (default "2006-01-02" site.Params.dateFormat) | jsonify }},
     "summary": {{ $page.Summary | plainify | jsonify }},
     "truncated": {{ $page.Truncated }},
     "tags": {{ default (slice) $page.Params.tags | jsonify }},
     "categories": {{ default (slice) $page.Params.categories | jsonify }},
+    "imgs": {{ default (slice) $page.Params.imgs | jsonify }},
     "readingTime": {{ $page.ReadingTime }},
     "external": {{ default false $page.Params.external }},
     "externalUrl": {{ default "" $page.Params.externalUrl | jsonify }}
