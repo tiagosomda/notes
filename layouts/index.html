@@ -1,0 +1,23 @@
+{{- define "main" -}}
+{{- partial "homepage-body.html" . -}}
+<div id="filter-bar" class="filter-bar" style="display:none;">
+    <div class="filter-bar-inner">
+        <span class="filter-bar-label">Filtered by:</span>
+        <span id="filter-pills" class="filter-pills"></span>
+        <button id="filter-clear" class="filter-clear">Clear all</button>
+    </div>
+</div>
+<div id="post-list-container">
+    {{- $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
+    <div id="post-list-paginated">
+        {{- partial "note-list.html" $paginator -}}
+    </div>
+    <div id="post-list-filtered" style="display:none;"></div>
+    <div id="pagination-container">
+        {{- partial "pagination.html" $paginator -}}
+    </div>
+</div>
+<div id="filter-empty" class="filter-empty" style="display:none;">
+    No posts match these filters.
+</div>
+{{- end -}}

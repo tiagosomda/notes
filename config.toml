@@ -20,6 +20,9 @@ googleAnalytics = "UA-123-45"
 
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy-term-pages"]
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [markup.highlight]
 codeFences = false
 noClasses = false

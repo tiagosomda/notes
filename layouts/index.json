@@ -1,0 +1,19 @@
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+[
+{{- range $index, $page := $pages -}}
+  {{- if $index -}},{{- end -}}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "url": {{ $page.RelPermalink | jsonify }},
+    "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
+    "dateFormatted": {{ $page.Date.Format (default "2006-01-02" site.Params.dateFormat) | jsonify }},
+    "summary": {{ $page.Summary | plainify | jsonify }},
+    "truncated": {{ $page.Truncated }},
+    "tags": {{ default (slice) $page.Params.tags | jsonify }},
+    "categories": {{ default (slice) $page.Params.categories | jsonify }},
+    "readingTime": {{ $page.ReadingTime }},
+    "external": {{ default false $page.Params.external }},
+    "externalUrl": {{ default "" $page.Params.externalUrl | jsonify }}
+  }
+{{- end -}}
+]

@@ -162,6 +162,89 @@ html {
     opacity: 0.6;
 }
 
+/* ── Filter pill bar ── */
+.filter-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #f3f6f9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+    margin-bottom: 16px;
+}
+.filter-bar-inner {
+    max-width: 744px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 16px;
+}
+.filter-bar-label {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: rgba(29, 43, 76, .6);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.filter-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.filter-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+.filter-pill-tag {
+    background-color: rgba(29, 43, 76, .08);
+    color: rgba(29, 43, 76, .85);
+}
+.filter-pill-category {
+    background-color: rgba(29, 43, 76, .85);
+    color: #fff;
+}
+.filter-pill-remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    line-height: 1;
+    padding: 0 0 0 2px;
+    color: inherit;
+    opacity: 0.6;
+}
+.filter-pill-remove:hover {
+    opacity: 1;
+}
+.filter-clear {
+    background: none;
+    border: 1px solid rgba(29, 43, 76, .2);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgba(29, 43, 76, .6);
+    transition: all 0.2s;
+}
+.filter-clear:hover {
+    background-color: rgba(29, 43, 76, .08);
+    color: rgba(29, 43, 76, .85);
+}
+.filter-empty {
+    text-align: center;
+    padding: 48px 16px;
+    font-size: 1.1em;
+    color: rgba(29, 43, 76, .5);
+}
+
 /* ── Responsive: show hamburger, hide desktop nav on mobile portrait ── */
 @media (max-width: 600px) {
     .mobile-menu-toggle {
@@ -215,6 +298,34 @@ html {
         color: #ffffff;
         background-color: rgba(255, 136, 0, 0.15);
         border-color: #ff8800;
+    }
+
+    /* ── Filter bar: dark mode ── */
+    .filter-bar {
+        background-color: #191f29;
+        border-bottom-color: rgba(255, 136, 0, 0.2);
+    }
+    .filter-bar-label {
+        color: rgba(255, 255, 255, .5);
+    }
+    .filter-pill-tag {
+        background-color: rgba(255, 136, 0, .15);
+        color: #ff8800;
+    }
+    .filter-pill-category {
+        background-color: #e05200;
+        color: #ffffff;
+    }
+    .filter-clear {
+        border-color: rgba(255, 136, 0, .3);
+        color: rgba(255, 255, 255, .5);
+    }
+    .filter-clear:hover {
+        background-color: rgba(255, 136, 0, .15);
+        color: #ff8800;
+    }
+    .filter-empty {
+        color: rgba(255, 255, 255, .4);
     }
 
     /* ── Pagination: orange instead of blue ── */
