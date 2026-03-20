@@ -28,8 +28,7 @@
             <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
         </div>
         <nav class="mobile-nav">
-            <div class="mobile-nav-section-label">Navigation</div>
-            <a class="mobile-nav-item" href="{{- `` | relLangURL -}}">All Posts</a>
+            <a class="mobile-nav-item" href="{{- `` | relLangURL -}}">Notes</a>
             {{- range $nav.custom -}}
                 {{- $url := replace .url "#" "%23" -}}
                 {{- $url = replace $url "." "%2e" -}}
@@ -38,13 +37,6 @@
                 <a class="mobile-nav-item" href="{{- $url -}}"
                     {{- if strings.HasPrefix $url "http" -}} target="_blank" rel="noopener noreferrer"
                     {{- end -}}>{{- .title -}}</a>
-            {{- end -}}
-            <div class="mobile-nav-section-label">Note Groups</div>
-            {{- if $nav.showCategories -}}
-                <a class="mobile-nav-item" href="{{- `categories/` | relLangURL -}}">Categories</a>
-            {{- end -}}
-            {{- if $nav.showTags -}}
-                <a class="mobile-nav-item" href="{{- `tags/` | relLangURL -}}">Tags</a>
             {{- end -}}
         </nav>
         <div class="mobile-nav-footer">
