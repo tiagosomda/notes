@@ -20,6 +20,38 @@ html {
     text-transform: uppercase;
     font-size: 1.575em;
 }
+.slogan-cursor {
+    display: inline-block;
+    font-weight: 700;
+    color: #ff9500;
+    animation: slogan-blink 0.8s infinite;
+    transition: opacity 0.6s ease;
+}
+.slogan-cursor-done {
+    animation: none;
+    opacity: 0;
+}
+.slogan-typed-char {
+    animation: slogan-glow 0.8s ease-out forwards;
+}
+@keyframes slogan-blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+@keyframes slogan-glow {
+    0% {
+        text-shadow: 0 0 10px #ff9500, 0 0 20px #ff9500, 0 0 30px #ffb347;
+        color: #ff9500;
+    }
+    100% {
+        text-shadow: none;
+        color: inherit;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .slogan-typed-char { animation: none; }
+    .slogan-cursor { animation: none; display: none; }
+}
 
 .nav.item:hover {
     font-weight: bold;

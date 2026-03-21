@@ -16,7 +16,7 @@
     </div>
 </section>
 {{- with site.Params.slogan -}}
-    <div class="site slogan"><span class="title">{{- . | safeHTML -}}</span></div>
+    <div class="site slogan" aria-label="{{- . | safeHTML -}}"><span class="title" id="slogan-text" data-text="{{- . | safeHTML -}}" aria-hidden="true"><noscript>{{- . | safeHTML -}}</noscript></span><span class="slogan-cursor" id="slogan-cursor" aria-hidden="true">|</span></div>
 {{- end -}}
 
 {{- $nav := site.Params.nav -}}
@@ -71,5 +71,35 @@
     overlay.addEventListener('click', function(e) {
         if (e.target === overlay) closeMenu();
     });
+})();
+</script>
+
+<script>
+(function() {
+    var el = document.getElementById('slogan-text');
+    var cursor = document.getElementById('slogan-cursor');
+    if (!el) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        el.textContent = el.getAttribute('data-text');
+        if (cursor) cursor.style.display = 'none';
+        return;
+    }
+    var chars = Array.from(el.getAttribute('data-text'));
+    var i = 0;
+    function type() {
+        if (i < chars.length) {
+            var span = document.createElement('span');
+            span.textContent = chars[i];
+            span.className = 'slogan-typed-char';
+            el.appendChild(span);
+            i++;
+            setTimeout(type, 50);
+        } else if (cursor) {
+            setTimeout(function() {
+                cursor.classList.add('slogan-cursor-done');
+            }, 2000);
+        }
+    }
+    setTimeout(type, 800);
 })();
 </script>
