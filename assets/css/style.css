@@ -239,13 +239,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
     min-height: 64px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 
     background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 200;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   }
   
   #content {
@@ -706,7 +705,8 @@
   }
   
   #header,
-  #foooter {
+  #footer,
+  .site.slogan {
     padding-left: 15px;
     padding-right: 15px;
   }

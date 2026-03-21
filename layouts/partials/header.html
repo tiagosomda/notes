@@ -14,10 +14,10 @@
             <span class="hamburger-line"></span>
         </button>
     </div>
-    {{- with site.Params.slogan -}}
-        <div class="site slogan"><span class="title">{{- . | safeHTML -}}</span></div>
-    {{- end -}}
 </section>
+{{- with site.Params.slogan -}}
+    <div class="site slogan"><span class="title">{{- . | safeHTML -}}</span></div>
+{{- end -}}
 
 {{- $nav := site.Params.nav -}}
 {{- if or $nav.showCategories $nav.showTags $nav.custom -}}
