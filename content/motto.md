@@ -1,5 +1,5 @@
 +++
-title = "What is my motto? this up here ^ "
+title = "What is my motto?"
 summary = "here is a bit about my motto"
 date = "2021-02-12"
 aliases = ["about", "about-us", "contact"]
