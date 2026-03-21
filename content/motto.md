@@ -7,8 +7,6 @@ author = "Tiago"
 readingTime = false 
 +++
 
-> 💻 The Staying Speed = The Right Effort + Time 🌍
-
 As I was taking a class in called "How To Make Great Decisions" at the Seattle community college (thanks Microsoft for sponsoring it!),  
 I had to keep a daily journal. One of the questions I had to answer in one of these days was "What is your motto?"
 
