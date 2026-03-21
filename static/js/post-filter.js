@@ -262,6 +262,15 @@
       .replace(/'/g, '&#39;');
   }
 
+  // Keep filter bar pinned just below the sticky header
+  function syncFilterBarTop() {
+    var header = document.getElementById('header');
+    if (!header || !filterBar) return;
+    filterBar.style.top = header.offsetHeight + 'px';
+  }
+  syncFilterBarTop();
+  window.addEventListener('resize', syncFilterBarTop);
+
   // On non-home pages, rewrite tag/category links to navigate to home with filter params
   function rewriteLabelsForNavigation() {
     document.addEventListener('click', function (e) {
