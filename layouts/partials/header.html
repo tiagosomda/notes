@@ -79,12 +79,15 @@
     var el = document.getElementById('slogan-text');
     var cursor = document.getElementById('slogan-cursor');
     if (!el) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        el.textContent = el.getAttribute('data-text');
+    var text = el.getAttribute('data-text');
+    var skipAnimation = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        || sessionStorage.getItem('sloganTyped');
+    if (skipAnimation) {
+        el.textContent = text;
         if (cursor) cursor.style.display = 'none';
         return;
     }
-    var chars = Array.from(el.getAttribute('data-text'));
+    var chars = Array.from(text);
     var i = 0;
     function type() {
         if (i < chars.length) {
@@ -94,10 +97,13 @@
             el.appendChild(span);
             i++;
             setTimeout(type, 50);
-        } else if (cursor) {
-            setTimeout(function() {
-                cursor.classList.add('slogan-cursor-done');
-            }, 2000);
+        } else {
+            sessionStorage.setItem('sloganTyped', '1');
+            if (cursor) {
+                setTimeout(function() {
+                    cursor.classList.add('slogan-cursor-done');
+                }, 2000);
+            }
         }
     }
     setTimeout(type, 800);
