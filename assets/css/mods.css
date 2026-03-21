@@ -58,13 +58,10 @@ html {
     text-decoration: none;
 }
 
-.article.header {
-    margin-top: 24px;
-}
-
 .article-container {
     padding-left: 0px;
     padding-right: 0px;
+    padding-top: 24px;
 }
 
 .markdown-body {
