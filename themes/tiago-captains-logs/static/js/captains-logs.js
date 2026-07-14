@@ -598,6 +598,7 @@
 
       let width = 0;
       let height = 0;
+      let density = 1;
       let progress = reducedMotion.matches ? 1 : 0;
       let animationFrame = 0;
       let animationStart = 0;
@@ -703,7 +704,7 @@
         const plotHeight = plot.bottom - plot.top;
         const xAt = (time) => plot.left + (time * plotWidth);
         const yAt = (effort) => plot.top + (effort * plotHeight);
-        const samples = Math.max(48, Math.round(plotWidth / 6));
+        const samples = Math.max(120, Math.round((plotWidth * density) / 2));
 
         ctx.clearRect(0, 0, width, height);
 
@@ -778,7 +779,7 @@
         ctx.stroke();
         ctx.restore();
 
-        const visibleSamples = Math.max(1, Math.round(samples * progress));
+        const visibleSamples = Math.max(1, Math.ceil(samples * progress));
         const stableColorTime = 3 / 4.5;
         const signalGradient = ctx.createLinearGradient(plot.left, 0, plot.right, 0);
         signalGradient.addColorStop(0, palette.orange);
@@ -807,20 +808,55 @@
         };
         ctx.save();
         ctx.lineWidth = 1.8;
+        ctx.lineCap = "round";
+        ctx.lineJoin = "round";
         ctx.shadowBlur = 7;
+        ctx.strokeStyle = signalGradient;
+        ctx.shadowColor = palette.cyan;
+        ctx.beginPath();
+        ctx.moveTo(xAt(0), yAt(effortAt(0)));
         for (let index = 1; index <= visibleSamples; index += 1) {
-          const startTime = ((index - 1) / visibleSamples) * progress;
-          const endTime = (index / visibleSamples) * progress;
-          const sampleTime = (startTime + endTime) / 2;
-          const stable = isStableAt(sampleTime);
-          const segmentColor = stable ? signalGradient : warningColor(warningIntensityAt(sampleTime));
-          ctx.strokeStyle = segmentColor;
-          ctx.shadowColor = stable ? palette.orange : segmentColor;
+          const time = Math.min(progress, index / samples);
+          ctx.lineTo(xAt(time), yAt(effortAt(time)));
+        }
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.save();
+        ctx.lineWidth = 1.8;
+        ctx.lineCap = "round";
+        ctx.lineJoin = "round";
+        ctx.shadowBlur = 7;
+        let warningStartIndex = null;
+        const drawWarningRun = (startIndex, endIndex) => {
+          const startTime = Math.max(0, (startIndex - 1) / samples);
+          const endTime = Math.min(progress, endIndex / samples);
+          const warningGradient = ctx.createLinearGradient(xAt(startTime), 0, xAt(endTime), 0);
+          const runLength = Math.max(1, endIndex - startIndex + 1);
+          for (let index = startIndex; index <= endIndex; index += 1) {
+            const time = Math.min(progress, (index - 0.5) / samples);
+            warningGradient.addColorStop((index - startIndex) / runLength, warningColor(warningIntensityAt(time)));
+          }
+          warningGradient.addColorStop(1, warningColor(warningIntensityAt(endTime)));
+          ctx.strokeStyle = warningGradient;
+          ctx.shadowColor = warningColor(warningIntensityAt((startTime + endTime) / 2));
           ctx.beginPath();
           ctx.moveTo(xAt(startTime), yAt(effortAt(startTime)));
-          ctx.lineTo(xAt(endTime), yAt(effortAt(endTime)));
+          for (let index = startIndex; index <= endIndex; index += 1) {
+            const time = Math.min(progress, index / samples);
+            ctx.lineTo(xAt(time), yAt(effortAt(time)));
+          }
           ctx.stroke();
+        };
+        for (let index = 1; index <= visibleSamples; index += 1) {
+          const time = Math.min(progress, (index - 0.5) / samples);
+          if (!isStableAt(time) && warningStartIndex === null) warningStartIndex = index;
+          if (isStableAt(time) && warningStartIndex !== null) {
+            drawWarningRun(warningStartIndex, index - 1);
+            warningStartIndex = null;
+          }
         }
+        if (warningStartIndex !== null) drawWarningRun(warningStartIndex, visibleSamples);
         ctx.restore();
 
         const markerX = xAt(progress);
@@ -866,10 +902,11 @@
         const bounds = canvas.getBoundingClientRect();
         const nextWidth = Math.max(1, Math.round(bounds.width));
         const nextHeight = Math.max(1, Math.round(bounds.height));
-        const density = Math.min(window.devicePixelRatio || 1, 2);
-        if (nextWidth === width && nextHeight === height) return;
+        const nextDensity = Math.min(window.devicePixelRatio || 1, 3);
+        if (nextWidth === width && nextHeight === height && nextDensity === density) return;
         width = nextWidth;
         height = nextHeight;
+        density = nextDensity;
         canvas.width = Math.round(width * density);
         canvas.height = Math.round(height * density);
         context.setTransform(density, 0, 0, density, 0, 0);
@@ -923,6 +960,22 @@
     });
   };
 
+  const initStayingSpeedDisclosures = () => {
+    const disclosures = Array.from(document.querySelectorAll("[data-staying-speed-disclosure]"));
+    disclosures.forEach((disclosure) => {
+      const toggle = disclosure.querySelector("[data-staying-speed-toggle]");
+      const reveal = disclosure.querySelector(".staying-speed-band-reveal");
+      if (!toggle || !reveal) return;
+
+      toggle.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!expanded));
+        reveal.setAttribute("aria-hidden", String(expanded));
+        disclosure.classList.toggle("is-open", !expanded);
+      });
+    });
+  };
+
   const initCopyLink = () => {
     const button = document.querySelector("[data-copy-link]");
     if (!button) return;
@@ -960,6 +1013,7 @@
   initReveal();
   initMobileNavigation();
   initArchiveFilters();
+  initStayingSpeedDisclosures();
   initStayingSpeedGraphs();
   initCopyLink();
 })();
