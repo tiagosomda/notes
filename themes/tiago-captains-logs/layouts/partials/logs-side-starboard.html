@@ -1,0 +1,27 @@
+{{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $latest := index ($posts.ByDate.Reverse) 0 }}
+<section class="console-module reveal">
+  <div class="module-heading"><p class="console-eyebrow">ARCHIVE STATUS</p><span>LIVE</span></div>
+  <dl class="telemetry-list">
+    <div><dt>Transmissions</dt><dd>{{ printf "%02d" (len $posts) }}</dd></div>
+    <div><dt>Tag vectors</dt><dd>{{ printf "%02d" (len site.Taxonomies.tags) }}</dd></div>
+    <div><dt>Log channels</dt><dd>{{ printf "%02d" (len site.Taxonomies.categories) }}</dd></div>
+    <div><dt>Latest signal</dt><dd>{{ $latest.Date.Format "2006.01.02" }}</dd></div>
+  </dl>
+</section>
+
+<section class="console-module reveal">
+  <div class="module-heading"><p class="console-eyebrow">LOG CHANNELS</p><span>OPEN</span></div>
+  <div class="channel-list">
+    {{ range site.Taxonomies.categories.ByCount }}
+      <a href="{{ .Page.RelPermalink }}" class="{{ if eq (lower .Page.Title) "projects" }}is-project{{ end }}"><i></i><span>{{ .Page.Title }}</span><b>{{ .Count }}</b></a>
+    {{ end }}
+  </div>
+</section>
+
+<section class="console-module mothership-console reveal">
+  <p class="console-eyebrow">RETURN VECTOR</p>
+  <h2>TIAGO.DEV</h2>
+  <p>Return to the command bridge and the complete mission profile.</p>
+  <a href="{{ site.Params.mothership }}">OPEN MOTHERSHIP <span aria-hidden="true">↗</span></a>
+</section>

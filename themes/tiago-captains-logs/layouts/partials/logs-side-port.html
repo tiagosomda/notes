@@ -1,0 +1,28 @@
+{{ $feed := site.Params.feed | default "/index.xml" }}
+<section class="console-module reveal">
+  <p class="console-eyebrow">NAV / LOG ARCHIVE</p>
+  <nav class="console-nav" aria-label="Archive sections">
+    <a href="{{ site.Home.RelPermalink }}"><span>00</span>All transmissions</a>
+    <a href="{{ "/staying-speed/" | relURL }}"><span>Φ</span>The Staying Speed</a>
+    <a href="{{ "/categories/projects/" | relURL }}"><span>01</span>Project logs</a>
+    <a href="{{ "/tags/" | relURL }}"><span>02</span>Tag vectors</a>
+    <a href="{{ "/categories/" | relURL }}"><span>03</span>Log channels</a>
+  </nav>
+</section>
+
+<section class="console-module reveal">
+  <div class="module-heading"><p class="console-eyebrow">POPULAR VECTORS</p><span>TOP 08</span></div>
+  <div class="side-tags">
+    {{ range first 8 site.Taxonomies.tags.ByCount }}
+      <a href="{{ .Page.RelPermalink }}"><span>#{{ .Page.Title }}</span><b>{{ .Count }}</b></a>
+    {{ end }}
+  </div>
+</section>
+
+<section class="console-module rss-console reveal">
+  <p class="console-eyebrow">AUTOMATED RECEIVER</p>
+  <div class="rss-orbit" aria-hidden="true"><i></i><i></i><b class="rss-glyph"></b></div>
+  <h2>RSS Uplink</h2>
+  <p>Receive every new transmission in the feed reader you already use.</p>
+  <a href="{{ $feed | relURL }}"><i class="status-dot"></i> CONNECT TO /INDEX.XML</a>
+</section>

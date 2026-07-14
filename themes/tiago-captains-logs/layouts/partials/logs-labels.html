@@ -1,0 +1,24 @@
+{{ $page := .page }}
+{{ $mode := .mode | default "links" }}
+{{ if or $page.Params.categories $page.Params.tags }}
+<div class="log-labels">
+  {{ range $page.Params.categories }}
+    {{ $value := . }}
+    {{ $slug := $value | urlize }}
+    {{ if eq $mode "filter" }}
+      <button class="log-label log-category {{ if eq (lower $value) "projects" }}is-project{{ end }}" type="button" data-filter-trigger data-filter-type="category" data-filter-value="{{ lower $value }}">{{ $value }}</button>
+    {{ else }}
+      <a class="log-label log-category {{ if eq (lower $value) "projects" }}is-project{{ end }}" href="{{ printf "/categories/%s/" $slug | relURL }}">{{ $value }}</a>
+    {{ end }}
+  {{ end }}
+  {{ range $page.Params.tags }}
+    {{ $value := . }}
+    {{ $slug := $value | urlize }}
+    {{ if eq $mode "filter" }}
+      <button class="log-label log-tag" type="button" data-filter-trigger data-filter-type="tag" data-filter-value="{{ lower $value }}">#{{ $value }}</button>
+    {{ else }}
+      <a class="log-label log-tag" href="{{ printf "/tags/%s/" $slug | relURL }}">#{{ $value }}</a>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

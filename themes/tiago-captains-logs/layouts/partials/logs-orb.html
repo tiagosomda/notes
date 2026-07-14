@@ -1,0 +1,17 @@
+{{ $code := .code | default "LOG" }}
+{{ $class := .class | default "" }}
+{{ $delay := .delay | default "-1.2s" }}
+{{ $codes := .codes | default (slice (dict "value" $code "class" "")) }}
+<span class="bloch-sphere quantum-orb {{ $class }}" style="--orb-delay: {{ $delay }}" aria-hidden="true">
+  <span class="orb-shell"></span>
+  <i class="orb-ring orb-ring-a"></i>
+  <i class="orb-ring orb-ring-b"></i>
+  <i class="orb-ring orb-ring-c"></i>
+  <span class="orb-axis"></span>
+  <em class="orb-vector"></em>
+  <b class="orb-readout {{ if gt (len $codes) 1 }}is-cycling{{ end }}">
+    {{ range $index, $item := $codes }}
+      <span class="{{ $item.class }}" style="--code-offset: {{ printf "%ds" (mul $index 3) }}">{{ $item.value }}</span>
+    {{ end }}
+  </b>
+</span>

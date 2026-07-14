@@ -1,11 +1,11 @@
 baseURL = "https://notes.tiago.dev"
 title = "notes.tiago.dev"
-theme = ["hugo-notepadium", "hugo-shortcode-gallery"]
+theme = ["tiago-captains-logs", "hugo-shortcode-gallery"]
 copyright = "©2024 notes.tiago.dev."
 
 publishDir = "public"
 
-languageCode = "en"  # for the RSS generation
+locale = "en-US"
 defaultContentLanguage = "en"
 
 hasCJKLanguage = false
@@ -15,10 +15,11 @@ enableRobotsTXT = true
 # Enable Disqus <--- a way to have comments in the blog
 #disqusShortname = "XXX"
 
-# Google Analytics <--- track page views and etc
-googleAnalytics = "UA-123-45"
-
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy-term-pages"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -32,12 +33,15 @@ unsafe = true  # enable raw HTML in Markdown
 
 [params]
 favicon = "favicon.ico"
+description = "Captain's Logs from TIAGO.DEV: projects, engineering notes, experiments, books, and field reports."
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 dateFormat = "Jan 02, 2006"  # if unset, default is "2006-01-02"
 readingTime = true  # show reading time after article date
 logo = ""
 slogan = "The Staying Speed"
 mainSections = ["post"]  # defines which sections to show on homepage
+mothership = "https://www.tiago.dev"
+feed = "/index.xml"
 #license = "<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."
 
 [params.assets]
@@ -73,8 +77,8 @@ showCategories = true       # /categories/
 showTags = true             # /tags/
 
 [[params.nav.custom]]
-title = "Motto"
-url = "/motto/"
+title = "The Staying Speed"
+url = "/staying-speed/"
 
 #[[params.nav.custom]]
 #title = "Hugo"

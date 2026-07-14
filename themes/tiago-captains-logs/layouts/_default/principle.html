@@ -1,0 +1,29 @@
+{{ define "main" }}
+<article class="principle-page">
+  <header class="principle-hero">
+    <div class="viewport-brackets" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <p class="console-eyebrow">CAPTAIN'S PRINCIPLES // PERSONAL NAVIGATION</p>
+    <h1>{{ .Title }}</h1>
+    {{ partial "staying-speed-formula.html" (dict "class" "principle-formula") }}
+    {{ partial "staying-speed-graph.html" (dict "class" "principle-graph") }}
+    <p class="principle-intro">Finding the sustainable balance of effort and time required to keep moving toward a goal.</p>
+  </header>
+
+  <div class="principle-content">
+    <aside class="principle-telemetry" aria-label="The Staying Speed variables">
+      <p>VARIABLE ARRAY</p>
+      <div><span>01</span><b>Right effort</b><small>Enough force to progress without burning out.</small></div>
+      <div><span>02</span><b>Time</b><small>A cadence that can survive changing circumstances.</small></div>
+      <div><span>03</span><b>Adjustment</b><small>Recognize the signal and change speed when needed.</small></div>
+    </aside>
+    <div class="markdown-body principle-story">
+      {{ .Content }}
+    </div>
+  </div>
+
+  <nav class="principle-actions" aria-label="Continue from The Staying Speed">
+    <a href="{{ site.Home.RelPermalink }}#archive"><small>RETURN TO DECK</small><b>Browse Captain's Logs</b><span aria-hidden="true">→</span></a>
+    <a href="{{ site.Params.mothership }}"><small>OPEN MOTHERSHIP</small><b>Return to TIAGO.DEV</b><span aria-hidden="true">↗</span></a>
+  </nav>
+</article>
+{{ end }}

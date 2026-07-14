@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ $feed := site.Params.feed | default "/index.xml" }}
+<article class="article-shell">
+  <header class="article-header">
+    <div class="article-status"><span><i class="status-dot"></i> TRANSMISSION DECRYPTED</span><b>{{ .Section | upper }} / {{ .Date.Format "2006.001" }}</b></div>
+    <p class="console-eyebrow">CAPTAIN'S LOG // {{ .Date.Format "2006.01.02" }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Summary }}<p class="article-summary">{{ . | plainify }}</p>{{ end }}
+    <div class="article-meta">
+      {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format (site.Params.dateFormat | default "Jan 02, 2006") }}</time>{{ end }}
+      <span>{{ .ReadingTime }} MIN READ</span>
+      {{ with .Params.author }}<span>BY {{ . | upper }}</span>{{ end }}
+    </div>
+    {{ partial "logs-labels.html" (dict "page" .) }}
+  </header>
+
+  {{ with .Params.cover }}<figure class="article-cover"><img src="{{ . | safeURL }}" alt=""></figure>{{ end }}
+  <div class="article-content markdown-body">
+    {{ .Content }}
+  </div>
+
+  <footer class="article-footer">
+    {{ partial "logs-labels.html" (dict "page" .) }}
+    <div class="article-actions">
+      <button type="button" data-copy-link><span>Copy transmission link</span><b aria-hidden="true">⧉</b></button>
+      <a href="{{ $feed | relURL }}"><i class="rss-glyph" aria-hidden="true"></i><span><b>Keep receiving logs</b><small>Subscribe via RSS</small></span></a>
+    </div>
+  </footer>
+</article>
+
+{{ if or .PrevInSection .NextInSection }}
+<nav class="article-navigation" aria-label="Adjacent transmissions">
+  {{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><small>← PREVIOUS LOG</small><b>{{ .Title }}</b></a>{{ else }}<span></span>{{ end }}
+  {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><small>NEXT LOG →</small><b>{{ .Title }}</b></a>{{ end }}
+</nav>
+{{ end }}
+{{ end }}

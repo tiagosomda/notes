@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="error-screen">
+  {{ partial "logs-orb.html" (dict "code" "404" "class" "error-orb" "delay" "-4.2s") }}
+  <p class="console-eyebrow">SIGNAL LOST</p>
+  <h1>Transmission not found.</h1>
+  <p>The requested log has drifted beyond receiver range.</p>
+  <a class="primary-action" href="{{ site.Home.RelPermalink }}"><span>Return to archive</span><b aria-hidden="true">←</b></a>
+</section>
+{{ end }}

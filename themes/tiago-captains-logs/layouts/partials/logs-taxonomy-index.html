@@ -1,0 +1,19 @@
+<section class="archive-panel taxonomy-index">
+  <div class="archive-heading">
+    <div>
+      <p class="console-eyebrow">NAVIGATION ARRAY</p>
+      <h1>{{ .Title }}</h1>
+    </div>
+    <span>{{ len .Data.Terms }} VECTORS</span>
+  </div>
+  <p class="taxonomy-intro">Select a {{ if eq .Data.Plural "categories" }}log channel{{ else }}tag vector{{ end }} to isolate matching transmissions.</p>
+  <div class="taxonomy-grid">
+    {{ range .Data.Terms.ByCount }}
+      {{ $codeLength := cond (gt (len .Page.Title) 2) 3 (len .Page.Title) }}
+      <a href="{{ .Page.RelPermalink }}" class="{{ if eq (lower .Page.Title) "projects" }}is-project{{ end }}">
+        {{ partial "logs-orb.html" (dict "code" (upper (substr .Page.Title 0 $codeLength)) "class" "taxonomy-orb" "delay" (printf "-%ds" (add .Count 1))) }}
+        <span><b>{{ .Page.Title }}</b><small>{{ .Count }} TRANSMISSIONS</small></span><i aria-hidden="true">→</i>
+      </a>
+    {{ end }}
+  </div>
+</section>

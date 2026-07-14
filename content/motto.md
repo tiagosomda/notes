@@ -1,26 +1,31 @@
 +++
-title = "What is my motto?"
-summary = "here is a bit about my motto"
+title = "The Staying Speed"
+summary = "The right balance of effort and time needed to keep moving toward a goal."
 date = "2021-02-12"
-aliases = ["about", "about-us", "contact"]
+url = "/staying-speed/"
+aliases = ["/motto/", "/about/", "/about-us/", "/contact/"]
 author = "Tiago"
-readingTime = false 
+readingTime = false
+layout = "principle"
 +++
 
-As I was taking a class in called "How To Make Great Decisions" at the Seattle community college (thanks Microsoft for sponsoring it!),  
-I had to keep a daily journal. One of the questions I had to answer in one of these days was "What is your motto?"
+## Where it came from
 
-As I thought about it, my mind went straight to a message that I used to written on a mirror right outside my bedroom.  
-The message was "The Staying Speed = The Right Effort + Time".  
+While taking a class called “How To Make Great Decisions” at a Seattle community college—thanks to Microsoft for sponsoring it—I kept a daily journal. One of the prompts asked a simple question: “What is your motto?”
 
-This was something I came up with a long time ago when I used to practice kung fu. I used to read a lot about Jeet Kune Do and quotes/teachings from Bruce Lee and in those, I derived this motto.  
+My mind went straight to a message I had written on a mirror outside my bedroom:
 
-**To me, the meaning behind "The Staying Speed" is**...  
-...about finding the right amount of time and effort needed to reach a goal.  
-- Put too little effort and time (how often you do something) and you won't accomplish it.  
-- Put too much effort and time and you might get burned out, bored, etc.  
+**The Staying Speed = The Right Effort + Time.**
 
-**"The Staying Speed" is** ...  
-the right balance of the amount of effort and time you put into a goal.  
-The speed is not always the same. It depends not only on what you are working on, but your emotional state as well. 
-Knowing that, allows you to recognize when it is too little and when it is too much. From there you can adjust your staying speed to accomplish your goal.  
+I came up with it years earlier while practicing kung fu. I read extensively about Jeet Kune Do and the teachings of Bruce Lee, and the idea emerged from those lessons.
+
+## What it means to me
+
+The Staying Speed is about finding the right amount of effort and time needed to reach a goal.
+
+- Put in too little effort, or practice too infrequently, and you will not make meaningful progress.
+- Put in too much effort for too long and you may burn out, become bored, or lose sight of why you started.
+
+The right speed is not constant. It changes with what you are working on, the circumstances around you, and your emotional state.
+
+Recognizing when your effort is too little or too much allows you to adjust. That adjustment—finding a pace you can sustain—is how you keep moving toward the goal.

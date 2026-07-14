@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale | default "en-US" }}">
+  <head>
+    {{ partial "logs-head.html" . }}
+  </head>
+  <body class="logs-page logs-page-{{ .Kind }}">
+    <a class="skip-link" href="#main-content">Skip to Captain's Logs</a>
+    <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
+    <div class="space-haze" aria-hidden="true"></div>
+
+    <div class="logs-frame">
+      {{ partial "logs-header.html" . }}
+      <div class="logs-grid">
+        <aside class="side-console side-console-port" aria-label="Archive navigation">
+          {{ partial "logs-side-port.html" . }}
+        </aside>
+
+        <main class="main-channel" id="main-content">
+          {{ block "main" . }}{{ end }}
+        </main>
+
+        <aside class="side-console side-console-starboard" aria-label="Archive telemetry">
+          {{ partial "logs-side-starboard.html" . }}
+        </aside>
+      </div>
+
+      <footer class="logs-footer">
+        <span>© {{ now.Year }} TIAGO.DEV</span>
+        <span>END TRANSMISSION // FEED REMAINS OPEN</span>
+      </footer>
+    </div>
+
+    <script defer src="{{ "js/captains-logs.js" | relURL }}?v={{ now.Unix }}"></script>
+    <script defer src="{{ "js/tabpane-persistence.js" | relURL }}"></script>
+  </body>
+</html>

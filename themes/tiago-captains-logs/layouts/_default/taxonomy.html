@@ -1,0 +1,7 @@
+{{ define "main" }}
+  {{ if eq .Kind "taxonomy" }}
+    {{ partial "logs-taxonomy-index.html" . }}
+  {{ else }}
+    {{ partial "logs-list-page.html" . }}
+  {{ end }}
+{{ end }}

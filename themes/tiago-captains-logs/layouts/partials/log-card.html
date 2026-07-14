@@ -1,0 +1,47 @@
+{{ $page := .page }}
+{{ $index := .index | default 0 }}
+{{ $filterMode := .filter | default false }}
+{{ $tags := default (slice) $page.Params.tags }}
+{{ $categories := default (slice) $page.Params.categories }}
+{{ $search := printf "%s %s %s %s" $page.Title ($page.Summary | plainify) (delimit $tags " ") (delimit $categories " ") | lower }}
+{{ $delay := printf "-%0.2fs" (add 0.35 (mul (mod $index 7) 0.83)) }}
+{{ $primaryCategory := "log" }}
+{{ if gt (len $categories) 0 }}{{ $primaryCategory = lower (index $categories 0) }}{{ end }}
+{{ if in $categories "projects" }}{{ $primaryCategory = "projects" }}{{ end }}
+{{ $channelCodes := dict "projects" "PRJ" "thoughts" "THO" "books" "BKS" "hacks" "HCK" "parenting" "PAR" }}
+{{ $channelCode := index $channelCodes $primaryCategory | default "" }}
+{{ if not $channelCode }}
+  {{ $channelLength := cond (gt (len $primaryCategory) 3) 3 (len $primaryCategory) }}
+  {{ $channelCode = upper (substr $primaryCategory 0 $channelLength) }}
+{{ end }}
+{{ $tagCode := "TAG" }}
+{{ if gt (len $tags) 0 }}
+  {{ $primaryTag := lower (index $tags 0) }}
+  {{ $tagWords := split (replaceRE "^ +| +$" "" (replaceRE "[^a-z0-9]+" " " $primaryTag)) " " }}
+  {{ if gt (len $tagWords) 1 }}
+    {{ $tagCode = "" }}
+    {{ range first 3 $tagWords }}{{ $tagCode = printf "%s%s" $tagCode (upper (substr . 0 1)) }}{{ end }}
+  {{ else }}
+    {{ $tagLength := cond (gt (len $primaryTag) 3) 3 (len $primaryTag) }}
+    {{ $tagCode = upper (substr $primaryTag 0 $tagLength) }}
+  {{ end }}
+{{ end }}
+{{ $readCode := printf "%dM" $page.ReadingTime }}
+{{ $orbCodes := slice (dict "value" $channelCode "class" "is-channel") (dict "value" (printf "#%s" $tagCode) "class" "is-tag") (dict "value" $readCode "class" "is-read") }}
+<article class="log-card reveal {{ if in $categories "projects" }}is-project-log{{ end }}"
+  {{ if $filterMode }}data-log-card data-tags="{{ delimit $tags "|" | lower }}" data-categories="{{ delimit $categories "|" | lower }}" data-search="{{ $search }}"{{ end }}>
+  <div class="log-card-primary">
+    {{ partial "logs-orb.html" (dict "codes" $orbCodes "class" "log-card-orb" "delay" $delay) }}
+    <div class="log-card-heading">
+      <div class="log-card-meta">
+        {{ with $page.Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format (site.Params.dateFormat | default "Jan 02, 2006") }}</time>{{ end }}
+        <span>{{ $page.ReadingTime }} MIN READ</span>
+        {{ if in $categories "projects" }}<span class="project-marker">PROJECT LOG</span>{{ end }}
+      </div>
+      <h2><a href="{{ if $page.Params.external }}{{ $page.Params.externalUrl }}{{ else }}{{ $page.RelPermalink }}{{ end }}">{{ $page.Title }}{{ if $page.Params.external }} <span aria-hidden="true">↗</span>{{ end }}</a></h2>
+    </div>
+    <a class="log-card-open" href="{{ if $page.Params.external }}{{ $page.Params.externalUrl }}{{ else }}{{ $page.RelPermalink }}{{ end }}" aria-label="Open {{ $page.Title }}">OPEN <span aria-hidden="true">→</span></a>
+  </div>
+  {{ with $page.Summary }}<p class="log-card-summary">{{ . | plainify | truncate 230 }}</p>{{ end }}
+  {{ partial "logs-labels.html" (dict "page" $page "mode" (cond $filterMode "filter" "links")) }}
+</article>

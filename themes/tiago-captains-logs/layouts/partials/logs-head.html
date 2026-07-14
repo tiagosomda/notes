@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#030608">
+{{ hugo.Generator }}
+
+{{ $pageTitle := site.Title }}
+{{ if and (not .IsHome) .Title }}{{ $pageTitle = printf "%s — %s" .Title site.Title }}{{ end }}
+<title>{{ $pageTitle }}</title>
+
+{{ $description := site.Params.description }}
+{{ with .Description }}{{ $description = . }}{{ else }}{{ if .IsPage }}{{ with .Summary }}{{ $description = . | plainify }}{{ end }}{{ end }}{{ end }}
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ site.Params.favicon | relURL }}" type="image/x-icon">
+<link rel="stylesheet" href="{{ "css/captains-logs.css" | relURL }}?v={{ now.Unix }}">
+
+{{ with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="application/rss+xml" title="{{ site.Title }} RSS feed" href="{{ .Permalink }}">
+{{ else }}
+  {{ with site.Home.OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }} RSS feed" href="{{ .Permalink }}">{{ end }}
+{{ end }}
+
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ $pageTitle }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta name="twitter:card" content="summary">

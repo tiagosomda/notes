@@ -1,0 +1,12 @@
+name = "TIAGO Captain's Logs"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A mobile-first spaceship logbook theme for notes.tiago.dev."
+homepage = "https://notes.tiago.dev"
+tags = ["blog", "dark", "responsive", "sci-fi", "rss"]
+features = ["responsive", "taxonomies", "rss", "client-side-filtering"]
+min_version = "0.120.0"
+
+[author]
+  name = "Tiago Sommer Damasceno"
+  homepage = "https://www.tiago.dev"

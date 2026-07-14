@@ -1,0 +1,48 @@
+{{ $feed := site.Params.feed | default "/index.xml" }}
+{{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $tagNames := slice }}
+{{ range site.Taxonomies.tags.Alphabetical }}{{ $tagNames = $tagNames | append .Page.Title }}{{ end }}
+{{ $mathSymbols := slice "ψ" "λ" "Σ" "∇" "∞" "π" "ℏ" "φ" "Δ" "⊗" "|0⟩" "|1⟩" }}
+<header class="logs-header {{ if not .IsHome }}brand-is-expanded brand-is-static{{ end }}" aria-label="Captain's Logs status" data-site-header>
+  <a class="logs-brand" href="{{ site.Home.RelPermalink }}" aria-label="Captain's Logs home">
+    {{ partial "logs-orb.html" (dict "code" "N" "class" "brand-bloch" "delay" "-4.3s") }}
+    <span class="brand-copy" data-brand-copy>
+      <strong aria-hidden="true"><i data-brand-segment data-text="NOTES.">NOTES.</i><span data-brand-segment data-text="TIAGO">TIAGO</span><em data-brand-segment data-text=".DEV">.DEV</em></strong>
+      <small>{{ site.Params.slogan | default "The Staying Speed" }}</small>
+    </span>
+  </a>
+
+  <div class="header-telemetry" aria-label="Archive telemetry">
+    <span><i class="status-dot"></i> ARCHIVE ONLINE</span>
+    <span data-utc-clock>--:--:-- UTC</span>
+    <span>{{ printf "%02d" (len $posts) }} TRANSMISSIONS</span>
+  </div>
+
+  <div class="header-actions">
+    <a class="rss-uplink rss-uplink-compact" href="{{ $feed | relURL }}" aria-label="Subscribe to Captain's Logs via RSS">
+      <i class="rss-glyph" aria-hidden="true"></i><span>RSS UPLINK</span>
+    </a>
+    <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="logs-mobile-nav" data-mobile-nav-trigger>
+      <small>NAV</small><span>DECK MAP</span><i aria-hidden="true"></i>
+    </button>
+  </div>
+  <span class="scroll-progress" aria-hidden="true"><i data-scroll-progress></i></span>
+</header>
+
+<button class="mobile-nav-scrim" type="button" tabindex="-1" aria-label="Close deck navigation" data-mobile-nav-scrim></button>
+<nav class="mobile-nav-panel" id="logs-mobile-nav" aria-label="Captain's Logs navigation" aria-hidden="true" data-mobile-nav-panel>
+  <div class="mobile-nav-heading">
+    <span><small>NOTES.TIAGO.DEV</small><b>LOG DECK</b></span>
+    <button class="mobile-nav-close" type="button" aria-label="Close deck navigation" data-mobile-nav-close></button>
+  </div>
+  <a href="{{ site.Home.RelPermalink }}"><b>00</b><span>All transmissions</span></a>
+  <a href="{{ "/staying-speed/" | relURL }}"><b>Φ</b><span>The Staying Speed</span></a>
+  <a href="{{ "/categories/projects/" | relURL }}"><b>01</b><span>Project logs</span></a>
+  <a href="{{ "/tags/" | relURL }}"><b>02</b><span>Tag vectors</span></a>
+  <a href="{{ "/categories/" | relURL }}"><b>03</b><span>Log channels</span></a>
+  <a href="{{ $feed | relURL }}"><b>RSS</b><span>Subscribe to feed</span></a>
+  <a href="{{ site.Params.mothership }}"><b>↗</b><span>Return to TIAGO.DEV</span></a>
+  <p><i class="status-dot"></i> NAVIGATION SYSTEM ONLINE</p>
+</nav>
+
+<script type="application/json" id="brand-orb-data">{{ dict "symbols" $mathSymbols "tags" $tagNames | jsonify | safeJS }}</script>

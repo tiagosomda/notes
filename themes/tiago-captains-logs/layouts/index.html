@@ -1,0 +1,89 @@
+{{ define "main" }}
+{{ $feed := site.Params.feed | default "/index.xml" }}
+{{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+<section class="logs-hero viewport-panel" id="bridge" aria-label="The Staying Speed">
+  <div class="viewport-brackets" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="hero-orbits" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="hero-signal"><span><i class="status-dot"></i> INBOUND TRANSMISSIONS</span><b><em>CAPTAIN'S LOGS</em><small> // CHANNEL 00.19</small></b></div>
+  <div class="hero-principle">
+    <p><span>CAPTAIN'S PRINCIPLES</span>SUSTAINABLE FORWARD MOTION</p>
+    {{ partial "staying-speed-formula.html" (dict "class" "hero-principle-formula" "heading" true) }}
+    {{ partial "staying-speed-graph.html" (dict "class" "hero-principle-graph") }}
+    <a href="{{ "/staying-speed/" | relURL }}">Explore the principle <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="hero-actions">
+    <a class="primary-action" href="#archive"><span>Browse transmissions</span><b aria-hidden="true">↓</b></a>
+    <a class="rss-uplink" href="{{ $feed | relURL }}"><i class="rss-glyph" aria-hidden="true"></i><span><b>Subscribe via RSS</b><small>Use any feed reader</small></span></a>
+  </div>
+  <div class="hero-telemetry" aria-label="Captain's Logs summary">
+    <span>TRANSMISSIONS <b>{{ printf "%02d" (len $posts) }}</b></span>
+    <span>PROJECT LOGS <b>{{ with site.Taxonomies.categories.projects }}{{ .Count }}{{ else }}00{{ end }}</b></span>
+    <span>RECEIVER <b>/INDEX.XML</b></span>
+  </div>
+</section>
+
+<section class="archive-panel" id="archive" data-log-archive aria-labelledby="archive-title">
+  <div class="archive-heading">
+    <div>
+      <p class="console-eyebrow">DECRYPTED / CHRONOLOGICAL</p>
+      <h2 id="archive-title">Transmission archive</h2>
+    </div>
+    <span data-visible-count>{{ len $posts }} LOGS VISIBLE</span>
+  </div>
+
+  <div class="filter-console" aria-label="Filter Captain's Logs">
+    <div class="filter-toolbar">
+      <div class="filter-search" data-search-control>
+        <button class="filter-search-toggle" type="button" aria-label="Search the archive" aria-expanded="false" aria-controls="archive-search-input" data-search-toggle><i aria-hidden="true"></i></button>
+        <div class="filter-search-reveal">
+          <input id="archive-search-input" type="search" placeholder="Search title, summary, or tag…" aria-label="Search Captain's Logs" autocomplete="off" data-log-search>
+          <button class="filter-search-dismiss" type="button" aria-label="Clear and close search" data-search-dismiss><i aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <details class="filter-deck channel-filter-deck" data-filter-deck data-filter-deck-type="category">
+        <summary><span>Channels</span><b>{{ len site.Taxonomies.categories }}</b><i aria-hidden="true"></i></summary>
+        <div class="filter-popover">
+          <p>LOG CHANNELS</p>
+          <div class="filter-options">
+            {{ range site.Taxonomies.categories.ByCount }}
+              <button type="button" class="filter-button {{ if eq (lower .Page.Title) "projects" }}is-project{{ end }}" data-filter-button data-filter-type="category" data-filter-value="{{ lower .Page.Title }}">{{ .Page.Title }} <b>{{ .Count }}</b></button>
+            {{ end }}
+          </div>
+        </div>
+      </details>
+
+      <details class="filter-deck tag-filter-deck" data-filter-deck data-filter-deck-type="tag">
+        <summary><span>Tags</span><b>{{ len site.Taxonomies.tags }}</b><i aria-hidden="true"></i></summary>
+        <div class="filter-popover">
+          <p>TAG VECTORS</p>
+          <div class="filter-options">
+            {{ range site.Taxonomies.tags.Alphabetical }}
+              <button type="button" class="filter-button" data-filter-button data-filter-type="tag" data-filter-value="{{ lower .Page.Title }}">#{{ .Page.Title }} <b>{{ .Count }}</b></button>
+            {{ end }}
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <div class="filter-status" hidden data-filter-status>
+      <span>ACTIVE FILTERS</span>
+      <div data-active-filters></div>
+      <button type="button" data-filter-clear>Clear all</button>
+    </div>
+  </div>
+
+  <div class="log-list" data-log-list>
+    {{ range $index, $page := $posts.ByDate.Reverse }}
+      {{ partial "log-card.html" (dict "page" $page "index" $index "filter" true) }}
+    {{ end }}
+  </div>
+
+  <div class="filter-empty" hidden data-filter-empty>
+    {{ partial "logs-orb.html" (dict "code" "Ø" "class" "empty-orb" "delay" "-3.6s") }}
+    <h2>No matching transmissions</h2>
+    <p>Clear a vector or widen the search parameters.</p>
+    <button type="button" data-filter-clear>RESET ARCHIVE FILTERS</button>
+  </div>
+</section>
+{{ end }}

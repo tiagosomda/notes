@@ -1,0 +1,21 @@
+{{ $pages := .Pages.ByDate.Reverse }}
+<section class="archive-panel list-archive">
+  <div class="archive-heading">
+    <div>
+      <p class="console-eyebrow">{{ if eq .Kind "term" }}FOCUSED CHANNEL{{ else }}ARCHIVE INDEX{{ end }}</p>
+      <h1>{{ .Title }}</h1>
+    </div>
+    <span>{{ len $pages }} TRANSMISSIONS</span>
+  </div>
+  {{ with .Content }}<div class="list-intro markdown-body">{{ . }}</div>{{ end }}
+  {{ with .OutputFormats.Get "RSS" }}
+  <a class="taxonomy-rss" href="{{ .RelPermalink }}"><i class="rss-glyph" aria-hidden="true"></i><span><b>RSS FOR THIS CHANNEL</b><small>Subscribe only to {{ $.Title }}</small></span></a>
+  {{ end }}
+  <div class="log-list">
+    {{ range $index, $page := $pages }}
+      {{ partial "log-card.html" (dict "page" $page "index" $index) }}
+    {{ else }}
+      <p class="empty-list">No transmissions have been logged in this channel.</p>
+    {{ end }}
+  </div>
+</section>
