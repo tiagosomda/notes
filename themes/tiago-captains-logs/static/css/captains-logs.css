@@ -2600,11 +2600,14 @@ summary:focus-visible {
 
   .logs-hero,
   .archive-panel,
-  .article-shell,
   .taxonomy-index,
-  .error-screen,
-  .principle-page {
+  .error-screen {
     margin: 10px;
+  }
+
+  .article-shell,
+  .principle-page {
+    margin: 0;
   }
 
   .logs-hero {
@@ -2676,10 +2679,15 @@ summary:focus-visible {
   }
 
   .archive-panel,
-  .article-shell,
   .taxonomy-index,
   .error-screen {
     padding: 29px 20px;
+  }
+
+  .article-shell {
+    padding: 29px 16px;
+    border-right: 0;
+    border-left: 0;
   }
 
   .archive-heading {
@@ -2776,7 +2784,7 @@ summary:focus-visible {
   }
 
   .principle-hero {
-    padding: 53px 20px;
+    padding: 53px 16px;
   }
 
   .principle-hero h1 {
@@ -2794,7 +2802,14 @@ summary:focus-visible {
 
   .principle-content {
     display: block;
-    padding: 24px 20px;
+    padding: 24px 16px;
+  }
+
+  .principle-hero,
+  .principle-content,
+  .principle-actions {
+    border-right: 0;
+    border-left: 0;
   }
 
   .principle-telemetry {
@@ -2803,6 +2818,11 @@ summary:focus-visible {
 
   .principle-actions {
     grid-template-columns: 1fr;
+  }
+
+  .principle-actions a {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .principle-actions a + a {
@@ -2828,6 +2848,18 @@ summary:focus-visible {
 
   .article-content {
     padding: 30px 0;
+  }
+
+  .article-content > .tabpane {
+    margin-right: -16px;
+    margin-left: -16px;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .article-content > .tabpane > .tabpane__panel {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .markdown-body {

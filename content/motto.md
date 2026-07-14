@@ -29,3 +29,9 @@ The Staying Speed is about finding the right amount of effort and time needed to
 The right speed is not constant. It changes with what you are working on, the circumstances around you, and your emotional state.
 
 Recognizing when your effort is too little or too much allows you to adjust. That adjustment—finding a pace you can sustain—is how you keep moving toward the goal.
+
+## The band moves with you
+
+The sustainable range is not bounded by two fixed lines. Life events, emotions, family and friends, and the environment around you can move it, narrow it, or widen it. The same effort that felt right yesterday may be too much—or too little—today.
+
+The Staying Speed is therefore not a pace you discover once and preserve forever. It is a continuing act of observation and adjustment: notice where the boundaries are now, choose the right effort for this moment, and keep moving without treating change as failure.
